@@ -9,4 +9,36 @@ This is a simple wrapper around the untappd API packaged as a ruby gem.
 
 == Releases
 
-* No releases yet
+* 0.0.1 Beer Search, Info and Checkins
+
+== Examples
+Configure your API KEY
+
+  Untappd.configure do |config|
+    config.apikey = 'YOUR_API_KEY'
+  end
+
+Get all the checkins for Arrogant Bastard Ale
+
+  checkins = Untappd.beer_checkins(18099)
+  checkins.each do |checkin|
+    puts "#{checkin.user.first_name} at #{checkin.created_at}" 
+  end
+
+Search for beers with the name Stone
+
+  beers = Untappd::Beer.search('stone')
+  beers.each do |beer|
+     puts "#{beer.beer_name}" 
+  end
+
+Get extended info for Arrogant Bastard Ale
+
+  info = Untappd::Beer.info(18099)
+  puts "#{info.name} by #{info.brewery}"
+  
+== Debugging
+You can dump any result to see what values are available with
+
+  info = Untappd::Beer.info(18099)
+  puts info.inspect

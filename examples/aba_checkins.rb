@@ -1,16 +1,19 @@
 #list the recent checkins for Arrogant Bastard Ale
 require 'rubygems'
-require File.dirname(__FILE__) + '/../lib/untappd'
+require 'untappd'
 
 Untappd.configure do |config|
   config.apikey = 'YOUR_API_KEY'
 end
 
-checkins = Untappd.beer_checkins(18099)
-
+checkins = Untappd::Beer.checkins(18099)
 checkins.each do |checkin|
   puts "#{checkin.user.first_name} at #{checkin.created_at}" 
 end
+
+info = Untappd::Beer.info(18099)
+puts "#{info.name} by #{info.brewery}"
+puts info.inspect
 
 # Example JSON response
 # {
