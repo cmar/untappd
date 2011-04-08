@@ -1,0 +1,12 @@
+== untappd API
+
+I have just started and would love help trying to cover all the end points.
+
+This is a simple wrapper around the untappd API packaged as a ruby gem.
+
+* You will need to register for an API key: http://untappd.com/api/register
+* Attempting to wrap all the API documented here: http://untappd.com/api/docs/v3
+
+== Releases
+
+* No releases yet
