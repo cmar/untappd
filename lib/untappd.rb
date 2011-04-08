@@ -15,8 +15,11 @@ module Untappd
     })
         
     response = get("/beer_checkins", :query => options)
-    puts response
-    Hashie::Mash.new(response) if response.code == 200
+    if response.code == 200
+      Hashie::Mash.new(response).results
+    else
+      Hashie::Mash.new {}
+    end
   end
 
   def self.apikey

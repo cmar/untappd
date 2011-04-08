@@ -6,9 +6,9 @@ Untappd.configure do |config|
   config.apikey = 'YOUR_API_KEY'
 end
 
-response = Untappd.beer_checkins(18099)
+checkins = Untappd.beer_checkins(18099)
 
-response.results.each do |checkin|
+checkins.each do |checkin|
   puts "#{checkin.user.first_name} at #{checkin.created_at}" 
 end
 
