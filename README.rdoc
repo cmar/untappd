@@ -9,6 +9,7 @@ This is a simple wrapper around the untappd API packaged as a ruby gem.
 
 == Releases
 
+* 0.0.2 User feed, distinct beers, info, badges, friends, wish list
 * 0.0.1 Beer Search, Info and Checkins
 
 == Examples
