@@ -51,21 +51,26 @@ You can dump any result to see what values are available with
   
 == API Coverage
 
+Beer Object
+* Beer Feed - done
+* Beer Info - done
+* Beer Search - done
+
+User Object
+* User Feed - done
+* User Info - done
+* User Badges - done
+* User Friends - done
+* User Wish List - done
+* User Distinct Beers - done
+
+TODO
 * Friend Feed
-* User Feed
 * The Pub Feed
 * Venue Feed
-* Beer Feed - done
 * Brewery Checkins
-* Beer Info - done
 * Venue Info
 * Checkin Info
-* User Info
-* User Badges
-* User Friends
-* User Wish List
-* User Distinct Beers
-* Beer Search - done
 * Trending
 * Checkin (Test)
 * Checkin
