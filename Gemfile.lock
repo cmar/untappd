@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    untappd (0.0.2)
+    untappd (0.0.3)
       hashie (>= 1.0.0)
       httparty (>= 0.7.3)
 
@@ -26,5 +26,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rspec
+  rspec (>= 2.5.0)
   untappd!

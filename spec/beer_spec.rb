@@ -43,8 +43,20 @@ describe "Beer" do
     search.first.beer_name.should == "Arrogant Bastard Ale"
   end
   
+  it "gets the trending beers" do
+    @response[:results] << {:beer_id => "18099",
+                            :beer_name => "Arrogant Bastard Ale",
+                            :brewery_name => "Stone Brewing Co."}
+    
+    trending = Untappd::Beer.trending()    
+    trending.first.beer_name.should == "Arrogant Bastard Ale"
+  end
+  
 end
 
+#beer trending JSON
+# {"http_code":200,"results":[{"beer_name":"Samuel Adams Noble Pils","beer_id":"5743","brewery_id":"157","count":"66","brewery_name":"Boston Beer Company","img":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-saNobilePils.jpg"},{"beer_name":"Bud Light","beer_id":"3784","brewery_id":"44","count":"55","brewery_name":"Anheuser-Busch","img":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-budLight.jpg"},{"beer_name":"Miller Lite","beer_id":"3811","brewery_id":"863","count":"55","brewery_name":"Miller Brewing Company","img":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-millerLite.jpg"},
+  
 #beer checkin JSON
 #{"next_query":"http:\/\/api.untappd.com\/v3\/beer_checkins?bid=18099&since=610053","next_page":"http:\/\/api.untappd.com\/v3\/beer_checkins?bid=18099&offset=25","http_code":200,"results":[{"user":{"user_name":"micek","first_name":"Cory","last_name":"M.","user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/0d781dfce6d3acfdfbbe9f2692a0d0e4_thumb.jpg","location":"San Diego, CA","bio":"interactive designer\/developer\/creativist, obsessed with user experience, loose leaf teas and micro brews","is_friends":null,"url":""},"checkin_id":"618853","beer_id":"18099","brewery_id":"1204","beer_name":"Arrogant Bastard Ale","brewery_name":"Stone Brewing Co.","created_at":"Sat, 09 Apr 2011 05:27:09 +0000","check_in_comment":"","checkin_link":"http:\/\/untappd.com\/user\/micek\/checkin\/BETZs89","beer_stamp":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-arrogantBastardAle.jpg","venue_name":"El Take It Easy","venue_id":"272","venue_lat":"32.749","venue_lng":"-117.13"}
   
