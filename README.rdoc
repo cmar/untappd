@@ -60,7 +60,7 @@ Configure your API KEY
 
 Get all the checkins for Arrogant Bastard Ale
 
-  checkins = Untappd::Beer.checkins(18099)
+  checkins = Untappd::Beer.feed(18099) # or Untappd::User.feed("cmar")
   checkins.each do |checkin|
     puts "#{checkin.user.first_name} at #{checkin.created_at}" 
   end
