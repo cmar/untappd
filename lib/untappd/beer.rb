@@ -5,7 +5,7 @@ module Untappd
     # since (optional) - The numeric ID of the last recent check-in. This provided to you in the next_query attribute.
     # offset (optional) - The offset that you like the dataset to begin with. 
     # Each set returns 25 max records, so you can use that paginate the feed.
-    def self.checkins(beer_id, options={})
+    def self.feed(beer_id, options={})
       options.merge!({
         :key => Untappd::apikey,
         :bid => beer_id

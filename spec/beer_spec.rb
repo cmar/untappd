@@ -14,13 +14,13 @@ describe "Beer" do
     Untappd::Beer.stub(:get => @response)
   end
   
-  it "should get checkins" do
+  it "should get feed" do
     @response[:results] << {:checkin_id => "610208",
                             :beer_id => "18099",
                             :beer_name => "Arrogant Bastard Ale",
                             :brewery_name => "Stone Brewing Co."}
 
-    checkins = Untappd::Beer.checkins(18099)    
+    checkins = Untappd::Beer.feed(18099)    
     checkins.first.beer_name.should == "Arrogant Bastard Ale"
   end
   

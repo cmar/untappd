@@ -1,14 +1,16 @@
 == untappd API
 
-I have just started and would love help trying to cover all the end points.
-
-This is a simple wrapper around the untappd API packaged as a ruby gem.
+This is a wrapper around the Untappd API. The untappd api is organized
+into proper RESTFUL objects. See API coverage below for mapping from
+the API documentation.
 
 * You will need to register for an API key: http://untappd.com/api/register
 * Attempting to wrap all the API documented here: http://untappd.com/api/docs/v3
+* All options can be passed into the calls
 
 == Releases
 
+* 0.0.3 Venue Info & Feed, Trending Beer, Brewery Feed, Checkin info & Feed (the pub), Renamed Beer.checkins to Beer.feed
 * 0.0.2 User feed, distinct beers, info, badges, friends, wish list
 * 0.0.1 Beer Search, Info and Checkins
 
@@ -53,26 +55,33 @@ You can dump any result to see what values are available with
 == API Coverage
 
 Beer Object
-* Beer Feed - done
-* Beer Info - done
-* Beer Search - done
+* Beer Feed - Untappd::Beer.feed
+* Beer Info - Untappd::Beer.info
+* Beer Search - Untappd::Beer.search
+* Trending - Untappd::Beer.trending
 
 User Object
-* User Feed - done
-* User Info - done
-* User Badges - done
-* User Friends - done
-* User Wish List - done
-* User Distinct Beers - done
+* User Feed - Untappd::User.feed
+* User Info - Untappd::User.info
+* User Badges - Untappd::User.badges
+* User Friends - Untappd::User.friends
+* User Wish List - Untappd::User.wish_list
+* User Distinct Beers - Untappd::User.distinct
+
+Venue Object
+* Venue Feed - Untappd::Venue.feed
+* Venue Info - Untappd::Venue.info
+
+Brewery Object
+* Brewery Checkins - Untappd::Brewery.feed
+
+Checkin Object
+* The Pub Feed - Untappd::Checkin.feed
+* Checkin Info - Untappd::Checkin.info
 
 TODO
+
 * Friend Feed
-* The Pub Feed
-* Venue Feed
-* Brewery Checkins
-* Venue Info
-* Checkin Info
-* Trending
 * Checkin (Test)
 * Checkin
 * Add Comment
