@@ -14,6 +14,43 @@ the API documentation.
 * 0.0.2 User feed, distinct beers, info, badges, friends, wish list
 * 0.0.1 Beer Search, Info and Checkins
 
+== API Coverage
+
+Beer Object
+* Beer Feed - Untappd::Beer.feed
+* Beer Info - Untappd::Beer.info
+* Beer Search - Untappd::Beer.search
+* Trending - Untappd::Beer.trending
+
+User Object
+* User Feed - Untappd::User.feed
+* User Info - Untappd::User.info
+* User Badges - Untappd::User.badges
+* User Friends - Untappd::User.friends
+* User Wish List - Untappd::User.wish_list
+* User Distinct Beers - Untappd::User.distinct
+
+Venue Object
+* Venue Feed - Untappd::Venue.feed
+* Venue Info - Untappd::Venue.info
+
+Brewery Object
+* Brewery Checkins - Untappd::Brewery.feed
+
+Checkin Object
+* The Pub Feed - Untappd::Checkin.feed
+* Checkin Info - Untappd::Checkin.info
+
+TODO
+
+* Friend Feed
+* Checkin (Test)
+* Checkin
+* Add Comment
+* Remove Comment
+* Toast
+* Remove Toast
+
 == Examples
 Configure your API KEY
 
@@ -51,40 +88,3 @@ You can dump any result to see what values are available with
 
   info = Untappd::Beer.info(18099)
   puts info.inspect
-  
-== API Coverage
-
-Beer Object
-* Beer Feed - Untappd::Beer.feed
-* Beer Info - Untappd::Beer.info
-* Beer Search - Untappd::Beer.search
-* Trending - Untappd::Beer.trending
-
-User Object
-* User Feed - Untappd::User.feed
-* User Info - Untappd::User.info
-* User Badges - Untappd::User.badges
-* User Friends - Untappd::User.friends
-* User Wish List - Untappd::User.wish_list
-* User Distinct Beers - Untappd::User.distinct
-
-Venue Object
-* Venue Feed - Untappd::Venue.feed
-* Venue Info - Untappd::Venue.info
-
-Brewery Object
-* Brewery Checkins - Untappd::Brewery.feed
-
-Checkin Object
-* The Pub Feed - Untappd::Checkin.feed
-* Checkin Info - Untappd::Checkin.info
-
-TODO
-
-* Friend Feed
-* Checkin (Test)
-* Checkin
-* Add Comment
-* Remove Comment
-* Toast
-* Remove Toast
