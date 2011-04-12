@@ -1,6 +1,6 @@
 == untappd API
 
-This is a wrapper around the Untappd API. The untappd api is organized
+Wrapper around the Untappd API. This organizes the untappd api 
 into proper RESTFUL objects. See API coverage below for mapping from
 the API documentation.
 
