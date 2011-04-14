@@ -10,6 +10,7 @@ the API documentation.
 
 == Releases
 
+* 0.0.4 Complete coverage of v3 API. Checkins, Comments, Toasts, gmt_offset configuration
 * 0.0.3 Venue Info & Feed, Trending Beer, Brewery Feed, Checkin info & Feed (the pub), Renamed Beer.checkins to Beer.feed
 * 0.0.2 User feed, distinct beers, info, badges, friends, wish list
 * 0.0.1 Beer Search, Info and Checkins
@@ -17,45 +18,43 @@ the API documentation.
 == API Coverage
 
 Beer Object
-* Beer Feed - Untappd::Beer.feed
-* Beer Info - Untappd::Beer.info
-* Beer Search - Untappd::Beer.search
-* Trending - Untappd::Beer.trending
+* Beer Feed - Untappd::Beer.feed(beer_id, options={})
+* Beer Info - Untappd::Beer.info(beer_id, options={})
+* Beer Search - Untappd::Beer.search(q, options={})
+* Trending - Untappd::Beer.trending(options={})
 
 User Object
-* User Feed - Untappd::User.feed
-* User Info - Untappd::User.info
-* User Badges - Untappd::User.badges
-* User Friends - Untappd::User.friends
-* User Wish List - Untappd::User.wish_list
-* User Distinct Beers - Untappd::User.distinct
+* User Feed - Untappd::User.feed(user, options={})
+* User Info - Untappd::User.info(user, options={})
+* User Badges - Untappd::User.badges(user, options={})
+* User Friends - Untappd::User.friends(user, options={})
+* User Wish List - Untappd::User.wish_list(user, options={})
+* User Distinct Beers - Untappd::User.distinct(user, options={})
+* Friend Feed - Untappd::User.friend_feed(username, password, options={})
 
 Venue Object
-* Venue Feed - Untappd::Venue.feed
-* Venue Info - Untappd::Venue.info
+* Venue Feed - Untappd::Venue.feed(venue_id, options={})
+* Venue Info - Untappd::Venue.info(venue_id, options={})
 
 Brewery Object
-* Brewery Checkins - Untappd::Brewery.feed
+* Brewery Checkins - Untappd::Brewery.feed(brewery_id, options={})
 
 Checkin Object
-* The Pub Feed - Untappd::Checkin.feed
-* Checkin Info - Untappd::Checkin.info
-
-TODO
-
-* Friend Feed
-* Checkin (Test)
-* Checkin
-* Add Comment
-* Remove Comment
-* Toast
-* Remove Toast
+* The Pub Feed - Untappd::Checkin.feed(options={})
+* Checkin Info - Untappd::Checkin.info(checkin_id, options={})
+* Checkin (Test) - Untappd::Checkin.test(username, password, beer_id, options={})
+* Checkin - Untappd::Checkin.create(username, password, beer_id, options={})
+* Add Comment - Untappd::Checkin.add_comment(username, password, checkin_id, comment, options={})
+* Remove Comment - Untappd::Checkin.remove_comment(username, password, comment_id, options={})
+* Toast - Untappd::Checkin.toast(username, password, checkin_id)
+* Remove Toast - Untappd::Checkin.untoast(username, password, checkin_id)
 
 == Examples
 Configure your API KEY
 
   Untappd.configure do |config|
     config.apikey = 'YOUR_API_KEY'
+    config.gmt_offset = -5
   end
 
 Get all the checkins for Arrogant Bastard Ale
@@ -65,6 +64,13 @@ Get all the checkins for Arrogant Bastard Ale
     puts "#{checkin.user.first_name} at #{checkin.created_at}" 
   end
 
+Create Checkin
+  #foursqure, lat, lng are optional
+  Untappd::Checkin.create("cmar", "PASSWORD", 4665,
+              :foursquare_id => "4ad6bf91f964a520380821e3",
+              :user_lat => "51.4718",
+              :user_lng => "-0.489278")
+              
 Search for beers with the name Stone
 
   beers = Untappd::Beer.search('stone')

@@ -20,7 +20,9 @@ describe "Venue" do
                              :beer_id => "18099",
                              :beer_name => "Arrogant Bastard Ale",
                              :brewery_name => "Stone Brewing Co."}
-
+    
+    Untappd::Venue.should_receive(:get).with("/venue_checkins", anything())
+    
     feed = Untappd::Venue.feed(18099)    
     feed.first.beer_name.should == "Arrogant Bastard Ale"
   end
@@ -29,6 +31,8 @@ describe "Venue" do
     @response[:results] = { :name => "Terminal 5",
                              :foursquare_id => "4ad6bf91f964a520380821e3"
                             }
+
+    Untappd::Venue.should_receive(:get).with("/venue_info", anything())
 
     info = Untappd::Venue.info(18099)    
     info.name.should == "Terminal 5"

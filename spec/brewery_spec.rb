@@ -14,13 +14,15 @@ describe "Brewery" do
     Untappd::Brewery.stub(:get => @response)
   end
   
-  it "gets the feed" do
+  it "get feed" do
     @response[:results] << { :user => {:user_name => "cmar"},
                              :checkin_id => "610233",
                              :beer_id => "18099",
                              :beer_name => "Arrogant Bastard Ale",
                              :brewery_name => "Stone Brewing Co."}
 
+    Untappd::Brewery.should_receive(:get).with("/brewery_checkins", anything())
+    
     feed = Untappd::Brewery.feed(18099)    
     feed.first.beer_name.should == "Arrogant Bastard Ale"
   end

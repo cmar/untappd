@@ -1,5 +1,6 @@
 require 'httparty'
 require 'hashie'
+require 'digest/md5'
 
 module Untappd
   
@@ -14,6 +15,11 @@ module Untappd
       else
         Hashie::Mash.new {}
       end
+    end
+  
+    def self.auth_hash(username, password)
+      {:username => username, 
+       :password => Digest::MD5.hexdigest(password)}
     end
   end
   

@@ -14,68 +14,93 @@ describe "User" do
     Untappd::User.stub(:get => @response)
   end
   
-  it "should get info" do
+  it "get info" do
     @response[:results] = {:user => {
                               :user_name => "cmar",
                               :first_name => "cmar"
                               }
                            }
-
+    
+    Untappd::User.should_receive(:get).with("/user", anything())
+    
     info = Untappd::User.info("cmar")    
     info.user.user_name.should == "cmar"
   end
   
-  it "should get badges" do
+  it "get badges" do
     @response[:results] << {
                               :badge_name => "Newbie",
                               :checkin_id => "413105"
                             }
-
+                            
+    Untappd::User.should_receive(:get).with("/user_badge", anything())
+                            
     badges = Untappd::User.badges("cmar")    
     badges.first.badge_name.should == "Newbie"
   end
   
-  it "should get friends" do
+  it "get friends" do
     @response[:results] << {
                               :user_name => "pks1850",
                               :user_id => "10819"
                             }
 
+    Untappd::User.should_receive(:get).with("/friends", anything())
+   
     friends = Untappd::User.friends("cmar")    
     friends.first.user_name.should == "pks1850"
   end
   
-  it "should get the wish list" do
+  it "get wish list" do
      @response[:results] << {
                                 :user => {:user_name => "cmar"},
                                 :beer_name => "Aprihop",
                                 :beer_id => "4665"
                             }
 
+    Untappd::User.should_receive(:get).with("/wish_list", anything())
+   
     wish_list = Untappd::User.wish_list("cmar")    
     wish_list.first.beer_name.should == "Aprihop"
   end
   
-  it "should get distinct beers" do
+  it "get distinct beers" do
      @response[:results] << {
                                 :user => {:user_name => "cmar"},
                                 :beer_name => "Aprihop",
                                 :beer_id => "4665"
                             }
-
+                            
+    Untappd::User.should_receive(:get).with("/distinct", anything())
+                            
     distinct_beers = Untappd::User.distinct("cmar")    
     distinct_beers.first.beer_name.should == "Aprihop"
   end
   
-  it "should get feed" do
+  it "get feed" do
      @response[:results] << {
                                 :user => {:user_name => "cmar"},
                                 :beer_name => "Aprihop",
                                 :checkin_id => "551239"
                             }
 
+    Untappd::User.should_receive(:get).with("/user_feed", anything())
+    
     feed = Untappd::User.feed("cmar")    
     feed.first.beer_name.should == "Aprihop"
+  end
+  
+  it "get friend feed" do
+     @response[:results] << {
+                                :user => {:user_name => "cmar"},
+                                :beer_name => "Aprihop",
+                                :checkin_id => "551239"
+                            }
+
+    Untappd::User.should_receive(:get).with("/feed", anything())
+                            
+    feed = Untappd::User.friend_feed("cmar", "password")    
+    feed.first.checkin_id.should == "551239"
   end
   
 end

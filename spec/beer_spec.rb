@@ -14,39 +14,47 @@ describe "Beer" do
     Untappd::Beer.stub(:get => @response)
   end
   
-  it "should get feed" do
+  it "get feed" do
     @response[:results] << {:checkin_id => "610208",
                             :beer_id => "18099",
                             :beer_name => "Arrogant Bastard Ale",
                             :brewery_name => "Stone Brewing Co."}
 
+    Untappd::Beer.should_receive(:get).with("/beer_checkins", anything())
+    
     checkins = Untappd::Beer.feed(18099)    
     checkins.first.beer_name.should == "Arrogant Bastard Ale"
   end
   
-  it "should get info" do
+  it "get info" do
     @response[:results] = {:brewery_id => "1204",
                             :beer_id => "18099",
                             :name => "Arrogant Bastard Ale",
                             :brewery => "Stone Brewing Co."}
 
+    Untappd::Beer.should_receive(:get).with("/beer_info", anything())
+    
     info = Untappd::Beer.info(18099)    
     info.name.should == "Arrogant Bastard Ale"
   end
   
-  it "should search" do
+  it "get search" do
     @response[:results] << {:beer_id => "18099",
                             :beer_name => "Arrogant Bastard Ale",
                             :brewery_name => "Stone Brewing Co."}
     
-    search = Untappd::Beer.info('stone')    
+    Untappd::Beer.should_receive(:get).with("/beer_search", anything())
+    
+    search = Untappd::Beer.search('stone')    
     search.first.beer_name.should == "Arrogant Bastard Ale"
   end
   
-  it "gets the trending beers" do
+  it "get trending beers" do
     @response[:results] << {:beer_id => "18099",
                             :beer_name => "Arrogant Bastard Ale",
                             :brewery_name => "Stone Brewing Co."}
+    
+    Untappd::Beer.should_receive(:get).with("/trending", anything())
     
     trending = Untappd::Beer.trending()    
     trending.first.beer_name.should == "Arrogant Bastard Ale"

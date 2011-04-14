@@ -8,8 +8,9 @@ require "untappd/brewery"
 require "untappd/checkin"
 
 module Untappd
-  @apikey = nil
-
+  @@apikey = nil
+  @@gmt_offset = 0
+  
   def self.apikey
     @@apikey
   end
@@ -18,6 +19,14 @@ module Untappd
     @@apikey = apikey
   end
 
+  def self.gmt_offset
+    @@gmt_offset
+  end
+
+  def self.gmt_offset=(gmt_offset)
+    @@gmt_offset = gmt_offset
+  end
+  
   def self.configure
     yield self
   end

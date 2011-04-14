@@ -7,33 +7,83 @@ describe "Checkin" do
         config.apikey = '6666666666666666666666'
     end
   end
-    
+
   before(:each) do
     @response = {:results =>[]}
     @response.stub(:code => 200)
-    Untappd::Checkin.stub(:get => @response)
   end
   
-  it "gets info" do
-    @response[:results] = { :user => {:user_name => "cmar"},
-                             :checkin_id => "610233",
-                             :beer_id => "18099",
-                             :beer_name => "Arrogant Bastard Ale",
-                             :brewery_name => "Stone Brewing Co."}
-
-    checkin = Untappd::Checkin.info(18099)    
-    checkin.beer_name.should == "Arrogant Bastard Ale"
+  context "post" do
+    
+    before(:each) do
+      Untappd::Checkin.stub(:post => @response)
+    end
+    
+    it "add comment" do
+      Untappd::Checkin.should_receive(:post).with("/add_comment", anything())
+      Untappd::Checkin.add_comment("cmar", "password", 666, "my fancy comment")
+    end
+    
+    it "removes comment" do
+      Untappd::Checkin.should_receive(:post).with("/delete_comment", anything())
+      Untappd::Checkin.remove_comment("cmar", "password", 666)
+    end
+    
+    it "adds toast" do
+      Untappd::Checkin.should_receive(:post).with("/toast", anything())
+      Untappd::Checkin.toast("cmar", "password", 666)
+    end
+    
+    it "removes toast" do
+      Untappd::Checkin.should_receive(:post).with("/delete_toast", anything())
+      Untappd::Checkin.untoast("cmar", "password", 666)
+    end
+    
+    it "creates checkin" do
+      Untappd::Checkin.should_receive(:post).with("/checkin", anything())
+      Untappd::Checkin.create("cmar", "password", 4665)
+    end
+    
+    it "creates test checkin" do
+      Untappd::Checkin.should_receive(:post).with("/checkin_test", anything())
+      Untappd::Checkin.test("cmar", "password", 4665)
+    end
+    
   end
   
-  it "gets thepub feed" do
-    @response[:results] << {:checkin_id => "610208",
-                            :beer_id => "18099",
-                            :beer_name => "Arrogant Bastard Ale",
-                            :brewery_name => "Stone Brewing Co."}
+  context "get" do
+    
+    before(:each) do
+      Untappd::Checkin.stub(:get => @response)
+    end
+  
+    it "gets info" do
+      @response[:results] = { :user => {:user_name => "cmar"},
+                               :checkin_id => "610233",
+                               :beer_id => "18099",
+                               :beer_name => "Arrogant Bastard Ale",
+                               :brewery_name => "Stone Brewing Co."}
 
-    checkins = Untappd::Checkin.feed()    
-    checkins.first.beer_name.should == "Arrogant Bastard Ale"
+      Untappd::Checkin.should_receive(:get).with("/details", anything())
+      
+      checkin = Untappd::Checkin.info(18099)    
+      checkin.beer_name.should == "Arrogant Bastard Ale"
+    end
+  
+    it "gets thepub feed" do
+      @response[:results] << {:checkin_id => "610208",
+                              :beer_id => "18099",
+                              :beer_name => "Arrogant Bastard Ale",
+                              :brewery_name => "Stone Brewing Co."}
+
+      Untappd::Checkin.should_receive(:get).with("/thepub", anything())
+      
+      checkins = Untappd::Checkin.feed()    
+      checkins.first.beer_name.should == "Arrogant Bastard Ale"
+    end
+    
   end
+  
 end
 
 
