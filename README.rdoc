@@ -47,8 +47,8 @@ Checkin Object
 * Checkin Info - Untappd::Checkin.info(checkin_id, options={})
 * Checkin (Test) - Untappd::Checkin.test(username, password, beer_id, options={})
 * Checkin - Untappd::Checkin.create(username, password, beer_id, options={})
-* Add Comment - Untappd::Checkin.add_comment(username, password, checkin_id, comment, options={})
-* Remove Comment - Untappd::Checkin.remove_comment(username, password, comment_id, options={})
+* Add Comment - Untappd::Checkin.add_comment(username, password, checkin_id, comment)
+* Remove Comment - Untappd::Checkin.remove_comment(username, password, comment_id)
 * Toast - Untappd::Checkin.toast(username, password, checkin_id)
 * Remove Toast - Untappd::Checkin.untoast(username, password, checkin_id)
 
