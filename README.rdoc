@@ -7,6 +7,9 @@ the API documentation.
 * You will need to register for an API key: http://untappd.com/api/register
 * Attempting to wrap all the API documented here: http://untappd.com/api/docs/v3
 * All options can be passed into the calls
+* Untappd v3 doesn't support oauth so you must pass your username and password
+* passwords are md5 hashed before they sent over the wire
+* all returns are wrapped in a Hashie::Mash
 
 == Releases
 
@@ -49,7 +52,12 @@ Checkin Object
 * Toast - Untappd::Checkin.toast(username, password, checkin_id)
 * Remove Toast - Untappd::Checkin.untoast(username, password, checkin_id)
 
+
 == Examples
+Add to your GemFile
+  
+  gem 'untappd'
+  
 Configure your API KEY
 
   Untappd.configure do |config|
