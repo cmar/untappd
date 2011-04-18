@@ -13,6 +13,7 @@ the API documentation.
 
 == Releases
 
+* 0.0.5 Brewery Info and Search
 * 0.0.4 Complete coverage of v3 API. Checkins, Comments, Toasts, gmt_offset configuration
 * 0.0.3 Venue Info & Feed, Trending Beer, Brewery Feed, Checkin info & Feed (the pub), Renamed Beer.checkins to Beer.feed
 * 0.0.2 User feed, distinct beers, info, badges, friends, wish list
@@ -41,6 +42,8 @@ Venue Object
 
 Brewery Object
 * Brewery Checkins - Untappd::Brewery.feed(brewery_id, options={})
+* Brewery Info - Untappd::Brewery.info(brewery_id, options={})
+* Brewery Search - Untappd::Brewery.search(q, options={})
 
 Checkin Object
 * The Pub Feed - Untappd::Checkin.feed(options={})

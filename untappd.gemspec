@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Untappd::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["cmar"]
-  s.email       = ["christopher.mar@gmail.com"]
+  s.email       = ["chris@cmar.me"]
   s.homepage    = "http://cmar.me"
   s.summary     = %q{Wrapper around the untappd.com API}
   s.description = %q{wrapper around the untappd.com API}
