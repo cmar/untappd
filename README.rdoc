@@ -55,6 +55,15 @@ Checkin Object
 * Toast - Untappd::Checkin.toast(username, password, checkin_id)
 * Remove Toast - Untappd::Checkin.untoast(username, password, checkin_id)
 
+TODO
+* /v3/friends_pending
+* /v3/friends_request
+* /v3/friends_reject
+* /v3/friends_approve
+* /v3/friends_revoke
+ 
+* /v3/add_to_wish
+* /v3/remove_from_wish
 
 == Examples
 Add to your GemFile
