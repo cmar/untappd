@@ -1,0 +1,372 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.untappd.com/v4/brewery/info/157?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 04 Dec 2012 02:51:25 GMT
+      server:
+      - Apache
+      set-cookie:
+      - BALANCEID=balancer.as1; path=/; domain=.untappd.com
+      x-powered-by:
+      - PHP/5.3.3-1ubuntu9.3
+      x-ratelimit-limit:
+      - '100'
+      x-ratelimit-remaining:
+      - '16'
+      x-auth-type:
+      - key
+      access-control-allow-origin:
+      - ! '*'
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"meta":{"code":200,"response_time":{"time":1.129,"measure":"seconds"}},"notifications":[],"response":{"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","brewery_in_production":0,"claimed_status":{"is_claimed":true,"claimed_slug":"samadams","follow_status":false,"follower_count":14973,"uid":0},"beer_count":179,"contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"brewery_type":"Micro
+        Brewery","location":{"brewery_address":"30 Germania St","brewery_city":"Boston","brewery_state":"MA","brewery_lat":42.3144,"brewery_lng":-71.1034},"rating":{"count":221651,"rating_score":3.53},"brewery_description":"Jim
+        Koch founded the Boston Beer Company back in 1984 after brewing the first
+        batch of Samuel Adams Boston Lager in his kitchen. It was his mission to reshape
+        the way American beer drinkers thought of American beer. \n\nJust six weeks
+        after introducing Samuel Adams Boston Lager to the public, it brought home
+        the \"Best Beer in America\" honors at the Great American Beer Festival in
+        Denver. An honor it went on to win 3 more times before that particular award
+        was discontinued.\n\nToday, Samuel Adams makes more than 21 styles of award
+        winning beer and is recognized around the globe as a hot house of new beer
+        ideas.\n\nIf you share our passion, join us here as a fan! \n\nTake Pride
+        in Your Beer! \n\nCheers!","stats":{"total_count":515232,"unique_count":72889},"media":{"count":10,"items":[{"photo_id":1558713,"photo":{"photo_img_sm":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/80f9bc0cd9c0e69a892bcf4358e2bcea_100x100.jpg","photo_img_md":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/80f9bc0cd9c0e69a892bcf4358e2bcea_320x320.jpg","photo_img_lg":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/80f9bc0cd9c0e69a892bcf4358e2bcea_640x640.jpg","photo_img_og":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/80f9bc0cd9c0e69a892bcf4358e2bcea_raw.jpg"},"created_at":"Tue,
+        04 Dec 2012 02:44:49 +0000","checkin_id":17307101,"beer":{"bid":8566,"beer_name":"Samuel
+        Adams New World Tripel","beer_abv":10,"beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsNewWorldTripel_8566.jpeg","beer_style":"Trippel","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"user":{"uid":255889,"user_name":"sch3nk2k4","first_name":"Chris","last_name":"S","user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/3dfaa786624159cd27a11eac78cba0aa_thumb.jpg","relationship":"unknown","is_private":0},"venue":[]},{"photo_id":1558690,"photo":{"photo_img_sm":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/78a6b51182724374a426a3a13dcd47cc_100x100.jpg","photo_img_md":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/78a6b51182724374a426a3a13dcd47cc_320x320.jpg","photo_img_lg":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/78a6b51182724374a426a3a13dcd47cc_640x640.jpg","photo_img_og":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/78a6b51182724374a426a3a13dcd47cc_raw.jpg"},"created_at":"Tue,
+        04 Dec 2012 02:41:27 +0000","checkin_id":17306815,"beer":{"bid":3914,"beer_name":"Samuel
+        Adams Boston Lager","beer_abv":4.9,"beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsBostonLager_3914.jpeg","beer_style":"Vienna
+        Lager","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"user":{"uid":339938,"user_name":"bessey86","first_name":"Scott","last_name":"B","user_avatar":"http:\/\/gravatar.com\/avatar\/8d64ecbd5f178405137d7fc1223a1735?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","relationship":"unknown","is_private":0},"venue":{"venue_id":495474,"venue_name":"ATW
+        Gate 3","primary_category":"Travel & Transport","parent_category_id":"4d4b7105d754a06379d81259","categories":{"count":1,"items":[{"category_name":"Airport
+        Gate","category_id":"4bf58dd8d48988d1f0931735","is_primary":true}]},"location":{"venue_address":"","venue_city":"Appleton","venue_state":"WI","lat":44.2604,"lng":-88.5124},"contact":{"twitter":"","venue_url":""},"foursquare":{"foursquare_id":"4c50f29d5ee81b8db78c6eff","foursquare_url":"http:\/\/4sq.com\/dy56hP"},"venue_icon":{"sm":"https:\/\/foursquare.com\/img\/categories\/travel\/airport_gate_64.png","md":"https:\/\/foursquare.com\/img\/categories\/travel\/airport_gate_88.png","lg":"https:\/\/foursquare.com\/img\/categories\/travel\/airport_gate_256.png"}}},{"photo_id":1558572,"photo":{"photo_img_sm":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/f96339095e0b1a4ae1c63beac2be1aa1_100x100.jpg","photo_img_md":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/f96339095e0b1a4ae1c63beac2be1aa1_320x320.jpg","photo_img_lg":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/f96339095e0b1a4ae1c63beac2be1aa1_640x640.jpg","photo_img_og":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/f96339095e0b1a4ae1c63beac2be1aa1_raw.jpg"},"created_at":"Tue,
+        04 Dec 2012 02:28:11 +0000","checkin_id":17305849,"beer":{"bid":6987,"beer_name":"Samuel
+        Adams Latitude 48 IPA","beer_abv":6,"beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-bostonLatitude48.jpg","beer_style":"American
+        IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"user":{"uid":174658,"user_name":"kwazzy","first_name":"Hans","last_name":"K","user_avatar":"http:\/\/gravatar.com\/avatar\/290d6fe44b551e5bd021fcb9660f0947?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","relationship":"unknown","is_private":0},"venue":[]},{"photo_id":1558569,"photo":{"photo_img_sm":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/ef8a67d4d9f4776cb97300f32722f079_100x100.jpg","photo_img_md":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/ef8a67d4d9f4776cb97300f32722f079_320x320.jpg","photo_img_lg":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/ef8a67d4d9f4776cb97300f32722f079_640x640.jpg","photo_img_og":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/ef8a67d4d9f4776cb97300f32722f079_raw.jpg"},"created_at":"Tue,
+        04 Dec 2012 02:28:10 +0000","checkin_id":17305833,"beer":{"bid":3942,"beer_name":"Samuel
+        Adams Octoberfest","beer_abv":5.3,"beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-bostonOctoberfest.jpg","beer_style":"Oktoberfest\/M\u00e4rzen","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"user":{"uid":93828,"user_name":"whitejes","first_name":"Jessica","last_name":false,"user_avatar":"http:\/\/gravatar.com\/avatar\/db8ca9b1e6182653ba4d6190622f8b6c?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","relationship":"unknown","is_private":0},"venue":{"venue_id":495458,"venue_name":"Mesa
+        Frump Hut","primary_category":"Travel & Transport","parent_category_id":"4d4b7105d754a06379d81259","categories":{"count":1,"items":[{"category_name":"Rest
+        Area","category_id":"4d954b16a243a5684b65b473","is_primary":true}]},"location":{"venue_address":"","venue_city":"","venue_state":"","lat":32.8043,"lng":-117.164},"contact":{"twitter":"","venue_url":""},"foursquare":{"foursquare_id":"4e70cb427d8b21fe9d6bc374","foursquare_url":"http:\/\/4sq.com\/pZXsJS"},"venue_icon":{"sm":"https:\/\/foursquare.com\/img\/categories\/travel\/default_64.png","md":"https:\/\/foursquare.com\/img\/categories\/travel\/default_88.png","lg":"https:\/\/foursquare.com\/img\/categories\/travel\/default_256.png"}}},{"photo_id":1558543,"photo":{"photo_img_sm":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/af77dd47e8086c9c94b9c6f40e44f240_100x100.jpg","photo_img_md":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/af77dd47e8086c9c94b9c6f40e44f240_320x320.jpg","photo_img_lg":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/af77dd47e8086c9c94b9c6f40e44f240_640x640.jpg","photo_img_og":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/af77dd47e8086c9c94b9c6f40e44f240_raw.jpg"},"created_at":"Tue,
+        04 Dec 2012 02:25:46 +0000","checkin_id":17305621,"beer":{"bid":8566,"beer_name":"Samuel
+        Adams New World Tripel","beer_abv":10,"beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsNewWorldTripel_8566.jpeg","beer_style":"Trippel","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"user":{"uid":45571,"user_name":"Pasteymf","first_name":"Ben","last_name":false,"user_avatar":"http:\/\/gravatar.com\/avatar\/b281c4233e6dcd47c8f0e955b4073fcf?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","relationship":"unknown","is_private":0},"venue":[]},{"photo_id":1558444,"photo":{"photo_img_sm":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/c622c1e82d8a95c19509cfc264ba8613_100x100.jpg","photo_img_md":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/c622c1e82d8a95c19509cfc264ba8613_320x320.jpg","photo_img_lg":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/c622c1e82d8a95c19509cfc264ba8613_640x640.jpg","photo_img_og":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/c622c1e82d8a95c19509cfc264ba8613_raw.jpg"},"created_at":"Tue,
+        04 Dec 2012 02:17:10 +0000","checkin_id":17304894,"beer":{"bid":5262,"beer_name":"Samuel
+        Adams Imperial White","beer_abv":10.3,"beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsImperialWhite_5262.jpeg","beer_style":"Witbier","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"user":{"uid":182315,"user_name":"andrewaguirre63","first_name":"Andrew","last_name":false,"user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/f213fcca43d18ed01a5d390d31a4906c_thumb.JPG","relationship":"unknown","is_private":0},"venue":{"venue_id":336584,"venue_name":"Crest","primary_category":"Great
+        Outdoors","parent_category_id":"4d4b7105d754a06377d81259","categories":{"count":1,"items":[{"category_name":"Other
+        Great Outdoors","category_id":"4bf58dd8d48988d162941735","is_primary":true}]},"location":{"venue_address":"Anywhere","venue_city":"Crest","venue_state":"CA","lat":32.8073,"lng":-116.868},"contact":{"twitter":"","venue_url":""},"foursquare":{"foursquare_id":"4ebcba57cc21ae646a846475","foursquare_url":"http:\/\/4sq.com\/t8kPIm"},"venue_icon":{"sm":"https:\/\/foursquare.com\/img\/categories\/parks_outdoors\/default_64.png","md":"https:\/\/foursquare.com\/img\/categories\/parks_outdoors\/default_88.png","lg":"https:\/\/foursquare.com\/img\/categories\/parks_outdoors\/default_256.png"}}},{"photo_id":1558441,"photo":{"photo_img_sm":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/b3234c7d3d3878062892b0438135b270_100x100.jpg","photo_img_md":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/b3234c7d3d3878062892b0438135b270_320x320.jpg","photo_img_lg":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/b3234c7d3d3878062892b0438135b270_640x640.jpg","photo_img_og":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/b3234c7d3d3878062892b0438135b270_raw.jpg"},"created_at":"Tue,
+        04 Dec 2012 02:16:14 +0000","checkin_id":17304837,"beer":{"bid":3919,"beer_name":"Samuel
+        Adams Winter Lager","beer_abv":5.6,"beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-_3919_5a06caba28f60ec2bf3b9ff41126.jpeg","beer_style":"Winter
+        Lager","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"user":{"uid":158,"user_name":"FussBoss","first_name":"Mark","last_name":"P","user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/49cbbefff9847af6f0c99a6819e6cd6c_thumb.jpg","relationship":"unknown","is_private":0},"venue":{"venue_id":318782,"venue_name":"Second
+        Wind Bar","primary_category":"Nightlife Spot","parent_category_id":"4d4b7105d754a06376d81259","categories":{"count":1,"items":[{"category_name":"Bar","category_id":"4bf58dd8d48988d116941735","is_primary":true}]},"location":{"venue_address":"8515
+        Navajo Road","venue_city":"San Diego","venue_state":"CA","lat":32.8027,"lng":-117.013},"contact":{"twitter":"","venue_url":""},"foursquare":{"foursquare_id":"4c11daf26e5dc9b6eadeb02d","foursquare_url":"http:\/\/4sq.com\/9CITdW"},"venue_icon":{"sm":"https:\/\/foursquare.com\/img\/categories\/nightlife\/bar_64.png","md":"https:\/\/foursquare.com\/img\/categories\/nightlife\/bar_88.png","lg":"https:\/\/foursquare.com\/img\/categories\/nightlife\/bar_256.png"}}},{"photo_id":1558409,"photo":{"photo_img_sm":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/a31302d4c96e8c280f7c5786c4691f53_100x100.jpg","photo_img_md":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/a31302d4c96e8c280f7c5786c4691f53_320x320.jpg","photo_img_lg":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/a31302d4c96e8c280f7c5786c4691f53_640x640.jpg","photo_img_og":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/a31302d4c96e8c280f7c5786c4691f53_raw.jpg"},"created_at":"Tue,
+        04 Dec 2012 02:12:39 +0000","checkin_id":17304528,"beer":{"bid":16955,"beer_name":"Samuel
+        Adams Stony Brook Red","beer_abv":9,"beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsStonyBrookRed_16955.jpeg","beer_style":"American
+        Wild Ale","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"user":{"uid":81462,"user_name":"EHPH2","first_name":"Ian","last_name":false,"user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/6b7b7f67e9d194683387b2ad384212fe_thumb.jpg","relationship":"unknown","is_private":0},"venue":{"venue_id":173940,"venue_name":"The
+        Oxford Tasting Room","primary_category":"Nightlife Spot","parent_category_id":"4d4b7105d754a06376d81259","categories":{"count":1,"items":[{"category_name":"Other
+        Nightlife","category_id":"4bf58dd8d48988d11a941735","is_primary":true}]},"location":{"venue_address":"100
+        Old Taylor Road","venue_city":"Oxford","venue_state":"MS","lat":34.3461,"lng":-89.5439},"contact":{"twitter":"","venue_url":""},"foursquare":{"foursquare_id":"4f2de96ee4b0118a865a6abd","foursquare_url":"http:\/\/4sq.com\/wOpEgd"},"venue_icon":{"sm":"https:\/\/foursquare.com\/img\/categories\/nightlife\/default_64.png","md":"https:\/\/foursquare.com\/img\/categories\/nightlife\/default_88.png","lg":"https:\/\/foursquare.com\/img\/categories\/nightlife\/default_256.png"}}},{"photo_id":1558404,"photo":{"photo_img_sm":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/00400aef33d7f7d67183d4fc13f5cc88_100x100.jpg","photo_img_md":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/00400aef33d7f7d67183d4fc13f5cc88_320x320.jpg","photo_img_lg":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/00400aef33d7f7d67183d4fc13f5cc88_640x640.jpg","photo_img_og":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/00400aef33d7f7d67183d4fc13f5cc88_raw.jpg"},"created_at":"Tue,
+        04 Dec 2012 02:11:00 +0000","checkin_id":17304362,"beer":{"bid":74792,"beer_name":"Samuel
+        Adams Tasman Red","beer_abv":6.5,"beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsTasmanRed_74792.jpeg","beer_style":"American
+        IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"user":{"uid":324603,"user_name":"Rtp515","first_name":"Ryan","last_name":"P","user_avatar":"http:\/\/gravatar.com\/avatar\/f614f947a4fb0eeefc745217f2a4ac23?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","relationship":"unknown","is_private":0},"venue":[]},{"photo_id":1558323,"photo":{"photo_img_sm":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/24c9e4d33f099fdfa9e3408fafd810c9_100x100.jpg","photo_img_md":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/24c9e4d33f099fdfa9e3408fafd810c9_320x320.jpg","photo_img_lg":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/24c9e4d33f099fdfa9e3408fafd810c9_640x640.jpg","photo_img_og":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_04\/24c9e4d33f099fdfa9e3408fafd810c9_raw.jpg"},"created_at":"Tue,
+        04 Dec 2012 02:04:52 +0000","checkin_id":17303859,"beer":{"bid":220198,"beer_name":"Samuel
+        Adams White Christmas","beer_abv":5.8,"beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-WhiteChristmas_220198.jpeg","beer_style":"American
+        Pale Wheat Ale","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"user":{"uid":208027,"user_name":"soleynm","first_name":"Matt","last_name":false,"user_avatar":"http:\/\/gravatar.com\/avatar\/1d7f576a8ed7a03b76776a2d86a0059e?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","relationship":"unknown","is_private":0},"venue":[]}]},"checkins":{"count":15,"items":[{"checkin_id":17307592,"created_at":"Tue,
+        04 Dec 2012 02:50:40 +0000","checkin_comment":"","rating_score":0,"user":{"uid":35508,"user_name":"Ayotte804","first_name":"Justin","last_name":"A.","location":"
+        804","url":"","is_supporter":0,"bio":"","relationship":null,"user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/7b6bfa785792844fc2038571392054a5_thumb.jpg","is_private":0,"contact":{"facebook":31802122,"twitter":"Hopheadaot","foursquare":11377332}},"beer":{"bid":215565,"beer_name":"Samuel
+        Adams Merry Mischief Gingerbread Stout","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-MerryMischief_215565.jpeg","beer_style":"Stout","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":{"venue_id":475602,"venue_name":"The
+        House That Craft Built","primary_category":"Nightlife Spot","categories":{"count":1,"items":[{"category_name":"Speakeasy","category_id":"4bf58dd8d48988d1d4941735","is_primary":true}]},"venue_icon":{"sm":"https:\/\/foursquare.com\/img\/categories\/nightlife\/secretbar_64.png","md":"https:\/\/foursquare.com\/img\/categories\/nightlife\/secretbar_88.png","lg":"https:\/\/foursquare.com\/img\/categories\/nightlife\/secretbar_256.png"},"location":{"venue_address":"4
+        N Stafford","venue_city":"Richmond","venue_state":"VA","lat":37.5516,"lng":-77.4704},"contact":{"twitter":"","venue_url":""},"foursquare":{"foursquare_id":"50a1b5c0d86c5711249dc9da","foursquare_url":"http:\/\/4sq.com\/RU4kME"}},"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for Android - (V2)","app_website":"http:\/\/untpd.it\/androidapp"}},{"checkin_id":17307573,"created_at":"Tue,
+        04 Dec 2012 02:50:25 +0000","checkin_comment":"Even better","rating_score":5,"user":{"uid":333508,"user_name":"Frik","first_name":"David","last_name":"M.","location":"","url":"","is_supporter":0,"bio":"","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/21bef8521f39372b41bf035e822b5c6b?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":[]},"beer":{"bid":256464,"beer_name":"Infinium
+        (2012)","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-beer-default.png","beer_style":"Bi\u00e8re
+        de Champagne \/ Bi\u00e8re Brut","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":[],"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for Android - (V2)","app_website":"http:\/\/untpd.it\/androidapp"}},{"checkin_id":17307549,"created_at":"Tue,
+        04 Dec 2012 02:50:25 +0000","checkin_comment":"Still great","rating_score":5,"user":{"uid":333508,"user_name":"Frik","first_name":"David","last_name":"M.","location":"","url":"","is_supporter":0,"bio":"","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/21bef8521f39372b41bf035e822b5c6b?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":[]},"beer":{"bid":99318,"beer_name":"Infinium
+        (2011)","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-Infinium2011_99318.jpeg","beer_style":"Bi\u00e8re
+        de Champagne \/ Bi\u00e8re Brut","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":[],"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for Android - (V2)","app_website":"http:\/\/untpd.it\/androidapp"}},{"checkin_id":17307525,"created_at":"Tue,
+        04 Dec 2012 02:50:11 +0000","checkin_comment":"Great","rating_score":5,"user":{"uid":333508,"user_name":"Frik","first_name":"David","last_name":"M.","location":"","url":"","is_supporter":0,"bio":"","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/21bef8521f39372b41bf035e822b5c6b?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":[]},"beer":{"bid":7837,"beer_name":"Infinium
+        (2010)","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-Infinium2010_7837.jpeg","beer_style":"Bi\u00e8re
+        de Champagne \/ Bi\u00e8re Brut","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":[],"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for Android - (V2)","app_website":"http:\/\/untpd.it\/androidapp"}},{"checkin_id":17307539,"created_at":"Tue,
+        04 Dec 2012 02:49:50 +0000","checkin_comment":"","rating_score":3,"user":{"uid":35661,"user_name":"hopulus","first_name":"Brad","last_name":"K.","location":"Richmond,
+        Virginia","url":"","is_supporter":0,"bio":"A fine beer may be judged with
+        only one sip, but it''s better to be thoroughly sure.","relationship":null,"user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/24bdaf36cdf7cc00ae2298e1db53e1f3_thumb.jpg","is_private":0,"contact":{"facebook":1172307621}},"beer":{"bid":215565,"beer_name":"Samuel
+        Adams Merry Mischief Gingerbread Stout","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-MerryMischief_215565.jpeg","beer_style":"Stout","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":[],"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for Android - (V2)","app_website":"http:\/\/untpd.it\/androidapp"}},{"checkin_id":17307527,"created_at":"Tue,
+        04 Dec 2012 02:49:45 +0000","checkin_comment":"","rating_score":3,"user":{"uid":338639,"user_name":"jump423","first_name":"adam","last_name":"b.","location":"Dillsburg
+        ","url":"","is_supporter":0,"bio":"","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/47b6d29eb7841f8516f9e1103732ea3f?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":[]},"beer":{"bid":3919,"beer_name":"Samuel
+        Adams Winter Lager","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-_3919_5a06caba28f60ec2bf3b9ff41126.jpeg","beer_style":"Winter
+        Lager","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":[],"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"}},{"checkin_id":17307478,"created_at":"Tue,
+        04 Dec 2012 02:49:42 +0000","checkin_comment":"","rating_score":5,"user":{"uid":270901,"user_name":"19tardis77","first_name":"Francisco","last_name":"L.","location":"","url":"","is_supporter":0,"bio":"","relationship":null,"user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/29414fe890cd0cb6d8f5a2c7c4c24474_thumb.jpg","is_private":0,"contact":{"twitter":"19tardis77","facebook":100000185911967,"foursquare":23815712}},"beer":{"bid":3942,"beer_name":"Samuel
+        Adams Octoberfest","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-bostonOctoberfest.jpg","beer_style":"Oktoberfest\/M\u00e4rzen","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":[],"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"}},{"checkin_id":17307475,"created_at":"Tue,
+        04 Dec 2012 02:49:26 +0000","checkin_comment":"","rating_score":3,"user":{"uid":195367,"user_name":"wrightjbjr","first_name":"James","last_name":"","location":"Charleston,
+        SC","url":"","is_supporter":0,"bio":"","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/985072b67a6078e3d45f1486f75d3e93?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":{"facebook":1003429306}},"beer":{"bid":4050,"beer_name":"Samuel
+        Adams Old Fezziwig Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsOldFezziwigAle_4050.jpeg","beer_style":"Winter
+        Warmer","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":[],"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for Android - (V2)","app_website":"http:\/\/untpd.it\/androidapp"}},{"checkin_id":17307483,"created_at":"Tue,
+        04 Dec 2012 02:49:19 +0000","checkin_comment":"Very enjoyable warmer. Me likey","rating_score":4,"user":{"uid":50923,"user_name":"wilkoffe","first_name":"Ephram","last_name":"W.","location":"Colorado
+        Springs, CO","url":"","is_supporter":0,"bio":"I''m a Worship Director from
+        OH-IO living serving and brewing in CO Springs","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/ada62ad06360a902105193a9d5270714?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":{"twitter":"wilkoffe"}},"beer":{"bid":4050,"beer_name":"Samuel
+        Adams Old Fezziwig Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsOldFezziwigAle_4050.jpeg","beer_style":"Winter
+        Warmer","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":[],"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"}},{"checkin_id":17307439,"created_at":"Tue,
+        04 Dec 2012 02:48:49 +0000","checkin_comment":"","rating_score":4,"user":{"uid":304269,"user_name":"nickkirbo","first_name":"Nicholas","last_name":"K.","location":"","url":"","is_supporter":0,"bio":"","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/b9c5206a547dff66490545fed56974a5?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":[]},"beer":{"bid":215565,"beer_name":"Samuel
+        Adams Merry Mischief Gingerbread Stout","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-MerryMischief_215565.jpeg","beer_style":"Stout","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":{"venue_id":469229,"venue_name":"Edgewick","primary_category":"Residence","categories":{"count":1,"items":[{"category_name":"Residential
+        Building (Apartment\/Condo)","category_id":"4d954b06a243a5684965b473","is_primary":true}]},"venue_icon":{"sm":"https:\/\/foursquare.com\/img\/categories\/building\/default_64.png","md":"https:\/\/foursquare.com\/img\/categories\/building\/default_88.png","lg":"https:\/\/foursquare.com\/img\/categories\/building\/default_256.png"},"location":{"venue_address":"1910
+        Wickshire Lane","venue_city":"Austin","venue_state":"TX","lat":30.2271,"lng":-97.7394},"contact":{"twitter":"","venue_url":"http:\/\/www.edgewick.com"},"foursquare":{"foursquare_id":"4c0c0e2b6071a593f336e232","foursquare_url":"http:\/\/4sq.com\/95V8Hf"}},"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"}},{"checkin_id":17307336,"created_at":"Tue,
+        04 Dec 2012 02:47:26 +0000","checkin_comment":"","rating_score":0,"user":{"uid":35828,"user_name":"jlindsey","first_name":"Justin","last_name":"","location":"Richmond,
+        VA","url":"","is_supporter":0,"bio":"","relationship":null,"user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/a9e2379f283b3b904aae0d944544f7c2_thumb.jpg","is_private":0,"contact":{"facebook":649715509}},"beer":{"bid":215565,"beer_name":"Samuel
+        Adams Merry Mischief Gingerbread Stout","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-MerryMischief_215565.jpeg","beer_style":"Stout","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":{"venue_id":475602,"venue_name":"The
+        House That Craft Built","primary_category":"Nightlife Spot","categories":{"count":1,"items":[{"category_name":"Speakeasy","category_id":"4bf58dd8d48988d1d4941735","is_primary":true}]},"venue_icon":{"sm":"https:\/\/foursquare.com\/img\/categories\/nightlife\/secretbar_64.png","md":"https:\/\/foursquare.com\/img\/categories\/nightlife\/secretbar_88.png","lg":"https:\/\/foursquare.com\/img\/categories\/nightlife\/secretbar_256.png"},"location":{"venue_address":"4
+        N Stafford","venue_city":"Richmond","venue_state":"VA","lat":37.5516,"lng":-77.4704},"contact":{"twitter":"","venue_url":""},"foursquare":{"foursquare_id":"50a1b5c0d86c5711249dc9da","foursquare_url":"http:\/\/4sq.com\/RU4kME"}},"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        Mobile for Windows Phone","app_website":"http:\/\/untappd.com"}},{"checkin_id":17307293,"created_at":"Tue,
+        04 Dec 2012 02:46:54 +0000","checkin_comment":"3.8","rating_score":4,"user":{"uid":258428,"user_name":"fjroney","first_name":"Jim","last_name":"R.","location":"","url":"","is_supporter":0,"bio":"","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/9026f10fe7d5dea713750352c7d3112e?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":{"facebook":1603878}},"beer":{"bid":4050,"beer_name":"Samuel
+        Adams Old Fezziwig Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsOldFezziwigAle_4050.jpeg","beer_style":"Winter
+        Warmer","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":{"venue_id":190555,"venue_name":"111
+        West Maple St","primary_category":"Residence","categories":{"count":1,"items":[{"category_name":"Residential
+        Building (Apartment\/Condo)","category_id":"4d954b06a243a5684965b473","is_primary":true}]},"venue_icon":{"sm":"https:\/\/foursquare.com\/img\/categories\/building\/default_64.png","md":"https:\/\/foursquare.com\/img\/categories\/building\/default_88.png","lg":"https:\/\/foursquare.com\/img\/categories\/building\/default_256.png"},"location":{"venue_address":"111
+        W Maple St","venue_city":"Chicago","venue_state":"IL","lat":41.9019,"lng":-87.6316},"contact":{"twitter":"","venue_url":""},"foursquare":{"foursquare_id":"4cb663bc1b0af04dc790d025","foursquare_url":"http:\/\/4sq.com\/ctl9K1"}},"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"}},{"checkin_id":17307268,"created_at":"Tue,
+        04 Dec 2012 02:46:48 +0000","checkin_comment":"good tripple Fruity dry it
+        is pleasantly oxidized little to no wood","rating_score":4,"user":{"uid":300442,"user_name":"Stachelrodt","first_name":"Patrick","last_name":"S.","location":"","url":"","is_supporter":0,"bio":"","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/0fe33b01bd1180e3cb7cd10557554009?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":[]},"beer":{"bid":8566,"beer_name":"Samuel
+        Adams New World Tripel","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsNewWorldTripel_8566.jpeg","beer_style":"Trippel","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":[],"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for Android - (V2)","app_website":"http:\/\/untpd.it\/androidapp"}},{"checkin_id":17307256,"created_at":"Tue,
+        04 Dec 2012 02:46:27 +0000","checkin_comment":"","rating_score":3,"user":{"uid":327892,"user_name":"rtrich","first_name":"Tom","last_name":"R.","location":"","url":"","is_supporter":0,"bio":"","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/d8ac1c65ee13db13cee389d600018bf1?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":[]},"beer":{"bid":92859,"beer_name":"Samuel
+        Adams Whitewater IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-WhitewaterIPA_92859.jpeg","beer_style":"American
+        IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":[],"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for Android - (V2)","app_website":"http:\/\/untpd.it\/androidapp"}},{"checkin_id":17307225,"created_at":"Tue,
+        04 Dec 2012 02:46:26 +0000","checkin_comment":"Very tasty!","rating_score":3,"user":{"uid":313825,"user_name":"cwerthalot","first_name":"Chelsea","last_name":"W.","location":"","url":"","is_supporter":0,"bio":"","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/b97faa9ee54249aec098fe0dc3224e82?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":[]},"beer":{"bid":3919,"beer_name":"Samuel
+        Adams Winter Lager","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-_3919_5a06caba28f60ec2bf3b9ff41126.jpeg","beer_style":"Winter
+        Lager","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":{"venue_id":417066,"venue_name":"College
+        Apartments","primary_category":"Unknown","categories":{"count":0,"items":[]},"venue_icon":{"sm":"http:\/\/foursquare.com\/img\/categories\/none_64.png","md":"http:\/\/foursquare.com\/img\/categories\/none_88.png","lg":"http:\/\/foursquare.com\/img\/categories\/none_256.png"},"location":{"venue_address":"College
+        Ave","venue_city":"Valparaiso","venue_state":"IN","lat":41.4644,"lng":-87.0541},"contact":{"twitter":"","venue_url":""},"foursquare":{"foursquare_id":"4e6402c545ddda352a42976b","foursquare_url":"http:\/\/4sq.com\/p5LavO"}},"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"}}]},"beer_list":{"count":15,"items":[{"has_had":null,"total_count":32621,"beer":{"bid":3942,"beer_name":"Samuel
+        Adams Octoberfest","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-bostonOctoberfest.jpg","beer_style":"Oktoberfest\/M\u00e4rzen","beer_abv":5.3,"auth_rating":0,"wish_list":false,"beer_description":"The
+        first thing you notice when pouring a glass of this seasonal beer is the color.
+        Samuel Adams\u00ae Octoberfest has a rich, deep golden amber hue which itself
+        is reflective of the season. Samuel Adams\u00c2\u00ae Octoberfest is a malt
+        lover''s dream, masterfully blending together five roasts of barley to create
+        a delicious harmony of sweet flavors including caramel and toffee. The beer
+        is kept from being overly sweet by the elegant bitterness imparted by the
+        German Noble hops. Samuel Adams\u00c2\u00ae Octoberfest provides a wonderful
+        transition from the lighter beers of summer to the winter''s heartier brews.","rating_score":3.598},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"friends":{"items":[],"count":0}},{"has_had":null,"total_count":28071,"beer":{"bid":3914,"beer_name":"Samuel
+        Adams Boston Lager","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsBostonLager_3914.jpeg","beer_style":"Vienna
+        Lager","beer_abv":4.9,"auth_rating":0,"wish_list":false,"beer_description":"Samuel
+        Adams Boston Lager\u00ae is the best example of the fundamental characteristics
+        of a great beer, offering a full, rich flavor that is both balanced and complex.
+        It is brewed using a decoration mash, a time consuming, traditional four vessel
+        brewing process discarded by many contemporary brewers. This process brings
+        forth a rich sweetness from the malt that makes it well worth the effort.
+        Samuel Adams Boston Lager\u00ae also uses only the finest of ingredients including
+        two row barley, as well as German Noble aroma hops. The exclusive use of two
+        row barley not only imparts a full, smooth body but also gives the beer a
+        wide spectrum of malt flavor ranging from slightly sweet to caramel to slightly
+        roasted. The Noble hops varieties, Hallertau Mittelfruh and Tettnang Tettnanger,
+        add a wide range of floral, piney and citrus notes, which are present from
+        the aroma, through the flavor, to the lingering smooth finish. We take great
+        pride in the Noble hops used in our beers. They are hand selected by Jim Koch
+        and our other brewers from the world''s oldest hops growing area. Among the
+        world''s most expensive, they cost twenty times as much as other hops.","rating_score":3.351},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"friends":{"items":[],"count":0}},{"has_had":null,"total_count":20730,"beer":{"bid":3919,"beer_name":"Samuel
+        Adams Winter Lager","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-_3919_5a06caba28f60ec2bf3b9ff41126.jpeg","beer_style":"Winter
+        Lager","beer_abv":5.6,"auth_rating":0,"wish_list":false,"beer_description":"Bold
+        and rich, with a touch of holiday spice\nThe first thing one notices in a
+        Samuel Adams\u00ae Winter Lager is its color: the deep brown of winter. Then
+        comes the magical aroma which promises something special on the tongue. The
+        warm aroma of cinnamon and ginger which blends with the toasty sweetness of
+        the malted barley and hint of citrus.","rating_score":3.343},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"friends":{"items":[],"count":0}},{"has_had":null,"total_count":20281,"beer":{"bid":3916,"beer_name":"Samuel
+        Adams Summer Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamAdamsSummerAle.jpg","beer_style":"American
+        Pale Wheat Ale","beer_abv":5.3,"auth_rating":0,"wish_list":false,"beer_description":"right
+        and citrusy, brewed with mysterious grains of paradise.\nSamuel Adams\u00ae
+        Summer Ale is an American wheat ale. This summer seasonal uses malted wheat
+        as well as lemon zest and grains of paradise, a rare pepper from Africa first
+        used as a brewing spice in the 13th Century to create a crisp and spicy flavor
+        and body. The ale fermentation imparts a background tropical fruit note reminiscent
+        of mangos and peaches. All of these come together to create a quenching, clean
+        finishing beer perfect for those warm Summer days","rating_score":3.296},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"friends":{"items":[],"count":0}},{"has_had":null,"total_count":13051,"beer":{"bid":6987,"beer_name":"Samuel
+        Adams Latitude 48 IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-bostonLatitude48.jpg","beer_style":"American
+        IPA","beer_abv":6,"auth_rating":0,"wish_list":false,"beer_description":"A
+        unique IPA brewed with a select blend of hops from top German, English, and
+        American growing regions all located close to the 48th latitude within the
+        \u201chop belt\u201d of the Northern Hemisphere.  The combination of hops
+        in this beer creates a distinctive but not overpowering hop character.  The
+        beer is dry hopped with Ahtanum, Simcoe\u00ae*, and East Kent Goldings hops
+        for a powerful citrus and earthy aroma.  The hop character is balanced by
+        a slight sweetness and full body from the malt blend.","rating_score":3.268},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"friends":{"items":[],"count":0}},{"has_had":null,"total_count":12721,"beer":{"bid":86589,"beer_name":"Samuel
+        Adams Alpine Spring","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsAlpineSpring_86589.jpeg","beer_style":"Kellerbier
+        \/ Zwickelbier","beer_abv":5.5,"auth_rating":0,"wish_list":false,"beer_description":"Bright
+        citrusy unfiltered lager, this brew was borne of the brewers\u2019 many trips
+        to Germany. Alpine Spring features a unique blend of lager attributes: the
+        balanced maltiness and hoppiness of a Helles, the smoothness and slightly
+        higher alcohol of a traditional spring bock, and the unfiltered appearance
+        of a Kellerbier. The beer is brewed with Noble Tettnang hops to add a unique,
+        bright orange-citrusy aroma and flavor.","rating_score":3.221},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"friends":{"items":[],"count":0}},{"has_had":null,"total_count":10057,"beer":{"bid":6278,"beer_name":"Samuel
+        Adams Harvest Pumpkin Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsHarvestPumpkinAle_6278.jpeg","beer_style":"Pumpkin\/Yam
+        Beer","beer_abv":5.7,"auth_rating":0,"wish_list":false,"beer_description":"Brewed
+        with over 11 pounds of real pumpkin per barrel, adding a full body and sweetness
+        to this dark reddish amber brew.  Deep roasted malts, including a smoked malt,
+        lend a distinct roasted character while traditional pumpkin pie spices give
+        the beer a subtle spice note.","rating_score":3.318},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"friends":{"items":[],"count":0}},{"has_had":null,"total_count":8512,"beer":{"bid":5743,"beer_name":"Samuel
+        Adams Noble Pils","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-saNobilePils.jpg","beer_style":"Czech
+        Pilsener","beer_abv":4.9,"auth_rating":0,"wish_list":false,"beer_description":"Samuel
+        Adams Noble Pils is one of the only brews made with all five Noble hops from
+        the world\u00e2\u20ac\u2122s growing regions. its bright flavor and lively,
+        citrus hop character reminds us that the warm days of spring are just a few
+        weeks away.","rating_score":3.36},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"friends":{"items":[],"count":0}},{"has_had":null,"total_count":8280,"beer":{"bid":4052,"beer_name":"Samuel
+        Adams Cherry Wheat","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsCherryWheat_4052.jpeg","beer_style":"Witbier","beer_abv":5.3,"auth_rating":0,"wish_list":false,"beer_description":"Ale
+        brewed with Cherries, crisp and fruity with a hint of honey.  Samuel Adams
+        Cherry Wheat\u00ae follows the centuries old American tradition of brewing
+        beer with native ingredients, in this case Michigan cherries as well as a
+        touch of honey. The sweet fruitiness of the cherries is balanced against the
+        crisp, cereal note from the malted wheat and the subtle citrus flavor from
+        the Noble hops. The end result is a sweet, refreshing beer that is light on
+        the palate but long on complexity.","rating_score":3.283},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"friends":{"items":[],"count":0}},{"has_had":null,"total_count":7715,"beer":{"bid":92859,"beer_name":"Samuel
+        Adams Whitewater IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-WhitewaterIPA_92859.jpeg","beer_style":"American
+        IPA","beer_abv":5.8,"auth_rating":0,"wish_list":false,"beer_description":"A
+        unique brew that combinines the intense hop character of an IPA with the crisp
+        spicy wheat character of a Belgian-style white ale. The white ale and IPA
+        combination make this crisp, smooth, yet hop-friendly beer the perfect pairing
+        with a variety of meats and cheeses.","rating_score":3.267},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"friends":{"items":[],"count":0}},{"has_had":null,"total_count":7691,"beer":{"bid":1195,"beer_name":"Samuel
+        Adams Chocolate Bock","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-samuelAdamsChocolateBock.jpg","beer_style":"Bock","beer_abv":5.8,"auth_rating":0,"wish_list":false,"beer_description":"This
+        dark beer has a big, malty character with the added sweetness of chocolate.
+        Chocolate Bock is slowly aged on a bed of rare dark cocoa nibs, the primary
+        ingredient in chocolate. Known for their quality, these cocoa nibs harvested
+        in Ecuador, impart complex aromas and flavors from chocolaty to fruity, nutty,
+        earthy, and citrusy.","rating_score":3.614},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"friends":{"items":[],"count":0}},{"has_had":null,"total_count":6569,"beer":{"bid":4050,"beer_name":"Samuel
+        Adams Old Fezziwig Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsOldFezziwigAle_4050.jpeg","beer_style":"Winter
+        Warmer","beer_abv":5.9,"auth_rating":0,"wish_list":false,"beer_description":"Spicy
+        and Bold, a big Christmas cookie of a beer.\nSamuel Adams\u00ae Old Fezziwig\u00ae
+        Ale is the Christmas cookie of beer. Bursting with spices of the season and
+        a remarkably full body, it helps those long winter nights pass much quicker.
+        The full body hits the palate first with a depth of malt character ranging
+        from sweeter toffee and caramel notes to the more dark, roasty chocolate notes.
+        Then come the spices in full force. Cinnamon, ginger and orange peel dance
+        on the tongue bringing with them the celebratory spirit that goes hand in
+        hand with the season.","rating_score":3.319},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"friends":{"items":[],"count":0}},{"has_had":null,"total_count":5885,"beer":{"bid":4051,"beer_name":"Samuel
+        Adams Holiday Porter","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsHolidayPorter_4051.jpeg","beer_style":"American
+        Porter","beer_abv":5.9,"auth_rating":0,"wish_list":false,"beer_description":"A
+        Traditional, British style. Robust and full bodied.  Introduced as a member
+        of the Winter Classics Mix Pack in 2004, Samuel Adams\u00ae Holiday Porter
+        with its rich malt complexity has become a favorite among our winter seasonal
+        brews. In total, five varieties of malted barley are used in the brewing process
+        including a variety of German malt called Carafa\u00ae. The Carafa\u00ae gives
+        our Holiday Porter its smooth, roasted malt character. Add generous portions
+        of imported hops to the mix and one has a brew that is both robust and high
+        in drinkability.","rating_score":3.275},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"friends":{"items":[],"count":0}},{"has_had":null,"total_count":5236,"beer":{"bid":176956,"beer_name":"Samuel
+        Adams Hazel Brown","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsHazelBrown_176956.jpeg","beer_style":"American
+        Brown Ale","beer_abv":5.2,"auth_rating":0,"wish_list":false,"beer_description":"This
+        flavorful dark brown ale has a distinct hazelnut aroma and taste.  Slightly
+        sweet caramel and toffee malt notes accentuate the pleasant roasted hazelnut
+        character.  This medium-bodied brew finishes smooth with an underlying spiciness
+        from the hops.  ","rating_score":3.521},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"friends":{"items":[],"count":0}},{"has_had":null,"total_count":5180,"beer":{"bid":4078,"beer_name":"Samuel
+        Adams Irish Red","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SamuelAdamsIrishRed_4078.jpeg","beer_style":"Irish
+        Red Ale","beer_abv":5.5,"auth_rating":0,"wish_list":false,"beer_description":"Malty
+        and slightly sweet, balanced by earthy notes from the hops.  The gentle rain
+        and fertile soil of Ireland helped inspire this style of ale, known for being
+        remarkably balanced. Pale and Caramel malts give the beer its rich, deep red
+        color and distinctive caramel flavor. The sweetness of the malt is pleasantly
+        balanced by a pronounced hop bitterness and an earthy note from the East Kent
+        Goldings hops. Samuel Adams\u00ae Irish Red finishes smooth and leaves you
+        wanting to take another sip.","rating_score":3.202},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"friends":{"items":[],"count":0}}]}}}}'
+    http_version: '1.1'
+  recorded_at: Tue, 04 Dec 2012 02:51:18 GMT
+recorded_with: VCR 2.3.0

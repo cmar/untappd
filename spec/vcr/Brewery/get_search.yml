@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.untappd.com/v4/search/brewery?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>&q=Boston%20Beer
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 04 Dec 2012 02:51:39 GMT
+      server:
+      - Apache
+      set-cookie:
+      - BALANCEID=balancer.as0; path=/; domain=.untappd.com
+      x-powered-by:
+      - PHP/5.3.3-1ubuntu9.3
+      x-ratelimit-limit:
+      - '100'
+      x-ratelimit-remaining:
+      - '15'
+      x-auth-type:
+      - key
+      access-control-allow-origin:
+      - ! '*'
+      content-length:
+      - '1427'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.257,"measure":"seconds"}},"notifications":[],"response":{"term":"Boston
+        Beer","brewery":{"count":4,"items":[{"brewery":{"brewery_id":46939,"beer_count":3,"brewery_name":"Boston
+        Beer Works","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":157,"beer_count":179,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}}},{"brewery":{"brewery_id":16455,"beer_count":6,"brewery_name":"Angry
+        Orchard Cider Company","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-AngryOrchardCiderCompany_16455.jpeg","country_name":"United
+        States","location":{"brewery_city":"Cincinatti","brewery_state":"OH","lat":0,"lng":0}}},{"brewery":{"brewery_id":9023,"beer_count":3,"brewery_name":"The
+        Hardcore Cider Company (Boston Beer Company)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-TheHardcoreCiderCompanyBostonBeerCompany_9023.jpeg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}}]}}}'
+    http_version: '1.1'
+  recorded_at: Tue, 04 Dec 2012 02:51:20 GMT
+recorded_with: VCR 2.3.0
