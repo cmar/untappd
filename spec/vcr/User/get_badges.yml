@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.untappd.com/v4/user/badges/cmar?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 04 Dec 2012 02:51:41 GMT
+      server:
+      - Apache
+      set-cookie:
+      - BALANCEID=balancer.as0; path=/; domain=.untappd.com
+      x-powered-by:
+      - PHP/5.3.3-1ubuntu9.3
+      x-ratelimit-limit:
+      - '100'
+      x-ratelimit-remaining:
+      - '13'
+      x-auth-type:
+      - key
+      access-control-allow-origin:
+      - ! '*'
+      content-length:
+      - '762'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.011,"measure":"seconds"}},"notifications":[],"response":{"type":"earned","sort":"all","count":1,"items":[{"badge_id":1,"user_badge_id":58708,"checkin_id":413105,"badge_name":"Newbie","badge_description":"So,
+        you''re new around here? Congrats on your first brew! This one''s for you.","badge_hint":"Try
+        out Untappd - you''ll get this one!","badge_active_status":1,"media":{"badge_image_sm":"https:\/\/untappd.s3.amazonaws.com\/assets\/badges\/bdg_newbie_sm.png","badge_image_md":"https:\/\/untappd.s3.amazonaws.com\/assets\/badges\/bdg_newbie_md.png","badge_image_lg":"https:\/\/untappd.s3.amazonaws.com\/assets\/badges\/bdg_newbie_lg.png"},"created_at":"Mon,
+        07 Mar 2011 01:45:07 +0000","is_level":false,"levels":[]}]}}'
+    http_version: '1.1'
+  recorded_at: Tue, 04 Dec 2012 02:51:20 GMT
+recorded_with: VCR 2.3.0

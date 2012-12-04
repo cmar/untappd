@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.untappd.com/v4/user/friends/cmar?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 04 Dec 2012 02:51:41 GMT
+      server:
+      - Apache
+      set-cookie:
+      - BALANCEID=balancer.as0; path=/; domain=.untappd.com
+      x-powered-by:
+      - PHP/5.3.3-1ubuntu9.3
+      x-ratelimit-limit:
+      - '100'
+      x-ratelimit-remaining:
+      - '12'
+      x-auth-type:
+      - key
+      access-control-allow-origin:
+      - ! '*'
+      content-length:
+      - '563'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.01,"measure":"seconds"}},"notifications":[],"response":{"count":1,"items":[{"friendship_hash":"40ca84b5e8d27e425c5233c15ec2b699","created_at":"Wed,
+        02 Feb 2011 11:35:45 +0000","user":{"uid":10819,"user_name":"pks1850","location":"","bio":"","first_name":"sam","last_name":"","relationship":"none","user_avatar":"http:\/\/gravatar.com\/avatar\/414bd46a3e2ccdb0620d80a30c088ac2?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg"},"mutual_friends":{"count":0,"items":[]}}]}}'
+    http_version: '1.1'
+  recorded_at: Tue, 04 Dec 2012 02:51:20 GMT
+recorded_with: VCR 2.3.0

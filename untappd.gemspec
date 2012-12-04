@@ -17,7 +17,9 @@ Gem::Specification.new do |s|
   s.add_dependency('httparty', '>= 0.7.3')
   s.add_dependency('hashie', '>= 1.0.0')
   
-  s.add_development_dependency('rspec', '>= 2.5.0')
+  s.add_development_dependency('rspec', '>= 2.12.0')
+  s.add_development_dependency('vcr', '>= 2.3.0')
+  s.add_development_dependency('fakeweb', '>= 1.3.0')
   
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
