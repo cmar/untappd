@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.untappd.com/v4/user/beers/cmar?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 04 Dec 2012 02:51:56 GMT
+      server:
+      - Apache
+      set-cookie:
+      - BALANCEID=balancer.as1; path=/; domain=.untappd.com
+      x-powered-by:
+      - PHP/5.3.3-1ubuntu9.3
+      x-ratelimit-limit:
+      - '100'
+      x-ratelimit-remaining:
+      - '10'
+      x-auth-type:
+      - key
+      access-control-allow-origin:
+      - ! '*'
+      content-length:
+      - '4959'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.021,"measure":"seconds"}},"notifications":[],"response":{"beers":{"sort":"date","count":4,"items":[{"recent_created_at":"Sat,
+        21 May 2011 04:03:04 +0000","rating_score":0,"first_had":"Sat, 21 May 2011
+        04:03:04 +0000","count":1,"beer":{"bid":4487,"beer_name":"Palo Santo Marron","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-dfhPaloSantoMarron.jpg","beer_abv":12,"beer_ibu":0,"beer_style":"Imperial
+        \/ Double Brown Ale","beer_description":"Palo Santo Marron (Holy Tree Brown)\n\nAn
+        unfiltered, unfettered, unprecedented brown ale aged in handmade wooden brewing
+        vessels. The caramel and vanilla complexity unique to this beer comes from
+        the exotic Paraguayan Palo Santo wood from which these tanks were crafted.
+        Palo Santo means \\holy tree\\\" and it''s wood has been used in South American
+        wine-making communities. \n\nThis beer is a 12% abv","created_at":"Sat, 21
+        Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":4.065},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
+        Head Craft Brewery","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
+        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099}}},{"recent_created_at":"Mon,
+        25 Apr 2011 10:49:45 +0000","rating_score":0,"first_had":"Mon, 25 Apr 2011
+        10:49:45 +0000","count":1,"beer":{"bid":1382,"beer_name":"Stone Ruination
+        IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-StoneRuinationIPA.jpg","beer_abv":7.7,"beer_ibu":0,"beer_style":"Imperial
+        \/ Double IPA","beer_description":"Wonderfully delicious and intensely bitter
+        flavor on a refreshing malt base. Those who seek, crave and rejoice in beers
+        with big, bold, bitter character will find true nirvana.","created_at":"Sat,
+        21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":4.164},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"recent_created_at":"Thu,
+        14 Apr 2011 09:58:28 +0000","rating_score":0,"first_had":"Wed, 30 Mar 2011
+        20:03:03 +0000","count":2,"beer":{"bid":4665,"beer_name":"Aprihop","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-dfhAprihop.jpg","beer_abv":7,"beer_ibu":0,"beer_style":"American
+        IPA","beer_description":"Brewed with Pilsner and Cystal malts massively hopped
+        in in the continuous fashion. The flavor is complimented by the addition of
+        Apricots. After fermentation the beer is dry hopped with irresponsible amounts
+        of Amarillo hops. A \"fruit beer for hop heads...\" --Ale Street News","created_at":"Sat,
+        21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":3.801},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
+        Head Craft Brewery","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
+        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099}}},{"recent_created_at":"Mon,
+        07 Mar 2011 01:45:07 +0000","rating_score":3,"first_had":"Mon, 07 Mar 2011
+        01:45:07 +0000","count":1,"beer":{"bid":3919,"beer_name":"Samuel Adams Winter
+        Lager","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-_3919_5a06caba28f60ec2bf3b9ff41126.jpeg","beer_abv":5.6,"beer_ibu":0,"beer_style":"Winter
+        Lager","beer_description":"Bold and rich, with a touch of holiday spice\nThe
+        first thing one notices in a Samuel Adams\u00ae Winter Lager is its color:
+        the deep brown of winter. Then comes the magical aroma which promises something
+        special on the tongue. The warm aroma of cinnamon and ginger which blends
+        with the toasty sweetness of the malted barley and hint of citrus.","created_at":"Sat,
+        21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":3.343},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}}}]}}}'
+    http_version: '1.1'
+  recorded_at: Tue, 04 Dec 2012 02:51:21 GMT
+recorded_with: VCR 2.3.0
