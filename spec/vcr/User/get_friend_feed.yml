@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.untappd.com/v4/checkin/recent?access_token=5A2891EFDFBE8BD6DEBB0E9FE4147C80655CB914
+    uri: http://api.untappd.com/v4/checkin/recent?access_token=<UNTAPPD_ACCESS_TOKEN>
     body:
       encoding: US-ASCII
       string: ''
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Wed, 12 Dec 2012 13:49:57 GMT
+      - Wed, 12 Dec 2012 13:58:38 GMT
       server:
       - Apache
       set-cookie:
@@ -23,7 +23,7 @@ http_interactions:
       x-ratelimit-limit:
       - '100'
       x-ratelimit-remaining:
-      - '99'
+      - '97'
       x-auth-type:
       - user
       access-control-allow-origin:
@@ -36,7 +36,7 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"meta":{"code":200,"response_time":{"time":0.846,"measure":"seconds"}},"notifications":{"type":"notifications","unread_count":{"comments":0,"toasts":0,"friends":0,"messages":0,"news":0}},"response":{"checkins":{"count":25,"items":[{"checkin_id":17769499,"created_at":"Wed,
+      string: ! '{"meta":{"code":200,"response_time":{"time":1.956,"measure":"seconds"}},"notifications":{"type":"notifications","unread_count":{"comments":0,"toasts":0,"friends":0,"messages":0,"news":0}},"response":{"checkins":{"count":25,"items":[{"checkin_id":17769499,"created_at":"Wed,
         12 Dec 2012 13:25:52 +0000","checkin_comment":"Pulled this one from the beer
         cellar last night. Nothing like a great beer after a 15 hour work day.","rating_score":4,"user":{"uid":98447,"user_name":"PetalumaSupplyCo","first_name":"Petaluma
         Supply Co.","last_name":"","location":"Petaluma, CA","url":"http:\/\/www.petalumasupplyco.com","is_supporter":0,"relationship":"friends","bio":"Petaluma
@@ -45,10 +45,13 @@ http_interactions:
         Oak","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-WhiteOak_29197.jpeg","beer_style":"Wheat
         Wine","beer_abv":11,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":1246,"brewery_name":"The
         Bruery","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-bruery.jpg","country_name":"United
-        States","contact":{"twitter":"thebruery","facebook":"https:\/\/www.facebook.com\/TheBruery","url":"http:\/\/www.thebruery.com\/"},"location":{"brewery_city":"Placentia","brewery_state":"CA","lat":33.8614,"lng":-117.88},"brewery_active":1},"venue":{"venue_id":0,"venue_name":null,"primary_category":null,"categories":[],"venue_icon":{"sm":"","md":"","lg":""},"location":{"venue_address":null,"venue_city":null,"venue_state":null,"lat":0,"lng":0},"contact":{"twitter":null,"venue_url":null},"foursquare":{"foursquare_id":null,"foursquare_url":null}},"comments":{"count":0,"items":[]},"toasts":{"count":3,"auth_toast":false,"items":[{"user":{"uid":133241,"user_name":"bigrick18b","first_name":"Rick","last_name":"P.","user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/546e18e2cc7b71d933ba2d439b604e6d_thumb.jpg","user_link":"http:\/\/untappd.com\/user\/bigrick18b","account_type":"user","brewery_details":[]},"like_id":2464339,"like_owner":false,"created_at":"Wed,
+        States","contact":{"twitter":"thebruery","facebook":"https:\/\/www.facebook.com\/TheBruery","url":"http:\/\/www.thebruery.com\/"},"location":{"brewery_city":"Placentia","brewery_state":"CA","lat":33.8614,"lng":-117.88},"brewery_active":1},"venue":{"venue_id":0,"venue_name":null,"primary_category":null,"categories":[],"venue_icon":{"sm":"","md":"","lg":""},"location":{"venue_address":null,"venue_city":null,"venue_state":null,"lat":0,"lng":0},"contact":{"twitter":null,"venue_url":null},"foursquare":{"foursquare_id":null,"foursquare_url":null}},"comments":{"count":0,"items":[]},"toasts":{"count":5,"auth_toast":false,"items":[{"user":{"uid":133241,"user_name":"bigrick18b","first_name":"Rick","last_name":"P.","user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/546e18e2cc7b71d933ba2d439b604e6d_thumb.jpg","user_link":"http:\/\/untappd.com\/user\/bigrick18b","account_type":"user","brewery_details":[]},"like_id":2464339,"like_owner":false,"created_at":"Wed,
         12 Dec 2012 13:25:47 +0000"},{"user":{"uid":28032,"user_name":"Scoop_In_Beer","first_name":"Sean","last_name":"C.","user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/2770e06e9061fb2b52b82075464093ff_thumb.jpeg","user_link":"http:\/\/untappd.com\/user\/Scoop_In_Beer","account_type":"user","brewery_details":[]},"like_id":2464356,"like_owner":false,"created_at":"Wed,
         12 Dec 2012 13:35:27 +0000"},{"user":{"uid":82178,"user_name":"oldeschool","first_name":"greg","last_name":"","user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/e3061817d8b9f9777d867bcd24748c2c_thumb.JPG","user_link":"http:\/\/untappd.com\/user\/oldeschool","account_type":"user","brewery_details":[]},"like_id":2464357,"like_owner":false,"created_at":"Wed,
-        12 Dec 2012 13:35:56 +0000"}]},"media":{"count":1,"items":[{"photo_id":1618940,"photo":{"photo_img_sm":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_12\/f5f87395431d71f3becfe50d91206172_100x100.jpg","photo_img_md":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_12\/f5f87395431d71f3becfe50d91206172_320x320.jpg","photo_img_lg":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_12\/f5f87395431d71f3becfe50d91206172_640x640.jpg","photo_img_og":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_12\/f5f87395431d71f3becfe50d91206172_raw.jpg"}}]},"source":{"app_name":"Untappd
+        12 Dec 2012 13:35:56 +0000"},{"user":{"uid":18132,"user_name":"tmajoratl","first_name":"Todd","last_name":"","user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/a66040d439a884a7302a780f5de9aff4_thumb.jpg","user_link":"http:\/\/untappd.com\/user\/tmajoratl","account_type":"user","brewery_details":[]},"like_id":2464421,"like_owner":false,"created_at":"Wed,
+        12 Dec 2012 13:57:07 +0000"},{"user":{"uid":15165,"user_name":"SkinsFanLarry","first_name":"Larry
+        G.","last_name":"J.","user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/6b9fde6b7309dab7cf29c4d8acfb856b_thumb.jpg","user_link":"http:\/\/untappd.com\/user\/SkinsFanLarry","account_type":"user","brewery_details":[]},"like_id":2464424,"like_owner":false,"created_at":"Wed,
+        12 Dec 2012 13:57:53 +0000"}]},"media":{"count":1,"items":[{"photo_id":1618940,"photo":{"photo_img_sm":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_12\/f5f87395431d71f3becfe50d91206172_100x100.jpg","photo_img_md":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_12\/f5f87395431d71f3becfe50d91206172_320x320.jpg","photo_img_lg":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_12\/f5f87395431d71f3becfe50d91206172_640x640.jpg","photo_img_og":"https:\/\/untappd.s3.amazonaws.com\/photo\/2012_12_12\/f5f87395431d71f3becfe50d91206172_raw.jpg"}}]},"source":{"app_name":"Untappd
         for iPhone - (V1)","app_website":"http:\/\/untappd.com"}},{"checkin_id":17762731,"created_at":"Wed,
         12 Dec 2012 04:30:09 +0000","checkin_comment":"","rating_score":3,"user":{"uid":108249,"user_name":"rchaudry","first_name":"Rafi","last_name":"C","location":"Los
         Angeles","url":"","is_supporter":0,"relationship":"friends","bio":"","user_avatar":"https:\/\/gravatar.com\/avatar\/7544498ef984709d1535d1faae6d962f?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","contact":[]},"beer":{"bid":7927,"beer_name":"Velvet
@@ -394,5 +397,5 @@ http_interactions:
         States","contact":{"twitter":"deschutesbeer","facebook":"http:\/\/www.facebook.com\/deschutes.brewery","url":"http:\/\/www.deschutesbrewery.com"},"location":{"brewery_city":"Bend","brewery_state":"OR","lat":44.0468,"lng":-121.322},"brewery_active":1},"venue":{"venue_id":0,"venue_name":null,"primary_category":null,"categories":[],"venue_icon":{"sm":"","md":"","lg":""},"location":{"venue_address":null,"venue_city":null,"venue_state":null,"lat":0,"lng":0},"contact":{"twitter":null,"venue_url":null},"foursquare":{"foursquare_id":null,"foursquare_url":null}},"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":false,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
         for Android - (V2)","app_website":"http:\/\/untpd.it\/androidapp"}}]},"pagination":{"next_url":"http:\/\/api.untappd.com\/v4\/checkins\/recent?max_id=17269548","max_id":17269548,"since_url":"http:\/\/api.untappd.com\/v4\/checkins\/recent?min_id=17769499"}}}'
     http_version: '1.1'
-  recorded_at: Wed, 12 Dec 2012 13:49:41 GMT
+  recorded_at: Wed, 12 Dec 2012 13:58:24 GMT
 recorded_with: VCR 2.3.0
