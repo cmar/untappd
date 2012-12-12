@@ -36,7 +36,7 @@ describe "User" do
   end
 
   it "get friend feed", :vcr do
-    friend_feed = Untappd::User.friend_feed('5A2891EFDFBE8BD6DEBB0E9FE4147C80655CB914')
+    friend_feed = Untappd::User.friend_feed('some_access_token')
     friend_feed.checkins.items.first.beer.beer_name.should == "White Oak"
     friend_feed.checkins.items.first.brewery.brewery_name.should == "The Bruery"
   end
