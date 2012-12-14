@@ -11,7 +11,7 @@ describe "OAuth" do
 
   it "returns the authentication url when correctly configured" do
     Untappd.config.redirect_url='http://domain.com'
-    expected_response = "https://untappd.com/oauth/authenticate/?client_id=abc&response_type=token&redirect_url=http://domain.com"
+    expected_response = "https://untappd.com/oauth/authenticate/?client_id=#{Untappd.config.client_id}&response_type=token&redirect_url=http://domain.com"
     Untappd::OAuth.authenticate_url.should == expected_response
   end
 end

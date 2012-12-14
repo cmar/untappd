@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.untappd.com/v4/checkin/toast/17831896?access_token=<UNTAPPD_ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 14 Dec 2012 01:38:48 GMT
+      server:
+      - Apache
+      set-cookie:
+      - BALANCEID=balancer.as0; path=/; domain=.untappd.com
+      x-powered-by:
+      - PHP/5.3.3-1ubuntu9.3
+      x-ratelimit-limit:
+      - '100'
+      x-ratelimit-remaining:
+      - '87'
+      x-auth-type:
+      - user
+      cache-control:
+      - no-cache
+      access-control-allow-origin:
+      - ! '*'
+      content-length:
+      - '731'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.034,"measure":"seconds"}},"notifications":{"type":"notifications","unread_count":{"comments":0,"toasts":0,"friends":0,"messages":0,"news":0}},"response":{"result":"success","like_type":"toast","toasts":{"count":1,"auth_toast":true,"items":[{"user":{"uid":25539,"user_name":"darbyfrey","first_name":"darby","last_name":"frey","user_avatar":"https:\/\/gravatar.com\/avatar\/86c338232f03869122eb323bf3aafbf4?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","user_link":"http:\/\/untappd.com\/user\/darbyfrey","account_type":"user","brewery_details":[]},"like_id":2481037,"like_owner":true,"created_at":"Fri,
+        14 Dec 2012 01:38:48 +0000"}]}}}'
+    http_version: '1.1'
+  recorded_at: Fri, 14 Dec 2012 01:38:06 GMT
+recorded_with: VCR 2.3.0
