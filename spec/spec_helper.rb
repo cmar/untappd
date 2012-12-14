@@ -10,7 +10,7 @@ VCR.configure do |c|
   c.configure_rspec_metadata!
   c.filter_sensitive_data('<UNTAPPD_CLIENT_ID>') { Untappd.config.client_id }
   c.filter_sensitive_data('<UNTAPPD_CLIENT_SECRET>') { Untappd.config.client_secret }
-  c.filter_sensitive_data('<UNTAPPD_ACCESS_TOKEN>') { 'some_access_token' }
+  c.filter_sensitive_data('<UNTAPPD_ACCESS_TOKEN>') { TEST_ACCESS_TOKEN }
 end
 
 RSpec.configure do |c|
@@ -20,7 +20,9 @@ end
 def configure_untappd
   Untappd.configure do |config|
     # use your real credentials when rebuilding VCR cassettes
-    config.client_id = 'abc'
-    config.client_secret = '123'
+    config.client_id = 'replace_with_your_client_id'
+    config.client_secret = 'replace_with_your_client_secret'
   end
 end
+
+TEST_ACCESS_TOKEN = 'replace_with_your_access_token'

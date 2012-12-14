@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.untappd.com/v4/checkin/view/17811863?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 13 Dec 2012 22:30:30 GMT
+      server:
+      - Apache
+      set-cookie:
+      - BALANCEID=balancer.as0; path=/; domain=.untappd.com
+      x-powered-by:
+      - PHP/5.3.3-1ubuntu9.3
+      x-ratelimit-limit:
+      - '100'
+      x-ratelimit-remaining:
+      - '90'
+      x-auth-type:
+      - key
+      access-control-allow-origin:
+      - ! '*'
+      content-length:
+      - '1636'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.055,"measure":"seconds"}},"notifications":[],"response":{"checkin":{"checkin_id":17811863,"created_at":"Thu,
+        13 Dec 2012 04:20:20 +0000","rating_score":3,"checkin_comment":"","user":{"uid":108249,"user_name":"rchaudry","first_name":"Rafi","last_name":"C.","relationship":null,"location":"Los
+        Angeles","is_supporter":0,"url":"","bio":"","user_avatar":"https:\/\/gravatar.com\/avatar\/7544498ef984709d1535d1faae6d962f?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":[{"twitter":"TheRafiChaud"}]},"beer":{"bid":252977,"beer_name":"Christmas
+        Ale (2012)","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-_252977_ada79c48bdb90b89cc36ba5d96a0.jpeg","beer_style":"Winter
+        Ale","beer_abv":7.5,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":3125,"brewery_name":"Great
+        Lakes Brewing Company ","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-GreatLakesBrewingCompanyUSA_3125.jpeg","country_name":"United
+        States","contact":{"twitter":"GLBC_Cleveland","facebook":"http:\/\/www.facebook.com\/greatlakesbrewingco","url":"http:\/\/www.greatlakesbrewing.com\/"},"location":{"brewery_city":"Cleveland","brewery_state":"OH","lat":41.4844,"lng":-81.7044},"brewery_active":1},"venue":[],"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"badges":{"count":0,"items":[]},"promotions":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for Android - (V2)","app_website":"http:\/\/untpd.it\/androidapp"}}}}'
+    http_version: '1.1'
+  recorded_at: Thu, 13 Dec 2012 22:29:50 GMT
+recorded_with: VCR 2.3.0
