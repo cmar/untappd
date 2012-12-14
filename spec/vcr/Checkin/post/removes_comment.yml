@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.untappd.com/v4/checkin/deletecomment/1326083?access_token=<UNTAPPD_ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 14 Dec 2012 01:23:53 GMT
+      server:
+      - Apache
+      set-cookie:
+      - BALANCEID=balancer.as1; path=/; domain=.untappd.com
+      x-powered-by:
+      - PHP/5.3.3-1ubuntu9.3
+      x-ratelimit-limit:
+      - '100'
+      x-ratelimit-remaining:
+      - '93'
+      x-auth-type:
+      - user
+      cache-control:
+      - no-cache
+      access-control-allow-origin:
+      - ! '*'
+      content-length:
+      - '1333'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.043,"measure":"seconds"}},"notifications":{"type":"notifications","unread_count":{"comments":0,"toasts":0,"friends":0,"messages":0,"news":0}},"response":{"result":"success","comments":{"count":2,"items":[{"user":{"uid":25539,"user_name":"darbyfrey","first_name":"darby","last_name":"frey","is_supporter":0,"user_avatar":"https:\/\/gravatar.com\/avatar\/86c338232f03869122eb323bf3aafbf4?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","user_link":"http:\/\/untappd.com\/user\/darbyfrey","account_type":"user","brewery_details":[]},"comment_id":"1326097","comment_owner":true,"comment_editor":true,"comment":"test
+        comment","created_at":"Fri, 14 Dec 2012 01:10:44 +0000","comment_source":"mobile"},{"user":{"uid":25539,"user_name":"darbyfrey","first_name":"darby","last_name":"frey","is_supporter":0,"user_avatar":"https:\/\/gravatar.com\/avatar\/86c338232f03869122eb323bf3aafbf4?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","user_link":"http:\/\/untappd.com\/user\/darbyfrey","account_type":"user","brewery_details":[]},"comment_id":"1326119","comment_owner":true,"comment_editor":true,"comment":"test
+        comment","created_at":"Fri, 14 Dec 2012 01:13:01 +0000","comment_source":"mobile"}]}}}'
+    http_version: '1.1'
+  recorded_at: Fri, 14 Dec 2012 01:23:34 GMT
+recorded_with: VCR 2.3.0
