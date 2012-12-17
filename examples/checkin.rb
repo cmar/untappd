@@ -3,26 +3,25 @@ require 'rubygems'
 require 'untappd'
 
 Untappd.configure do |config|
-  config.apikey = 'YOUR_API_KEY'
-  config.gmt_offset = -5
+  config.client_id = 'YOUR_CLIENT_ID'
+  config.client_secret = 'YOUR_CLIENT_SECRET'
 end
 
-username = "cmar"
-password = "password"
+access_token = 'YOUR_ACCESS_TOKEN'
 
-checkin = Untappd::Checkin.create(username, password, 4665,
-              :foursquare_id => "4ad6bf91f964a520380821e3",
-              :user_lat => "51.4718",
-              :user_lng => "-0.489278")
+Untappd::Checkin.create(access_token, -6, 'CST', 4665
+            :foursquare_id => "4ad6bf91f964a520380821e3",
+            :user_lat => "51.4718",
+            :user_lng => "-0.489278")
 
 puts checkin.inspect
 
 
-feed = Untappd::User.friend_feed(username, password)
+feed = Untappd::User.friend_feed(access_token)
 puts feed.inspect
 
-comment = Untappd::Checkin.add_comment(username, password, 414882, "this is a test")
+comment = Untappd::Checkin.add_comment(access_token, 414882, "this is a test")
 puts comment.inspect
 
-result = Untappd::Checkin.toast(username, password, 414882)
+result = Untappd::Checkin.toggle_toast(access_token, 414882)
 puts result.inspect

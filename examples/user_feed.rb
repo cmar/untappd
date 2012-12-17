@@ -1,12 +1,13 @@
-#list the recent checkins for Arrogant Bastard Ale
+#list the recent checkins for username "cmar"
 require 'rubygems'
 require 'untappd'
 
 Untappd.configure do |config|
-  config.apikey = 'YOUR_API_KEY'
+  config.client_id = 'YOUR_CLIENT_ID'
+  config.client_secret = 'YOUR_CLIENT_SECRET'
 end
 
 feed = Untappd::User.feed("cmar")
-feed.each do |f|
-  puts "#{f.user.first_name} at #{f.created_at}" 
+feed.checkins.items.each do |f|
+  puts "#{f.beer.beer_name} from #{f.brewery.brewery_name} by #{f.user.first_name} at #{f.created_at}"
 end
