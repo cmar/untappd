@@ -12,6 +12,7 @@ the API documentation.
 
 ## Releases
 
+* 4.0.0 supports the v4 API (https://untappd.com/api/docs/v4)
 * 0.0.5 Brewery Info and Search
 * 0.0.4 Complete coverage of v3 API. Checkins, Comments, Toasts, gmt_offset configuration
 * 0.0.3 Venue Info & Feed, Trending Beer, Brewery Feed, Checkin info & Feed (the pub), Renamed Beer.checkins to Beer.feed
@@ -105,8 +106,9 @@ Get all the checkins for Arrogant Bastard Ale
 Create Checkin
 
     #foursqure, lat, lng are optional
-    Untappd::Checkin.create(ACCESS_TOKEN, -6, 'CST', 4665
+    Untappd::Checkin.create(ACCESS_TOKEN, 4665,
                 :foursquare_id => "4ad6bf91f964a520380821e3",
+								:timezone => 'EST',
                 :user_lat => "51.4718",
                 :user_lng => "-0.489278")
 
