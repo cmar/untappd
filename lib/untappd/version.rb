@@ -1,3 +1,3 @@
 module Untappd
-  VERSION = "0.0.5"
+  VERSION = "4.0.0"
 end
