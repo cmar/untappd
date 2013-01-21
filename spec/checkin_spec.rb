@@ -26,7 +26,7 @@ describe "Checkin" do
     end
 
     it "creates checkin", :vcr do
-      checkin = Untappd::Checkin.create(TEST_ACCESS_TOKEN, -5, 'CST', 10891)
+      checkin = Untappd::Checkin.create(TEST_ACCESS_TOKEN, 10891, { timezone: 'CST' })
       checkin.beer.beer_name.should == 'Tank 7 Farmhouse Ale'
     end
   end

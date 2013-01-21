@@ -19,6 +19,8 @@ module Untappd
     # options:
     # * foursquare_id (optional) - The MD5 hash ID of the Venue you want to attach the beer
     # checkin. This HAS TO BE the MD5 non-numeric hash from the foursquare v2.
+    # * timezone - user timezone, defaults to 'PST'
+    # * gmt_offset - calculated from the timezone, but you may override
     # * geolat (optional) - The numeric Latitude of the user. This is required if you add a location.
     # * geolng (optional) - The numeric Longitude of the user. This is required if you add a location.
     # * shout (optional) - The text you would like to include as a comment of the checkin.
@@ -28,10 +30,13 @@ module Untappd
     # * facebook (optional) - Default = "off", Pass "on" to post to facebook
     # * twitter (optional) - Default = "off", Pass "on" to post to twitter
     # * foursquare (optional) - Default = "off", Pass "on" to checkin on foursquare
-    def self.create(access_token, gmt_offset, timezone, beer_id, options={})
+    def self.create(access_token, beer_id, options={})
+      timezone = options.fetch(:timezone, 'PST')
+      gmt_offset = options.fetch(:gmt_offset, Time.zone_offset(timezone))
+
       options.merge!({
-        :gmt_offset   => gmt_offset,
         :timezone     => timezone,
+        :gmt_offset   => gmt_offset,
         :bid          => beer_id
       })
 

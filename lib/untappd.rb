@@ -1,5 +1,7 @@
 require 'rubygems'
 
+require 'time'
+
 require "untappd/config"
 require "untappd/base"
 require "untappd/oauth"
