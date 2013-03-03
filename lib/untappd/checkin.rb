@@ -5,15 +5,30 @@ module Untappd
     end
 
     # options:
-    # * since (int, optional) - The numeric ID of the most recent check-in.
-    # * lng (float, optional) - The numeric Latitude to filter the public feed.
-    # * lat (float, optional) - The numeric Longitude to filter the public feed.
-    # * radius (int, optional) - The max radius you would like the check-ins to start within
+    # * min_id (int, optional) - The numeric ID of the most recent check-in.
     # * max_id (int, optional) - The checkin ID that you want the results to start with
     # * limit (int, optional) - The number of results to return, max of 50, default is 25
     def self.feed(options={})
       options.merge!(auth_options)
       response_to_mash get("/thepub", :query => options)
+    end
+
+    # options:
+    # * min_id (int, optional) - The numeric ID of the most recent check-in.
+    # * lng (float, optional) - The numeric Latitude to filter the public feed.
+    # * lat (float, optional) - The numeric Longitude to filter the public feed.
+    # * radius (int, optional) - The max radius you would like the check-ins to start within
+    # * max_id (int, optional) - The checkin ID that you want the results to start with
+    # * limit (int, optional) - The number of results to return, max of 50, default is 25
+    def self.local_feed(lng, lat, radius, options={})
+      options.merge!(auth_options)
+      options.merge!({
+        :lng      => lng,
+        :lat      => lat,
+        :radius   => radius
+      })
+
+      response_to_mash get("/thepub/local", :query => options)
     end
 
     # options:

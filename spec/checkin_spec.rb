@@ -41,5 +41,12 @@ describe "Checkin" do
       checkins = Untappd::Checkin.feed
       checkins.checkins.items.first.beer.beer_name.should == "Harvest Ale"
     end
+
+    it "gets thepub local feed", :vcr do
+      checkins = Untappd::Checkin.local_feed(-87.6353645, 41.8883695, 1)
+      checkins.checkins.items.count.should be(25)
+      checkins.checkins.items.first.beer.beer_name.should == "The Torch"
+      checkins.checkins.items.first.venue.venue_name.should == "Haymarket Pub & Brewery"
+    end
   end
 end
