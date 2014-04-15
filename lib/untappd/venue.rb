@@ -13,5 +13,11 @@ module Untappd
     def self.info(venue_id)
       response_to_mash get("/venue/info/#{venue_id}", :query => auth_options)
     end
+
+    def self.foursquare_lookup(foursquare_id)
+      response_to_mash(
+        get("/venue/foursquare_lookup/#{foursquare_id}", :query => auth_options)
+      )
+    end
   end
 end

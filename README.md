@@ -39,6 +39,7 @@ the API documentation.
 **Venue Object**
 * Venue Feed - Untappd::Venue.feed(venue_id, options={})
 * Venue Info - Untappd::Venue.info(venue_id)
+* Foursquare Venue Lookup - Untappd::Venue.foursquare_lookup(foursquare_id)
 
 **Brewery Object**
 * Brewery Checkins - Untappd::Brewery.feed(brewery_id, options={})
@@ -62,7 +63,6 @@ the API documentation.
 * Remove Friends - /v4/friend/remove/TARGET_ID
 * Request Friends - /v4/friend/request/TARGET_ID
 * Notifications - /v4/notifications
-* Foursquare Venue Lookup - /v4/venue/foursquare_lookup/VENUE_ID
 
 ## Examples
 
