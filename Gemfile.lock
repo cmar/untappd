@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    untappd (4.0.1)
+    untappd (4.0.2)
       hashie (>= 1.0.0)
       httparty (>= 0.7.3)
 
