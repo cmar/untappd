@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.untappd.com/v4/venue/foursquare_lookup/4ccf5fec1ac7a1cd6a5c1392?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-api-version:
+      - '4'
+      server:
+      - Apache/2.2.22 (Ubuntu)
+      vary:
+      - Accept-Encoding
+      content-type:
+      - application/json
+      date:
+      - Tue, 15 Apr 2014 18:35:38 GMT
+      x-ratelimit-limit:
+      - '100'
+      keep-alive:
+      - timeout=5, max=99
+      x-auth-type:
+      - key
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - close
+      x-powered-by:
+      - PHP/5.4.6-1ubuntu1.4
+      x-ratelimit-remaining:
+      - '99'
+      content-length:
+      - '324'
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"code":200,"response_time":{"time":0.012,"measure":"seconds"},"init_time":{"time":0.011,"measure":"seconds"}},"notifications":[],"response":{"venue":{"count":1,"items":[{"venue_name":"Untappd
+        HQ - East","venue_id":1222,"foursquare_id":"4ccf5fec1ac7a1cd6a5c1392","last_updated":"Fri,
+        11 Apr 2014 17:41:14 +0000"}]}}}'
+    http_version: '1.1'
+  recorded_at: Tue, 15 Apr 2014 18:35:47 GMT
+recorded_with: VCR 2.4.0
