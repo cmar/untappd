@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.untappd.com/v4/search/brewery?q=Boston%20Beer&client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
+    uri: https://api.untappd.com/v4/search/brewery?q=Boston%20Beer&client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
     body:
       encoding: US-ASCII
       string: ''
@@ -13,39 +13,43 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Tue, 04 Dec 2012 02:51:39 GMT
+      - Fri, 19 Sep 2014 03:53:14 GMT
       server:
-      - Apache
-      set-cookie:
-      - BALANCEID=balancer.as0; path=/; domain=.untappd.com
+      - Apache/2.2.22 (Ubuntu)
       x-powered-by:
-      - PHP/5.3.3-1ubuntu9.3
+      - PHP/5.4.6-1ubuntu1.4
       x-ratelimit-limit:
       - '100'
       x-ratelimit-remaining:
-      - '15'
+      - '72'
       x-auth-type:
       - key
+      x-api-version:
+      - '4'
+      x-http-protocol:
+      - '443'
+      vary:
+      - Accept-Encoding
       access-control-allow-origin:
       - ! '*'
+      access-control-allow-headers:
+      - X-Untappd-App
       content-length:
-      - '1427'
+      - '1232'
       connection:
       - close
       content-type:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"meta":{"code":200,"response_time":{"time":0.257,"measure":"seconds"}},"notifications":[],"response":{"term":"Boston
-        Beer","brewery":{"count":4,"items":[{"brewery":{"brewery_id":46939,"beer_count":3,"brewery_name":"Boston
-        Beer Works","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
-        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":157,"beer_count":179,"brewery_name":"Boston
-        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
-        States","location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}}},{"brewery":{"brewery_id":16455,"beer_count":6,"brewery_name":"Angry
-        Orchard Cider Company","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-AngryOrchardCiderCompany_16455.jpeg","country_name":"United
-        States","location":{"brewery_city":"Cincinatti","brewery_state":"OH","lat":0,"lng":0}}},{"brewery":{"brewery_id":9023,"beer_count":3,"brewery_name":"The
-        Hardcore Cider Company (Boston Beer Company)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-TheHardcoreCiderCompanyBostonBeerCompany_9023.jpeg","country_name":"United
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.032,"measure":"seconds"},"init_time":{"time":0.012,"measure":"seconds"}},"notifications":[],"response":{"search_type":"wildcard","sort":"","term":"Boston
+        Beer","key":"boston beer","found":3,"brewery":{"count":3,"items":[{"brewery":{"brewery_id":157,"beer_count":360,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":158,"beer_count":333,"brewery_name":"Beer
+        Works (Boston, Salem, Hingham, Lowell)","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-BeerWorks_158.jpeg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":9023,"beer_count":3,"brewery_name":"The
+        Hardcore Cider Company (Boston Beer Company)","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-TheHardcoreCiderCompanyBostonBeerCompany_9023.jpeg","country_name":"United
         States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}}]}}}'
     http_version: '1.1'
-  recorded_at: Tue, 04 Dec 2012 02:51:20 GMT
+  recorded_at: Fri, 19 Sep 2014 03:53:23 GMT
 recorded_with: VCR 2.3.0

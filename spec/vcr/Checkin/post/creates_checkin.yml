@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.untappd.com/v4/checkin/add?access_token=<UNTAPPD_ACCESS_TOKEN>
+    uri: https://api.untappd.com/v4/checkin/add?access_token=<UNTAPPD_ACCESS_TOKEN>
     body:
       encoding: US-ASCII
-      string: gmt_offset=-5&timezone=CST&bid=10891
+      string: timezone=CST&gmt_offset=-6&bid=10891
     headers: {}
   response:
     status:
@@ -13,41 +13,53 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Thu, 13 Dec 2012 22:50:56 GMT
+      - Fri, 19 Sep 2014 04:16:19 GMT
       server:
-      - Apache
-      set-cookie:
-      - BALANCEID=balancer.as0; path=/; domain=.untappd.com
+      - Apache/2.2.22 (Ubuntu)
       x-powered-by:
-      - PHP/5.3.3-1ubuntu9.3
+      - PHP/5.4.6-1ubuntu1.4
       x-ratelimit-limit:
       - '100'
       x-ratelimit-remaining:
-      - '95'
+      - '81'
       x-auth-type:
       - user
+      x-api-version:
+      - '4'
+      x-http-protocol:
+      - '443'
+      vary:
+      - Accept-Encoding
       cache-control:
       - no-cache
       access-control-allow-origin:
       - ! '*'
+      access-control-allow-headers:
+      - X-Untappd-App
       content-length:
-      - '2122'
+      - '3048'
       connection:
       - close
       content-type:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"meta":{"code":200,"response_time":{"time":0.268,"measure":"seconds"}},"notifications":{"type":"notifications","unread_count":{"comments":0,"toasts":0,"friends":0,"messages":0,"news":0}},"response":{"result":"success","badge_valid":true,"checkin_id":17831666,"checkin_comment":"","stats":{"beer":"1st","beer_month":"1st"},"rating":[],"rapid":{"is_fast":true,"auth_level":"basic","time_left_rapid":0,"time_left_reg":9},"user":{"uid":25539,"user_name":"darbyfrey","first_name":"darby","last_name":"frey","location":"chicago","url":"","bio":"","user_avatar":"https:\/\/gravatar.com\/avatar\/86c338232f03869122eb323bf3aafbf4?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","account_type":"user","contact":{"twitter":"darbyfrey"},"email_prefs":{"is_friend_request":1,"is_toast":0,"is_comment":1}},"beer":{"bid":10891,"beer_name":"Tank
-        7 Farmhouse Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-Boulevard-BrewingTank-7-Farmhouse-Ale.jpg","beer_abv":8,"beer_ibu":38,"beer_description":"A
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.487,"measure":"seconds"},"init_time":{"time":0.021,"measure":"seconds"}},"notifications":{"type":"notifications","unread_count":{"comments":0,"toasts":0,"friends":0,"messages":0,"news":0}},"response":{"result":"success","badge_valid":true,"checkin_id":115708302,"created_at":"Fri,
+        19 Sep 2014 04:16:19 +0000","checkin_comment":"","stats":{"beer":"2nd","beer_month":"1st"},"rating":[],"user":{"uid":25539,"user_name":"darbyfrey","first_name":"darby","last_name":"frey","location":"chicago","url":"","bio":"","user_avatar":"https:\/\/gravatar.com\/avatar\/86c338232f03869122eb323bf3aafbf4?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","account_type":"user","is_private":0,"contact":{"twitter":"darbyfrey"},"email_prefs":{"is_friend_request":1,"is_toast":0,"is_comment":1}},"beer":{"bid":10891,"beer_name":"Tank
+        7 Farmhouse Ale","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_10891_sm_aef080415fc974e16507ad5f8f808e.jpeg","beer_abv":8.5,"beer_ibu":38,"beer_slug":"boulevard-brewing-co-tank-7-farmhouse-ale","beer_description":"A
         traditional Belgian-style farmhouse ale, the perfect combination of elements
         came together in their #7 fermenter. You could call it fate, but they called
         it Tank 7, and so it is. Beginning with a big surge of fruity aromatics and
         grapefruit-hoppy notes, the flavor of this complex, straw-colored ale tapers
-        off to a peppery, dry finish.","beer_style_id":42,"beer_style":"Saison \/
-        Farmhouse Ale","auth_rating":0},"brewery":{"brewery_id":1514,"brewery_name":"Boulevard
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-boulevard.jpg","country_name":"United
-        States"},"venue":[],"recommendations":[],"distance":0,"media":{"is_photo":false,"photo_data":false},"media_allowed":false,"social_settings":{"facebook":"off","twitter":"off","foursquare":"off"},"source":{"app_name":"WhatsThatTap","app_website":"http:\/\/WhatsThatTap.com"},"follow_status":{"is_follow":true,"status":false,"hash":"c88de65f3d84ebf1d7b089253fa20e16","uid":112981},"promotions":{"count":0,"items":[]},"badges":{"count":0,"items":[]},"social":[]}}'
+        off to a peppery, dry finish.","is_in_production":1,"beer_style_id":42,"beer_style":"Saison
+        \/ Farmhouse Ale","auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":1514,"brewery_name":"Boulevard
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-boulevard.jpg","country_name":"United
+        States","contact":{"twitter":"Boulevard_Beer","facebook":"http:\/\/www.facebook.com\/Boulevard","url":"http:\/\/www.boulevard.com\/"},"location":{"brewery_city":"Kansas
+        City","brewery_state":"MO","lat":39.0821,"lng":-94.5965},"brewery_active":1},"venue":[],"recommendations":[],"distance":0,"media":{"is_photo":false,"photo_data":false},"media_allowed":false,"social_settings":{"facebook":"off","twitter":"off","foursquare":"off"},"source":{"app_name":"WhatsThatTap","app_website":"http:\/\/WhatsThatTap.com"},"follow_status":{"is_follow":true,"status":false,"hash":"c88de65f3d84ebf1d7b089253fa20e16","uid":112981},"promotions":{"count":0,"items":[]},"badges":{"count":1,"items":[{"badge_id":"538","badge_name":"Land
+        of the Free (Level 2)","badge_description":"You\u2019ve pledged allegiance,
+        and now it\u2019s time to enjoy some beer! Now remember, not all American
+        beer is fizzy and yellow. That\u2019s 10 different beers from a brewery in
+        the United States. Try 5 more for Level 3.","badge_image":{"sm":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_america_sm.jpg","md":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_america_md.jpg","lg":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_america_lg.jpg"}}]}}}'
     http_version: '1.1'
-  recorded_at: Thu, 13 Dec 2012 22:50:17 GMT
+  recorded_at: Fri, 19 Sep 2014 04:16:26 GMT
 recorded_with: VCR 2.3.0

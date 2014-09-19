@@ -8,7 +8,9 @@ describe "Checkin" do
     end
 
     it "removes comment", :vcr do
-      comment = Untappd::Checkin.remove_comment(TEST_ACCESS_TOKEN, 1326083)
+      comment = Untappd::Checkin.add_comment(TEST_ACCESS_TOKEN, 17831896, 'test comment')
+      comment_id = comment.comments.items.first.comment_id
+      comment = Untappd::Checkin.remove_comment(TEST_ACCESS_TOKEN, comment_id)
       comment.result.should == 'success'
     end
 
@@ -39,14 +41,14 @@ describe "Checkin" do
 
     it "gets thepub feed", :vcr do
       checkins = Untappd::Checkin.feed
-      checkins.checkins.items.first.beer.beer_name.should == "Harvest Ale"
+      checkins.checkins.items.first.beer.beer_name.should == "Dude"
     end
 
     it "gets thepub local feed", :vcr do
       checkins = Untappd::Checkin.local_feed(-87.6353645, 41.8883695, 1)
       checkins.checkins.items.count.should be(25)
-      checkins.checkins.items.first.beer.beer_name.should == "The Torch"
-      checkins.checkins.items.first.venue.venue_name.should == "Haymarket Pub & Brewery"
+      checkins.checkins.items.first.beer.beer_name.should == "Oberon Ale"
+      checkins.checkins.items.first.venue.venue_name.should == "Bridge House Tavern"
     end
   end
 end

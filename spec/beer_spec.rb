@@ -18,13 +18,13 @@ describe "Beer" do
   it "get search", :vcr do
     search = Untappd::Beer.search('stone')
     search.beers.items.first.beer.beer_name == "Stone IPA"
-    search.breweries.items.first.brewery.brewery_name.should == "Stone Fly Rye"
+    search.breweries.items.first.brewery.brewery_name.should == "Stone Brewing Co."
   end
 
   it "get trending beers", :vcr do
     trending = Untappd::Beer.trending
     trending.macro.items.first.beer.beer_name.should == "Guinness Draught"
-    trending.micro.items.first.beer.beer_name.should == "Celebration Ale (2012)"
+    trending.micro.items.first.beer.beer_name.should == "Samuel Adams OctoberFest"
   end
 
 end

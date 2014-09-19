@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.untappd.com/v4/user/badges/cmar?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
+    uri: https://api.untappd.com/v4/user/badges/cmar?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
     body:
       encoding: US-ASCII
       string: ''
@@ -13,33 +13,87 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Tue, 04 Dec 2012 02:51:41 GMT
+      - Fri, 19 Sep 2014 03:53:16 GMT
       server:
-      - Apache
-      set-cookie:
-      - BALANCEID=balancer.as0; path=/; domain=.untappd.com
+      - Apache/2.2.22 (Ubuntu)
       x-powered-by:
-      - PHP/5.3.3-1ubuntu9.3
+      - PHP/5.4.6-1ubuntu1.4
       x-ratelimit-limit:
       - '100'
       x-ratelimit-remaining:
-      - '13'
+      - '65'
       x-auth-type:
       - key
+      x-api-version:
+      - '4'
+      x-http-protocol:
+      - '443'
+      vary:
+      - Accept-Encoding
       access-control-allow-origin:
       - ! '*'
+      access-control-allow-headers:
+      - X-Untappd-App
       content-length:
-      - '762'
+      - '7855'
       connection:
       - close
       content-type:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"meta":{"code":200,"response_time":{"time":0.011,"measure":"seconds"}},"notifications":[],"response":{"type":"earned","sort":"all","count":1,"items":[{"badge_id":1,"user_badge_id":58708,"checkin_id":413105,"badge_name":"Newbie","badge_description":"So,
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.03,"measure":"seconds"},"init_time":{"time":0.011,"measure":"seconds"}},"notifications":[],"response":{"type":"earned","sort":"all","count":10,"items":[{"badge_id":246,"user_badge_id":4640101,"checkin_id":31022120,"badge_name":"American
+        Craft Beer Week (2013)","badge_description":"With new breweries popping up
+        every day, there''s no doubt the craft beer movement is strong in the US.
+        Celebrate American Craft Beer Week and show your support!","badge_hint":"Check-in
+        to any American craft beer during May 13th - May 20th. The beer must be from
+        a brewery in the United States and listed as non-Macro brewery on Untappd.","badge_active_status":0,"media":{"badge_image_sm":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_acbw2013_sm.jpg","badge_image_md":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_acbw2013_md.jpg","badge_image_lg":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_acbw2013_lg.jpg"},"created_at":"Sun,
+        19 May 2013 18:47:22 +0000","is_level":false,"levels":[]},{"user_badge_id":4640098,"badge_id":60,"checkin_id":31022120,"badge_name":"I
+        Believe in IPA!","badge_description":"We believe in IPA and you should too.
+        You certainly have a taste for the hops! That''s 5 different IPAs. Try 5 more
+        for Level 2","badge_hint":"Try 5 different IPA style beers. This badge can
+        be leveled to 10. You can earn 1 level per 24 hours.","badge_active_status":1,"media":{"badge_image_sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_hoptopia_sm.jpg","badge_image_md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_hoptopia_md.jpg","badge_image_lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_hoptopia_lg.jpg"},"created_at":"Sun,
+        19 May 2013 18:47:21 +0000","is_level":true,"levels":{"count":1,"items":[{"actual_badge_id":60,"badge_id":4640098,"checkin_id":31022120,"badge_name":"I
+        Believe in IPA!","badge_description":"We believe in IPA and you should too.
+        You certainly have a taste for the hops! That''s 5 different IPAs. Try 5 more
+        for Level 2","media":{"badge_image_sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_hoptopia_sm.jpg","badge_image_md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_hoptopia_md.jpg","badge_image_lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_hoptopia_lg.jpg"},"created_at":"Sun,
+        19 May 2013 18:47:21 +0000"}]}},{"badge_id":221,"user_badge_id":4263979,"checkin_id":28756552,"badge_name":"Beer
+        Gathering","badge_description":"Beer is often better with friends. Besides,
+        drinking socially is what we''re all about! You''ve checked in with at least
+        10 other people within 5 hours.","badge_hint":"Check-in to a location with
+        at least 10 others within 5 hours.","badge_active_status":1,"media":{"badge_image_sm":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_beerGathering_sm.jpg","badge_image_md":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_beerGathering_md.jpg","badge_image_lg":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_beerGathering_lg.jpg"},"created_at":"Sat,
+        27 Apr 2013 17:47:32 +0000","is_level":false,"levels":[]},{"badge_id":230,"user_badge_id":3700174,"checkin_id":25067344,"badge_name":"St.
+        Patrick''s Day (2013)","badge_description":"Happy St. Patrick''s day! Here''s
+        hoping you''re enjoying some fine beers, especially the green kind. Cheers
+        from all of us at Untappd!","badge_hint":"Check in any beer on St. Patrick''s
+        Day on in your local time zone!","badge_active_status":0,"media":{"badge_image_sm":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_StPatirkcs2013_sm.jpg","badge_image_md":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_StPatirkcs2013_md.jpg","badge_image_lg":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_StPatirkcs2013_lg.jpg"},"created_at":"Sun,
+        17 Mar 2013 22:15:58 +0000","is_level":false,"levels":[]},{"badge_id":78,"user_badge_id":3601760,"checkin_id":24554137,"badge_name":"Playing
+        the Field","badge_description":"Does the word picking favorites mean anything
+        to you? Obviously not. That''s 10 different beers in a row.","badge_hint":"Be
+        spontaneous - try 10 different beers in a row.","badge_active_status":1,"media":{"badge_image_sm":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_playingTheField_sm.jpg","badge_image_md":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_playingTheField_md.jpg","badge_image_lg":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_playingTheField_lg.jpg"},"created_at":"Tue,
+        12 Mar 2013 22:05:52 +0000","is_level":false,"levels":[]},{"badge_id":84,"user_badge_id":3235491,"checkin_id":21864820,"badge_name":"Untappd
+        Groupie","badge_description":"Woah! You\u2019ve had at least five beers that
+        the Untappd founders have had. That\u2019s tough since we like a wide variety
+        of beers. Obviously you\u2019re just trying to be cool like us!","badge_hint":"Have
+        5 beers that the Co-Founders of Untappd have had in the last 90 days.","badge_active_status":1,"media":{"badge_image_sm":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_groupie_sm.jpg","badge_image_md":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_groupie_md.jpg","badge_image_lg":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_groupie_lg.jpg"},"created_at":"Fri,
+        08 Feb 2013 00:48:43 +0000","is_level":false,"levels":[]},{"badge_id":23,"user_badge_id":3228407,"checkin_id":21817585,"badge_name":"Night
+        Out","badge_description":"Enjoying a nice Night Out on the town? Thanks for
+        taking untappd along.","badge_hint":"Out with Untappd? Let us you know your
+        location and we''ll give you this badge! Check in with a location from 7pm
+        to 4am in your local timezone.","badge_active_status":1,"media":{"badge_image_sm":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_barCrawl_sm.jpg","badge_image_md":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_barCrawl_md.jpg","badge_image_lg":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_barCrawl_lg.jpg"},"created_at":"Thu,
+        07 Feb 2013 02:12:33 +0000","is_level":false,"levels":[]},{"badge_id":13,"user_badge_id":3228404,"checkin_id":21817585,"badge_name":"Beer
+        Party","badge_description":"Drinking with friends is fun. Right? You''ve checked
+        in with at least 4 other people within 2 hours.","badge_hint":"Drink socially
+        and at a venue.","badge_active_status":1,"media":{"badge_image_sm":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_beerParty_sm.jpg","badge_image_md":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_beerParty_md.jpg","badge_image_lg":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_beerParty_lg.jpg"},"created_at":"Thu,
+        07 Feb 2013 02:12:28 +0000","is_level":false,"levels":[]},{"badge_id":223,"user_badge_id":3209508,"checkin_id":21677681,"badge_name":"Brew
+        Bowl XLVII","badge_description":"Whether you''re in your living room or tail
+        gating at the Super Dome, it''s game day and you''re enjoying a great beer.
+        Could life get any better? Oh wait, it just did because you unlocked the Brew
+        Bowl XLVII badge!","badge_hint":"Check-in on Super Bowl Sunday 2013.","badge_active_status":0,"media":{"badge_image_sm":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_BrewBowlXLVII_sm.jpg","badge_image_md":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_BrewBowlXLVII_md.jpg","badge_image_lg":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_BrewBowlXLVII_lg.jpg"},"created_at":"Mon,
+        04 Feb 2013 03:15:09 +0000","is_level":false,"levels":[]},{"badge_id":1,"user_badge_id":58708,"checkin_id":413105,"badge_name":"Newbie","badge_description":"So,
         you''re new around here? Congrats on your first brew! This one''s for you.","badge_hint":"Try
-        out Untappd - you''ll get this one!","badge_active_status":1,"media":{"badge_image_sm":"https:\/\/untappd.s3.amazonaws.com\/assets\/badges\/bdg_newbie_sm.png","badge_image_md":"https:\/\/untappd.s3.amazonaws.com\/assets\/badges\/bdg_newbie_md.png","badge_image_lg":"https:\/\/untappd.s3.amazonaws.com\/assets\/badges\/bdg_newbie_lg.png"},"created_at":"Mon,
+        out Untappd - you''ll get this one!","badge_active_status":1,"media":{"badge_image_sm":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_newbie_sm.jpg","badge_image_md":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_newbie_md.jpg","badge_image_lg":"https:\/\/untappd.s3.amazonaws.com\/badges\/bdg_newbie_lg.jpg"},"created_at":"Mon,
         07 Mar 2011 01:45:07 +0000","is_level":false,"levels":[]}]}}'
     http_version: '1.1'
-  recorded_at: Tue, 04 Dec 2012 02:51:20 GMT
+  recorded_at: Fri, 19 Sep 2014 03:53:30 GMT
 recorded_with: VCR 2.3.0

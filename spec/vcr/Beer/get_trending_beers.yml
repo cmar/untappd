@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.untappd.com/v4/beer/trending?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
+    uri: https://api.untappd.com/v4/beer/trending?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
     body:
       encoding: US-ASCII
       string: ''
@@ -13,21 +13,27 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Tue, 04 Dec 2012 03:07:17 GMT
+      - Fri, 19 Sep 2014 03:53:06 GMT
       server:
-      - Apache
-      set-cookie:
-      - BALANCEID=balancer.as0; path=/; domain=.untappd.com
+      - Apache/2.2.22 (Ubuntu)
       x-powered-by:
-      - PHP/5.3.3-1ubuntu9.3
+      - PHP/5.4.6-1ubuntu1.4
       x-ratelimit-limit:
       - '100'
       x-ratelimit-remaining:
-      - '6'
+      - '74'
       x-auth-type:
       - key
+      x-api-version:
+      - '4'
+      x-http-protocol:
+      - '443'
+      vary:
+      - Accept-Encoding
       access-control-allow-origin:
       - ! '*'
+      access-control-allow-headers:
+      - X-Untappd-App
       connection:
       - close
       transfer-encoding:
@@ -36,73 +42,84 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"meta":{"code":200,"response_time":{"time":0.035,"measure":"seconds"}},"notifications":[],"response":{"macro":{"count":8,"items":[{"total_count":287,"your_count":0,"beer":{"bid":4473,"beer_name":"Guinness
-        Draught","style_name":"Irish Dry Stout","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-guinnessDraught.jpg","beer_style":"Irish
-        Dry Stout","beer_abv":"4.3","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":49,"brewery_name":"Guinness","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-guinness.jpg","country_name":"Ireland","contact":{"twitter":"GuinnessIreland","facebook":"","url":"http:\/\/www.guinness.com"},"location":{"brewery_city":"Dublin","brewery_state":"Ireland","lat":53.3441,"lng":-6.26749}}},{"total_count":265,"your_count":0,"beer":{"bid":3784,"beer_name":"Bud
-        Light","style_name":"American Light Lager","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-budLight.jpg","beer_style":"American
-        Light Lager","beer_abv":"4.2","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":44,"brewery_name":"Anheuser-Busch
-        (ABInBev)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-Anheuser-Busch.jpg","country_name":"United
-        States","contact":{"twitter":"","facebook":"http:\/\/www.facebook.com\/AnheuserBusch","url":"http:\/\/www.anheuser-busch.com"},"location":{"brewery_city":"St.
-        Louis","brewery_state":"MO","lat":38.5985,"lng":-90.2094}}},{"total_count":263,"your_count":0,"beer":{"bid":3811,"beer_name":"Miller
-        Lite","style_name":"American Light Lager","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-millerLite.jpg","beer_style":"American
-        Light Lager","beer_abv":"4.17","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":863,"brewery_name":"Miller
-        Brewing Company","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-millerBrewing.jpg","country_name":"United
-        States","contact":{"twitter":"MillerCoors","facebook":"http:\/\/www.facebook.com\/MillerCoors","url":"http:\/\/www.millercoors.com"},"location":{"brewery_city":"Milwaukee","brewery_state":"WI","lat":43.0422,"lng":-87.9631}}},{"total_count":224,"your_count":0,"beer":{"bid":176974,"beer_name":"Snowdrift
-        Vanilla Porter","style_name":"American Porter","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SnowdriftVanillaPorter_176974.jpeg","beer_style":"American
-        Porter","beer_abv":"6","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":708,"brewery_name":"Jacob
-        Leinenkugel Brewing Company","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-JacobLeinenkugelBrewingCompany_708.jpeg","country_name":"United
-        States","contact":{"twitter":"","facebook":"http:\/\/www.facebook.com\/Leinenkugels","url":"http:\/\/leinie.com"},"location":{"brewery_city":"Chippewa
-        Falls","brewery_state":"WI","lat":44.9433,"lng":-91.3953}}},{"total_count":199,"your_count":0,"beer":{"bid":3834,"beer_name":"Coors
-        Light","style_name":"American Light Lager","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-coorsLight.jpg","beer_style":"American
-        Light Lager","beer_abv":"4.2","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":399,"brewery_name":"Coors
-        Brewing Company","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-coors.jpg","country_name":"United
-        States","contact":{"twitter":"","facebook":"","url":"http:\/\/www.coors.com"},"location":{"brewery_city":"Golden","brewery_state":"CO","lat":39.7591,"lng":-105.217}}},{"total_count":190,"your_count":0,"beer":{"bid":3883,"beer_name":"Pabst
-        Blue Ribbon (PBR)","style_name":"American Adjunct Lager","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-pasbtsBlueRibbbon.jpg","beer_style":"American
-        Adjunct Lager","beer_abv":"4.74","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":963,"brewery_name":"Pabst
-        Brewing Company","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-pbr.jpg","country_name":"United
-        States","contact":{"twitter":"pabstblueribbon","facebook":"http:\/\/facebook.com\/pbrme","url":"http:\/\/www.pabstbrewingco.com"},"location":{"brewery_city":"Woodridge","brewery_state":"IL","lat":41.7181,"lng":-88.009}}},{"total_count":187,"your_count":0,"beer":{"bid":4010,"beer_name":"Stella
-        Artois","style_name":"Euro Lager","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-stellaArtois.jpg","beer_style":"Euro
-        Lager","beer_abv":"5.2","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":265,"brewery_name":"Stella
-        Artois (ABInBev)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-StellaArtoisABInBev_265.jpeg","country_name":"Belgium","contact":{"twitter":"Stella__Artois","facebook":"","url":"http:\/\/www.stellaartois.be"},"location":{"brewery_city":"3000
-        Leuven","brewery_state":"","lat":50.8854,"lng":4.70088}}},{"total_count":186,"your_count":0,"beer":{"bid":3839,"beer_name":"Blue
-        Moon Belgian White","style_name":"Witbier","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-blueMoon.jpg","beer_style":"Witbier","beer_abv":"5.4","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":399,"brewery_name":"Coors
-        Brewing Company","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-coors.jpg","country_name":"United
-        States","contact":{"twitter":"","facebook":"","url":"http:\/\/www.coors.com"},"location":{"brewery_city":"Golden","brewery_state":"CO","lat":39.7591,"lng":-105.217}}}]},"micro":{"count":8,"items":[{"total_count":633,"your_count":0,"beer":{"bid":226743,"beer_name":"Celebration
-        Ale (2012)","style_name":"American IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-_226743_546361c777f4d932e590178a0082.jpeg","beer_style":"American
-        IPA","beer_abv":"6.8","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1142,"brewery_name":"Sierra
-        Nevada Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-sierraNevada.jpg","country_name":"United
-        States","contact":{"twitter":"SierraNevada","facebook":"http:\/\/www.facebook.com\/sierranevadabeer","url":"http:\/\/www.sierranevada.com\/"},"location":{"brewery_city":"Chico","brewery_state":"CA","lat":39.7246,"lng":-121.816}}},{"total_count":600,"your_count":0,"beer":{"bid":3919,"beer_name":"Samuel
-        Adams Winter Lager","style_name":"Winter Lager","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-_3919_5a06caba28f60ec2bf3b9ff41126.jpeg","beer_style":"Winter
-        Lager","beer_abv":"5.6","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
-        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
-        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}}},{"total_count":313,"your_count":0,"beer":{"bid":262630,"beer_name":"Enjoy
-        By 12.21.12 IPA","style_name":"Imperial \/ Double IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-_262630_cf1462bea2de12df978bb5c72843.jpeg","beer_style":"Imperial
-        \/ Double IPA","beer_abv":"9.4","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"total_count":274,"your_count":0,"beer":{"bid":204983,"beer_name":"Our
-        Special Ale 2012 (Christmas Ale)","style_name":"Winter Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-_204983_31a598cc2f89b066ed7d0489510a.jpeg","beer_style":"Winter
-        Ale","beer_abv":"5.5","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":3891,"brewery_name":"Anchor
-        Brewing Company","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-AnchorBrewingCompany_3891.jpeg","country_name":"United
-        States","contact":{"twitter":"AnchorBrewing","facebook":"http:\/\/www.facebook.com\/anchorbrewing","url":"http:\/\/www.anchorbrewing.com"},"location":{"brewery_city":"San
-        Francisco","brewery_state":"CA","lat":37.7635,"lng":-122.401}}},{"total_count":260,"your_count":0,"beer":{"bid":65937,"beer_name":"Snow
-        Day","style_name":"Winter Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SnowDay_65937.jpeg","beer_style":"Winter
-        Ale","beer_abv":"6.2","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":905,"brewery_name":"New
-        Belgium Brewing Company","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-newBelgiumBrewing.jpg","country_name":"United
-        States","contact":{"twitter":"newbelgium","facebook":"http:\/\/www.facebook.com\/newbelgium","url":"http:\/\/www.newbelgium.com"},"location":{"brewery_city":"Fort
-        Collins","brewery_state":"CO","lat":40.5934,"lng":-105.067}}},{"total_count":257,"your_count":0,"beer":{"bid":7472,"beer_name":"Christmas
-        Ale","style_name":"Winter Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-ChristmasAle_7472.jpeg","beer_style":"Winter
-        Ale","beer_abv":"7.5","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":3125,"brewery_name":"Great
-        Lakes Brewing Company ","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-GreatLakesBrewingCompanyUSA_3125.jpeg","country_name":"United
-        States","contact":{"twitter":"GLBC_Cleveland","facebook":"http:\/\/www.facebook.com\/greatlakesbrewingco","url":"http:\/\/www.greatlakesbrewing.com\/"},"location":{"brewery_city":"Cleveland","brewery_state":"OH","lat":41.4844,"lng":-81.7044}}},{"total_count":257,"your_count":0,"beer":{"bid":14814,"beer_name":"Winter
-        Solstice","style_name":"Winter Warmer","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-WinterSolstice_14814.jpeg","beer_style":"Winter
-        Warmer","beer_abv":"6.9","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":3880,"brewery_name":"Anderson
-        Valley Brewing Company","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-AndersonValleyBrewingCompany_3880.jpeg","country_name":"United
-        States","contact":{"twitter":"avbc","facebook":"http:\/\/www.facebook.com\/AndersonValleyBrewingCompany","url":"http:\/\/www.avbc.com"},"location":{"brewery_city":"Boonville","brewery_state":"CA","lat":39.0005,"lng":-123.356}}},{"total_count":253,"your_count":0,"beer":{"bid":4589,"beer_name":"Breakfast
-        Stout","style_name":"American Imperial \/ Double Stout","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-FoundersBreakfastStout.jpg","beer_style":"American
-        Imperial \/ Double Stout","beer_abv":"8.3","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":549,"brewery_name":"Founders
-        Brewing Company","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-FoundersBrewingCompany_549.jpeg","country_name":"United
-        States","contact":{"twitter":"foundersbrewing","facebook":"http:\/\/www.facebook.com\/founderstaproom","url":"http:\/\/www.foundersbrewing.com\/"},"location":{"brewery_city":"Grand
-        Rapids","brewery_state":"MI","lat":42.9585,"lng":-85.6735}}}]}}}'
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.067,"measure":"seconds"},"init_time":{"time":0.009,"measure":"seconds"}},"notifications":[],"response":{"macro":{"count":10,"items":[{"total_count":501,"your_count":0,"beer":{"bid":4473,"beer_name":"Guinness
+        Draught","style_name":"Irish Dry Stout","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_4473_8122008947804818c90640a06d83.jpeg","beer_style":"Irish
+        Dry Stout","beer_abv":4.3,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":49,"brewery_name":"Guinness","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-guinness.jpg","country_name":"Ireland","contact":{"twitter":"GuinnessIreland","facebook":"","instagram":"","url":"http:\/\/www.guinness.com"},"location":{"brewery_city":"Dublin
+        8","brewery_state":"Ireland","lat":53.3614,"lng":-6.24792},"brewery_active":1}},{"total_count":419,"your_count":0,"beer":{"bid":3784,"beer_name":"Bud
+        Light","style_name":"American Light Lager","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-3784_46fe5_sm.jpeg","beer_style":"American
+        Light Lager","beer_abv":4.2,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":44,"brewery_name":"Anheuser-Busch","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-anheuserbusch_44.jpeg","country_name":"United
+        States","contact":{"twitter":"AnheuserBusch","facebook":"http:\/\/www.facebook.com\/AnheuserBusch","instagram":"budweiser","url":"http:\/\/www.anheuser-busch.com"},"location":{"brewery_city":"St.
+        Louis","brewery_state":"MO","lat":38.5985,"lng":-90.2094},"brewery_active":1}},{"total_count":408,"your_count":0,"beer":{"bid":3811,"beer_name":"Miller
+        Lite","style_name":"American Light Lager","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-3811_be0ea_sm.jpeg","beer_style":"American
+        Light Lager","beer_abv":4.17,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":863,"brewery_name":"Miller
+        Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-millerBrewing.jpg","country_name":"United
+        States","contact":{"twitter":"MillerCoors","facebook":"http:\/\/www.facebook.com\/MillerCoors","instagram":"","url":"http:\/\/www.millercoors.com"},"location":{"brewery_city":"Milwaukee","brewery_state":"WI","lat":43.0422,"lng":-87.9631},"brewery_active":1}},{"total_count":369,"your_count":0,"beer":{"bid":5860,"beer_name":"Heineken","style_name":"Pale
+        Lager","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_5860_b030fadf70b76c074a13e47b719c.jpeg","beer_style":"Pale
+        Lager","beer_abv":5,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1400,"brewery_name":"Heineken","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-HeinekenBV_1400.jpeg","country_name":"Netherlands","contact":{"twitter":"heineken","facebook":"https:\/\/www.facebook.com\/heineken","instagram":"","url":"http:\/\/www.heineken.com"},"location":{"brewery_city":"Zoeterwoude","brewery_state":"Zuid
+        Holland","lat":52.1375,"lng":4.53398},"brewery_active":1}},{"total_count":340,"your_count":0,"beer":{"bid":3834,"beer_name":"Coors
+        Light","style_name":"American Light Lager","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-coorsLight.jpg","beer_style":"American
+        Light Lager","beer_abv":4.2,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":399,"brewery_name":"Coors
+        Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-coors.jpg","country_name":"United
+        States","contact":{"twitter":"","facebook":"","instagram":"","url":"http:\/\/www.coors.com"},"location":{"brewery_city":"Golden","brewery_state":"CO","lat":39.7591,"lng":-105.217},"brewery_active":1}},{"total_count":326,"your_count":0,"beer":{"bid":3839,"beer_name":"Belgian
+        White","style_name":"Witbier","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-3839_879cb_sm.jpeg","beer_style":"Witbier","beer_abv":5.4,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":127804,"brewery_name":"Blue
+        Moon Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-127804_687d5.jpeg","country_name":"United
+        States","contact":{"twitter":"BlueMoonBrewCo","facebook":"https:\/\/www.facebook.com\/bluemoon","instagram":"","url":"http:\/\/www.bluemoonbrewingcompany.com\/"},"location":{"brewery_city":"Denver","brewery_state":"CO","lat":39.7561,"lng":-104.992},"brewery_active":1}},{"total_count":322,"your_count":0,"beer":{"bid":3883,"beer_name":"Pabst
+        Blue Ribbon","style_name":"North American Adjunct Lager","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-pasbtsBlueRibbbon.jpg","beer_style":"North
+        American Adjunct Lager","beer_abv":4.9,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":963,"brewery_name":"Pabst
+        Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-pbr.jpg","country_name":"United
+        States","contact":{"twitter":"pabstblueribbon","facebook":"https:\/\/www.facebook.com\/PabstBrewingCo","instagram":"","url":"http:\/\/www.pabstbrewingco.com"},"location":{"brewery_city":"Woodridge","brewery_state":"IL","lat":41.7181,"lng":-88.009},"brewery_active":1}},{"total_count":309,"your_count":0,"beer":{"bid":4010,"beer_name":"Stella
+        Artois","style_name":"Euro Lager","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-stellaArtois.jpg","beer_style":"Euro
+        Lager","beer_abv":5.2,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":265,"brewery_name":"Stella
+        Artois","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-StellaArtoisABInBev_265.jpeg","country_name":"Belgium","contact":{"twitter":"StellaArtois","facebook":"","instagram":"","url":"http:\/\/www.stellaartois.be"},"location":{"brewery_city":"3000
+        Leuven","brewery_state":"Vlaams-Brabant","lat":50.8858,"lng":4.70101},"brewery_active":1}},{"total_count":273,"your_count":0,"beer":{"bid":3837,"beer_name":"Harvest
+        Pumpkin Ale","style_name":"Pumpkin \/ Yam Beer","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-3837_77eba_sm.jpeg","beer_style":"Pumpkin
+        \/ Yam Beer","beer_abv":5.7,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":127804,"brewery_name":"Blue
+        Moon Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-127804_687d5.jpeg","country_name":"United
+        States","contact":{"twitter":"BlueMoonBrewCo","facebook":"https:\/\/www.facebook.com\/bluemoon","instagram":"","url":"http:\/\/www.bluemoonbrewingcompany.com\/"},"location":{"brewery_city":"Denver","brewery_state":"CO","lat":39.7561,"lng":-104.992},"brewery_active":1}},{"total_count":239,"your_count":0,"beer":{"bid":3783,"beer_name":"Budweiser","style_name":"American
+        Light Lager","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-budwiser.jpg","beer_style":"American
+        Light Lager","beer_abv":5,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":44,"brewery_name":"Anheuser-Busch","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-anheuserbusch_44.jpeg","country_name":"United
+        States","contact":{"twitter":"AnheuserBusch","facebook":"http:\/\/www.facebook.com\/AnheuserBusch","instagram":"budweiser","url":"http:\/\/www.anheuser-busch.com"},"location":{"brewery_city":"St.
+        Louis","brewery_state":"MO","lat":38.5985,"lng":-90.2094},"brewery_active":1}}]},"micro":{"count":10,"items":[{"total_count":1436,"your_count":0,"beer":{"bid":3942,"beer_name":"Samuel
+        Adams OctoberFest","style_name":"Oktoberfest\/M\u00e4rzen","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-3942_dcf0d_sm.jpeg","beer_style":"Oktoberfest\/M\u00e4rzen","beer_abv":5.3,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","instagram":"samueladamsbeer","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034},"brewery_active":1}},{"total_count":959,"your_count":0,"beer":{"bid":4996,"beer_name":"Punkin
+        Ale","style_name":"Pumpkin \/ Yam Beer","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_4996_sm.jpeg","beer_style":"Pumpkin
+        \/ Yam Beer","beer_abv":7,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
+        Head Craft Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
+        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","instagram":"dogfishbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099},"brewery_active":1}},{"total_count":922,"your_count":0,"beer":{"bid":4886,"beer_name":"Pumking","style_name":"Pumpkin
+        \/ Yam Beer","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_4886_sm_c3f94d87df6c98a8b3fe0bc01175ea.jpeg","beer_style":"Pumpkin
+        \/ Yam Beer","beer_abv":8.6,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":4586,"brewery_name":"Southern
+        Tier Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-southernTier.jpg","country_name":"United
+        States","contact":{"twitter":"stbcbeer","facebook":"http:\/\/www.facebook.com\/SouthernTierBrewingCompany","instagram":"stbcbeer","url":"http:\/\/www.stbcbeer.com\/"},"location":{"brewery_city":"Lakewood","brewery_state":"NY","lat":42.0892,"lng":-79.3543},"brewery_active":1}},{"total_count":503,"your_count":0,"beer":{"bid":406125,"beer_name":"Warlock","style_name":"Pumpkin
+        \/ Yam Beer","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_406125_sm_d3ef3b97f910507d5759edb173254d.jpeg","beer_style":"Pumpkin
+        \/ Yam Beer","beer_abv":8.6,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":4586,"brewery_name":"Southern
+        Tier Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-southernTier.jpg","country_name":"United
+        States","contact":{"twitter":"stbcbeer","facebook":"http:\/\/www.facebook.com\/SouthernTierBrewingCompany","instagram":"stbcbeer","url":"http:\/\/www.stbcbeer.com\/"},"location":{"brewery_city":"Lakewood","brewery_state":"NY","lat":42.0892,"lng":-79.3543},"brewery_active":1}},{"total_count":490,"your_count":0,"beer":{"bid":5117,"beer_name":"Pumpkinhead
+        Ale","style_name":"Pumpkin \/ Yam Beer","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-PumpkinheadAle_5117.jpeg","beer_style":"Pumpkin
+        \/ Yam Beer","beer_abv":4.5,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":2392,"brewery_name":"Shipyard
+        Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-ShipyardBrewingCo_2392.jpeg","country_name":"United
+        States","contact":{"twitter":"shipyardbrewing","facebook":"http:\/\/www.facebook.com\/ShipyardBrewing?ref=ts","instagram":"","url":"http:\/\/www.shipyard.com\/"},"location":{"brewery_city":"Portland","brewery_state":"ME","lat":43.6621,"lng":-70.2485},"brewery_active":1}},{"total_count":443,"your_count":0,"beer":{"bid":754494,"beer_name":"Flipside
+        Red IPA (2014)","style_name":"American IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-754494_bd479_sm.jpeg","beer_style":"American
+        IPA","beer_abv":6.2,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1142,"brewery_name":"Sierra
+        Nevada Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-sierraNevada.jpg","country_name":"United
+        States","contact":{"twitter":"SierraNevada","facebook":"http:\/\/www.facebook.com\/sierranevadabeer","instagram":"sierranevada","url":"http:\/\/www.sierranevada.com\/"},"location":{"brewery_city":"Chico","brewery_state":"CA","lat":39.7246,"lng":-121.816},"brewery_active":1}},{"total_count":441,"your_count":0,"beer":{"bid":16649,"beer_name":"Traditional
+        Lager","style_name":"American Amber \/ Red Lager","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-TraditionalLager_16649.jpeg","beer_style":"American
+        Amber \/ Red Lager","beer_abv":4.4,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1976,"brewery_name":"Yuengling
+        Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-YuenglingBrewery_1976.jpeg","country_name":"United
+        States","contact":{"twitter":"Yuengling_Beer","facebook":"https:\/\/www.facebook.com\/Yuengling","instagram":"YuenglingBeer","url":"http:\/\/www.yuengling.com\/"},"location":{"brewery_city":"Pottsville","brewery_state":"PA","lat":40.6856,"lng":-76.1955},"brewery_active":1}},{"total_count":440,"your_count":0,"beer":{"bid":4509,"beer_name":"IPA","style_name":"American
+        IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_4509_sm_ba810d3c0e2b2f8a0de4d773db9449.jpeg","beer_style":"American
+        IPA","beer_abv":6.2,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":765,"brewery_name":"Lagunitas
+        Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-lagunitas.jpg","country_name":"United
+        States","contact":{"twitter":"lagunitasbruhws","facebook":"http:\/\/www.facebook.com\/#!\/LagunitasBrewingCo","instagram":"lagunitasbeer","url":"http:\/\/www.lagunitas.com\/"},"location":{"brewery_city":"Petaluma","brewery_state":"CA","lat":38.2724,"lng":-122.662},"brewery_active":1}},{"total_count":419,"your_count":0,"beer":{"bid":4133,"beer_name":"Two
+        Hearted Ale","style_name":"American IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-TwoHeartedAle_4133.jpeg","beer_style":"American
+        IPA","beer_abv":7,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":2507,"brewery_name":"Bell''s
+        Brewery, Inc.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-BellsBreweryInc_2507.jpeg","country_name":"United
+        States","contact":{"twitter":"BellsBrewery","facebook":"http:\/\/www.facebook.com\/BellsBreweryInc","instagram":"bellsbrewery","url":"http:\/\/www.bellsbeer.com\/"},"location":{"brewery_city":"Galesburg\/Comstock
+        & Kalamazoo","brewery_state":"MI","lat":42.2917,"lng":-85.5872},"brewery_active":1}},{"total_count":411,"your_count":0,"beer":{"bid":715788,"beer_name":"18th
+        Anniversary IPA","style_name":"Imperial \/ Double IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-715788_d9496_sm.jpeg","beer_style":"Imperial
+        \/ Double IPA","beer_abv":8.5,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}}]}}}'
     http_version: '1.1'
-  recorded_at: Tue, 04 Dec 2012 03:06:57 GMT
+  recorded_at: Fri, 19 Sep 2014 03:53:20 GMT
 recorded_with: VCR 2.3.0

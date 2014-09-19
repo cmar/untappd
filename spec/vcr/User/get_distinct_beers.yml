@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.untappd.com/v4/user/beers/cmar?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
+    uri: https://api.untappd.com/v4/user/beers/cmar?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
     body:
       encoding: US-ASCII
       string: ''
@@ -13,70 +13,249 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Tue, 04 Dec 2012 02:51:56 GMT
+      - Fri, 19 Sep 2014 03:53:16 GMT
       server:
-      - Apache
-      set-cookie:
-      - BALANCEID=balancer.as1; path=/; domain=.untappd.com
+      - Apache/2.2.22 (Ubuntu)
       x-powered-by:
-      - PHP/5.3.3-1ubuntu9.3
+      - PHP/5.4.6-1ubuntu1.4
       x-ratelimit-limit:
       - '100'
       x-ratelimit-remaining:
-      - '10'
+      - '62'
       x-auth-type:
       - key
+      x-api-version:
+      - '4'
+      x-http-protocol:
+      - '443'
+      vary:
+      - Accept-Encoding
       access-control-allow-origin:
       - ! '*'
-      content-length:
-      - '4959'
+      access-control-allow-headers:
+      - X-Untappd-App
       connection:
       - close
+      transfer-encoding:
+      - chunked
       content-type:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"meta":{"code":200,"response_time":{"time":0.021,"measure":"seconds"}},"notifications":[],"response":{"beers":{"sort":"date","count":4,"items":[{"recent_created_at":"Sat,
-        21 May 2011 04:03:04 +0000","rating_score":0,"first_had":"Sat, 21 May 2011
-        04:03:04 +0000","count":1,"beer":{"bid":4487,"beer_name":"Palo Santo Marron","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-dfhPaloSantoMarron.jpg","beer_abv":12,"beer_ibu":0,"beer_style":"Imperial
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.136,"measure":"seconds"},"init_time":{"time":0.01,"measure":"seconds"}},"notifications":[],"response":{"is_search":false,"beers":{"sort":"date","sort_english":"Date
+        (Descending)","count":18,"items":[{"first_checkin_id":55010886,"first_created_at":"Fri,
+        22 Nov 2013 20:29:55 +0000","recent_checkin_id":55010886,"recent_created_at":"Fri,
+        22 Nov 2013 20:29:55 +0000","recent_created_at_timezone":"-5","rating_score":4,"first_had":"Fri,
+        22 Nov 2013 20:29:55 +0000","count":1,"beer":{"bid":5724,"beer_name":"Jai
+        Alai IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-5724_64765_sm.jpeg","beer_abv":7.5,"beer_ibu":65,"beer_slug":"cigar-city-brewing-jai-alai-ipa","beer_style":"American
+        IPA","beer_description":"Jai Alai IPA is a monster interpretation of an American
+        IPA. In fact, it is so big that it equals the alcohol of some double IPAs
+        on the market. Our IPA uses 6 different hop varietals, with Simcoe hops only
+        being used for dry hopping. The rest of the hop additions are blended at different
+        IBU''s (International Bittering Units) in groups of three hops per addition
+        in order to create more hop complexity. At CCB, we love hops but also feel
+        that balance is important for IPAs. So Jai Alai features a sturday caramel
+        malt component which helps to create balance, staving off hop astringency.
+        Ultimately, Jai Alai is a very strong interpretation of a single American
+        IPA. We hope that it makes Tampa Bay natives happy because this is head brewer
+        Wayne Wamble''s favorite Cigar City beer and he''d love to share one with
+        you!","created_at":"Sat, 21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":4.02},"brewery":{"brewery_id":379,"brewery_name":"Cigar
+        City Brewing","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-CigarCityBrewing_379.jpeg","country_name":"United
+        States","contact":{"twitter":"CigarCityBeer","facebook":"http:\/\/www.facebook.com\/cigarcitybeer","instagram":"cigarcitybrewing","url":"http:\/\/cigarcitybrewing.com\/"},"location":{"brewery_city":"Tampa","brewery_state":"FL","lat":27.9593,"lng":-82.5092},"brewery_active":1}},{"first_checkin_id":49904197,"first_created_at":"Fri,
+        18 Oct 2013 17:18:47 +0000","recent_checkin_id":49904197,"recent_created_at":"Fri,
+        18 Oct 2013 17:18:47 +0000","recent_created_at_timezone":"-4","rating_score":3.5,"first_had":"Fri,
+        18 Oct 2013 17:18:47 +0000","count":1,"beer":{"bid":1148,"beer_name":"Oaked
+        Big Hoppy Monster (2012)","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-BigHoppyMonster2012_1148.jpeg","beer_abv":9.1,"beer_ibu":75,"beer_slug":"terrapin-beer-company-oaked-big-hoppy-monster-2012","beer_style":"Imperial
+        \/ Double Red Ale","beer_description":"Terrapin''s fall Monster Beer is back
+        with an upgrade for 2012... we aged the entire batch on oak! Oaked Big Hoppy
+        Monster Imperial Red Ale pours a luscious garnet color. Expect this brew to
+        lead with big American style hop aroma, which is quickly complemented by a
+        monstrous malt backbone rounded with rich oaky notes and hints of vanilla.
+        A bit of alcohol warmth and a multitude of malty goodness, with just a snarl
+        of hop bitterness, awaits at the finish. This enormous beer will go down smooth\u2026
+        but watch out; this Monster bites!","created_at":"Sat, 21 Aug 2010 07:26:35
+        +0000","auth_rating":0,"wish_list":false,"rating_score":3.777},"brewery":{"brewery_id":1243,"brewery_name":"Terrapin
+        Beer Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-TerrapinBeerCompany_1243.jpeg","country_name":"United
+        States","contact":{"twitter":"TerrapinBeerCo","facebook":"http:\/\/www.facebook.com\/terrapinbeerco","instagram":"","url":"http:\/\/terrapinbeer.com\/"},"location":{"brewery_city":"Athens","brewery_state":"GA","lat":33.9804,"lng":-83.3957},"brewery_active":1}},{"first_checkin_id":31887636,"first_created_at":"Mon,
+        27 May 2013 12:02:28 +0000","recent_checkin_id":31887636,"recent_created_at":"Mon,
+        27 May 2013 12:02:28 +0000","recent_created_at_timezone":"-4","rating_score":0,"first_had":"Mon,
+        27 May 2013 12:02:28 +0000","count":1,"beer":{"bid":373608,"beer_name":"Hop
+        It Like It''s Hot","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/assets\/images\/temp\/badge-beer-default.png","beer_abv":0,"beer_ibu":0,"beer_slug":"dogfish-head-craft-brewery-hop-it-like-it-s-hot","beer_style":"American
+        Amber \/ Red Ale","beer_description":"Amber IPA","created_at":"Mon, 27 May
+        2013 09:02:16 +0000","auth_rating":0,"wish_list":false,"rating_score":3.642},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
+        Head Craft Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
+        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","instagram":"dogfishbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099},"brewery_active":1}},{"first_checkin_id":31022120,"first_created_at":"Sun,
+        19 May 2013 14:47:21 +0000","recent_checkin_id":31022120,"recent_created_at":"Sun,
+        19 May 2013 14:47:21 +0000","recent_created_at_timezone":"-4","rating_score":0,"first_had":"Sun,
+        19 May 2013 14:47:21 +0000","count":1,"beer":{"bid":5011,"beer_name":"Hop
+        Head Red (-2013 Retired)","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_5011_sm_9666df92b1db93b09c4fc01ef26f6d.jpeg","beer_abv":7,"beer_ibu":70,"beer_slug":"green-flash-brewing-co-hop-head-red-2013-retired","beer_style":"American
+        IPA","beer_description":"This is the 2013 and prior version and has been retired.\nA
+        full-bodied dazzler that will stun your taste buds. Resinous hop characteristics
+        emerge from an enormous hopping with Columbus, Nugget and Amarillo overtaking
+        the rich caramel malt base. To add luscious?hop flavors and enticingly floral
+        hop aromas, we dry-hop the brew with bucket loads of Amarillo hops. Welcome
+        to the world of Red IPA. This ideal combo of India Pale and Red Ale makes
+        our fine brew stand out from the crowd. Experience love at first sip.\n","created_at":"Sat,
+        21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":3.73},"brewery":{"brewery_id":609,"brewery_name":"Green
+        Flash Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-GreenFlashBrewingCo_609.jpeg","country_name":"United
+        States","contact":{"twitter":"GreenFlashBeer","facebook":"http:\/\/www.facebook.com\/GreenFlashBrew","instagram":"","url":"http:\/\/www.greenflashbrew.com"},"location":{"brewery_city":"San
+        Diego","brewery_state":"CA","lat":32.9073,"lng":-117.178},"brewery_active":1}},{"first_checkin_id":31022013,"first_created_at":"Sun,
+        19 May 2013 14:46:29 +0000","recent_checkin_id":31022013,"recent_created_at":"Sun,
+        19 May 2013 14:46:29 +0000","recent_created_at_timezone":"-4","rating_score":0,"first_had":"Sun,
+        19 May 2013 14:46:29 +0000","count":1,"beer":{"bid":315120,"beer_name":"GrayJacket","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_315120_sm_d56e7349c8c4dee934ca8e3b47dbab.jpeg","beer_abv":5.4,"beer_ibu":0,"beer_slug":"brasserie-de-la-senne-grayjacket","beer_style":"Saison
+        \/ Farmhouse Ale","beer_description":"Collaboration with BlueJacket.","created_at":"Fri,
+        22 Feb 2013 14:35:41 +0000","auth_rating":0,"wish_list":false,"rating_score":3.701},"brewery":{"brewery_id":176,"brewery_name":"Brasserie
+        de la Senne","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-BrasseriedelaSenne_176.jpeg","country_name":"Belgium","contact":{"twitter":"","facebook":"","instagram":"","url":"http:\/\/www.brasseriedelasenne.be"},"location":{"brewery_city":"1080
+        Bruxelles","brewery_state":"Bruxelles-Capitale","lat":50.8601,"lng":4.30842},"brewery_active":1}},{"first_checkin_id":28756552,"first_created_at":"Sat,
+        27 Apr 2013 13:47:32 +0000","recent_checkin_id":28756552,"recent_created_at":"Sat,
+        27 Apr 2013 13:47:32 +0000","recent_created_at_timezone":"-4","rating_score":0,"first_had":"Sat,
+        27 Apr 2013 13:47:32 +0000","count":1,"beer":{"bid":104828,"beer_name":"Woody
+        Stout","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-WoodyStout_104828.jpeg","beer_abv":6.8,"beer_ibu":30,"beer_slug":"lost-rhino-brewing-company-woody-stout","beer_style":"American
+        Stout","beer_description":"Stout aged in Bourbon Barrels from Bowman\u2019s
+        Distillery. Roasted malts and herbal hops provide an aroma of coffee and spicy
+        chocolate which blends with caramel and vanilla notes that are products of
+        the aging in the Bourbon soaked oak barrels.","created_at":"Fri, 02 Dec 2011
+        14:35:41 +0000","auth_rating":0,"wish_list":false,"rating_score":3.712},"brewery":{"brewery_id":11259,"brewery_name":"Lost
+        Rhino Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-LostRhinoBrewingCompany_11259.jpeg","country_name":"United
+        States","contact":{"twitter":"lostrhino","facebook":"http:\/\/www.facebook.com\/LostRhino","instagram":"","url":"http:\/\/www.lostrhino.com\/"},"location":{"brewery_city":"Ashburn","brewery_state":"VA","lat":39.0175,"lng":-77.4771},"brewery_active":1}},{"first_checkin_id":25067344,"first_created_at":"Sun,
+        17 Mar 2013 18:15:58 +0000","recent_checkin_id":25067344,"recent_created_at":"Sun,
+        17 Mar 2013 18:15:58 +0000","recent_created_at_timezone":"-4","rating_score":0,"first_had":"Sun,
+        17 Mar 2013 18:15:58 +0000","count":1,"beer":{"bid":4473,"beer_name":"Guinness
+        Draught","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_4473_8122008947804818c90640a06d83.jpeg","beer_abv":4.3,"beer_ibu":0,"beer_slug":"guinness-guinness-draught","beer_style":"Irish
+        Dry Stout","beer_description":"Swirling clouds tumble as the storm begins
+        to calm, settle, breathe in the moment, then break through the smooth, light
+        head to the bittersweet reward. Unmistakeably GUINNESS\u00ae beer, stout,
+        or draught , from the first velvet sip to the last, lingering drop. And every
+        deep-dark satisfying mouthful in between.  Pure beauty. Pure GUINNESS\u00ae
+        ","created_at":"Sat, 21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":3.838},"brewery":{"brewery_id":49,"brewery_name":"Guinness","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-guinness.jpg","country_name":"Ireland","contact":{"twitter":"GuinnessIreland","facebook":"","instagram":"","url":"http:\/\/www.guinness.com"},"location":{"brewery_city":"Dublin
+        8","brewery_state":"Ireland","lat":53.3614,"lng":-6.24792},"brewery_active":1}},{"first_checkin_id":24554137,"first_created_at":"Tue,
+        12 Mar 2013 18:05:52 +0000","recent_checkin_id":24554137,"recent_created_at":"Tue,
+        12 Mar 2013 18:05:52 +0000","recent_created_at_timezone":"-4","rating_score":4,"first_had":"Tue,
+        12 Mar 2013 18:05:52 +0000","count":1,"beer":{"bid":297618,"beer_name":"B\/A\/Y\/S
+        - Rye Barrel (Ghost 004)","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_297618_464be029bfdb7ccfc42193c7ae19.jpeg","beer_abv":9.1,"beer_ibu":80,"beer_slug":"adroit-theory-b-a-y-s-rye-barrel-ghost-004","beer_style":"Russian
+        Imperial Stout","beer_description":"As part of our revamped version of our
+        original Imperial Russian Stout, we split off some to age in bourbon barrels.
+        This beer is identical to Ghost 002, but aged in Finger Lakes Distilling Co.
+        Barrel.","created_at":"Sun, 20 Jan 2013 07:00:02 +0000","auth_rating":0,"wish_list":false,"rating_score":3.723},"brewery":{"brewery_id":33686,"brewery_name":"Adroit
+        Theory","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-AdroitTheory_33686.jpeg","country_name":"United
+        States","contact":{"twitter":"AdroitTheory","facebook":"http:\/\/www.facebook.com\/AdroitTheory","instagram":"AdroitTheory","url":"http:\/\/www.adroit-theory.com"},"location":{"brewery_city":"Purcellville","brewery_state":"VA","lat":39.1439,"lng":-77.7202},"brewery_active":1}},{"first_checkin_id":23484641,"first_created_at":"Wed,
+        27 Feb 2013 19:29:40 +0000","recent_checkin_id":23484641,"recent_created_at":"Wed,
+        27 Feb 2013 19:29:40 +0000","recent_created_at_timezone":"-5","rating_score":0,"first_had":"Wed,
+        27 Feb 2013 19:29:40 +0000","count":1,"beer":{"bid":2384,"beer_name":"Rare
+        Vos","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_2384_sm_05050d51c1084a3a8b2bb457646dff.jpeg","beer_abv":6.5,"beer_ibu":21,"beer_slug":"brewery-ommegang-rare-vos","beer_style":"Belgian
+        Pale Ale","beer_description":"Amber Ale. Ale with Spices: Sweet Orange Peel,
+        Grains of Paradise, Coriander. Mellow, fruity, spicy. Everyday we race towards
+        something. This should be one of them. Rare Vos was made to reward your victories.Rare
+        Vos Amber Ale is styled after smooth, drinkable beers popular in Belgian caf\u00e9s.
+        It''s named after a caf\u00e9 just outside of Brussels, De Rare Vos, or \"The
+        Sly Fox.\" Pours a bright coper-amber hue, with a big, creamy white head.
+        Enjoy as a session beer or with mussels, fries, and other pub foods. Part
+        of the Duvel family of fine Belgian ales. ","created_at":"Sat, 21 Aug 2010
+        07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":3.773},"brewery":{"brewery_id":249,"brewery_name":"Brewery
+        Ommegang","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-BreweryOmmegang_249.jpeg","country_name":"United
+        States","contact":{"twitter":"BreweryOmmegang","facebook":"http:\/\/www.facebook.com\/ommegang","instagram":"","url":"http:\/\/www.ommegang.com\/"},"location":{"brewery_city":"Cooperstown","brewery_state":"NY","lat":42.6818,"lng":-74.9255},"brewery_active":1}},{"first_checkin_id":23484373,"first_created_at":"Wed,
+        27 Feb 2013 19:29:02 +0000","recent_checkin_id":23484373,"recent_created_at":"Wed,
+        27 Feb 2013 19:29:02 +0000","recent_created_at_timezone":"-5","rating_score":0,"first_had":"Wed,
+        27 Feb 2013 19:29:02 +0000","count":1,"beer":{"bid":31961,"beer_name":"Troegenator
+        Doublebock","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-troegTroegenator.jpg","beer_abv":8.2,"beer_ibu":0,"beer_slug":"troegs-brewing-company-troegenator-doublebock","beer_style":"Doppelbock
+        ","beer_description":"Troegenator\u00ae Double Bock\n\nFor periods of fasting
+        without solid foods, Monastic brewers relied on the double bock; a stronger,
+        richer beer to fulfill their basic nutritional needs. Known to them as \"liquid
+        bread\", a double bock has a strong malt aroma and chewy rich body. In the
+        spirited tradition of naming a double bock in the suffix \"ator,\" we give
+        you Troegenator to provide warmth and richness through the early spring months.","created_at":"Sun,
+        20 Feb 2011 01:12:48 +0000","auth_rating":0,"wish_list":false,"rating_score":3.752},"brewery":{"brewery_id":2583,"brewery_name":"Tr\u00f6egs
+        Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-troegs.jpg","country_name":"United
+        States","contact":{"twitter":"TroegsBeer","facebook":"https:\/\/www.facebook.com\/troegsbrewingco","instagram":"troegsbeer","url":"http:\/\/www.troegs.com\/"},"location":{"brewery_city":"Hershey","brewery_state":"PA","lat":40.2933,"lng":-76.6576},"brewery_active":1}},{"first_checkin_id":22454066,"first_created_at":"Fri,
+        15 Feb 2013 14:04:55 +0000","recent_checkin_id":22454066,"recent_created_at":"Fri,
+        15 Feb 2013 14:04:55 +0000","recent_created_at_timezone":"-5","rating_score":0,"first_had":"Fri,
+        15 Feb 2013 14:04:55 +0000","count":1,"beer":{"bid":4133,"beer_name":"Two
+        Hearted Ale","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-TwoHeartedAle_4133.jpeg","beer_abv":7,"beer_ibu":0,"beer_slug":"bell-s-brewery-inc-two-hearted-ale","beer_style":"American
+        IPA","beer_description":"India Pale Ale style well suited for Hemingway-esque
+        trips to the Upper Peninsula. American malts and enormous hop additions give
+        this beer a crisp finish and incredible floral hop aroma.","created_at":"Sat,
+        21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":4.028},"brewery":{"brewery_id":2507,"brewery_name":"Bell''s
+        Brewery, Inc.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-BellsBreweryInc_2507.jpeg","country_name":"United
+        States","contact":{"twitter":"BellsBrewery","facebook":"http:\/\/www.facebook.com\/BellsBreweryInc","instagram":"bellsbrewery","url":"http:\/\/www.bellsbeer.com\/"},"location":{"brewery_city":"Galesburg\/Comstock
+        & Kalamazoo","brewery_state":"MI","lat":42.2917,"lng":-85.5872},"brewery_active":1}},{"first_checkin_id":21864820,"first_created_at":"Thu,
+        07 Feb 2013 19:48:43 +0000","recent_checkin_id":21864820,"recent_created_at":"Thu,
+        07 Feb 2013 19:48:43 +0000","recent_created_at_timezone":"-5","rating_score":0,"first_had":"Thu,
+        07 Feb 2013 19:48:43 +0000","count":1,"beer":{"bid":65937,"beer_name":"Snow
+        Day","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-SnowDay_65937.jpeg","beer_abv":6.2,"beer_ibu":0,"beer_slug":"new-belgium-brewing-company-snow-day","beer_style":"Winter
+        Ale","beer_description":"Pleasantly hoppy, Snow Day carries the subtle chocolate
+        and caramel flavors of a new brewing malt known as Midnight Wheat. The Styrian
+        Golding, Centennial and Cascade hops bring the backbone of hoppy bitterness
+        to complement the roasty undertones. This beer is the deep garnet of a roasted
+        walnut and presents a creamy tan head, floating artfully atop. Snow Day is
+        bold and hoppy, drinkable and strong.\n\nIt reminds you to enjoy the unexpected.","created_at":"Thu,
+        21 Jul 2011 12:27:55 +0000","auth_rating":0,"wish_list":false,"rating_score":3.425},"brewery":{"brewery_id":905,"brewery_name":"New
+        Belgium Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-905_2ddc7.jpeg","country_name":"United
+        States","contact":{"twitter":"newbelgium","facebook":"http:\/\/www.facebook.com\/newbelgium","instagram":"newbelgium","url":"http:\/\/www.newbelgium.com"},"location":{"brewery_city":"Fort
+        Collins","brewery_state":"CO","lat":40.5934,"lng":-105.067},"brewery_active":1}},{"first_checkin_id":21817585,"first_created_at":"Wed,
+        06 Feb 2013 21:12:28 +0000","recent_checkin_id":21817585,"recent_created_at":"Wed,
+        06 Feb 2013 21:12:28 +0000","recent_created_at_timezone":"-5","rating_score":4,"first_had":"Wed,
+        06 Feb 2013 21:12:28 +0000","count":1,"beer":{"bid":219320,"beer_name":"Birra
+        Etrusca Bronze","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-BirraEtrusca_219320.jpeg","beer_abv":8.5,"beer_ibu":20,"beer_slug":"dogfish-head-craft-brewery-birra-etrusca-bronze","beer_style":"Gruit
+        \/ Ancient Herbed Ale","beer_description":"The backbone of Birra Etrusca comes
+        from two-row malted barley and an heirloom Italian wheat. Specialty ingredients
+        include hazelnut flour, pomegranates, Italian chestnut honey, Delaware wildflower
+        honey and clover honey. A handful of whole-flower hops are added, but the
+        bulk of the bitterness comes from gentian root and the sarsaparilla-like Ethiopian
+        myrrh resin.","created_at":"Thu, 23 Aug 2012 18:50:24 +0000","auth_rating":0,"wish_list":false,"rating_score":3.643},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
+        Head Craft Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
+        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","instagram":"dogfishbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099},"brewery_active":1}},{"first_checkin_id":21677681,"first_created_at":"Sun,
+        03 Feb 2013 22:15:09 +0000","recent_checkin_id":21677681,"recent_created_at":"Sun,
+        03 Feb 2013 22:15:09 +0000","recent_created_at_timezone":"-5","rating_score":4,"first_had":"Sun,
+        03 Feb 2013 22:15:09 +0000","count":1,"beer":{"bid":54180,"beer_name":"Chinook
+        IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/assets\/images\/temp\/badge-beer-default.png","beer_abv":0,"beer_ibu":0,"beer_slug":"northern-brewer-homebrew-supply-chinook-ipa","beer_style":"American
+        IPA","beer_description":"","created_at":"Mon, 30 May 2011 19:25:15 +0000","auth_rating":0,"wish_list":false,"rating_score":3.815},"brewery":{"brewery_id":2718,"brewery_name":"Northern
+        Brewer Homebrew Supply","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
+        States","contact":{"twitter":"","facebook":"","instagram":"","url":""},"location":{"brewery_city":"Minneapolis","brewery_state":"mn","lat":44.9833,"lng":-93.2667},"brewery_active":1}},{"first_checkin_id":922857,"first_created_at":"Sat,
+        21 May 2011 00:03:04 +0000","recent_checkin_id":922857,"recent_created_at":"Sat,
+        21 May 2011 00:03:04 +0000","recent_created_at_timezone":"-4","rating_score":0,"first_had":"Sat,
+        21 May 2011 00:03:04 +0000","count":1,"beer":{"bid":4487,"beer_name":"Palo
+        Santo Marron","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-dfhPaloSantoMarron.jpg","beer_abv":12,"beer_ibu":50,"beer_slug":"dogfish-head-craft-brewery-palo-santo-marron","beer_style":"Imperial
         \/ Double Brown Ale","beer_description":"Palo Santo Marron (Holy Tree Brown)\n\nAn
         unfiltered, unfettered, unprecedented brown ale aged in handmade wooden brewing
         vessels. The caramel and vanilla complexity unique to this beer comes from
         the exotic Paraguayan Palo Santo wood from which these tanks were crafted.
         Palo Santo means \\holy tree\\\" and it''s wood has been used in South American
         wine-making communities. \n\nThis beer is a 12% abv","created_at":"Sat, 21
-        Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":4.065},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
-        Head Craft Brewery","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
-        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099}}},{"recent_created_at":"Mon,
-        25 Apr 2011 10:49:45 +0000","rating_score":0,"first_had":"Mon, 25 Apr 2011
-        10:49:45 +0000","count":1,"beer":{"bid":1382,"beer_name":"Stone Ruination
-        IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-StoneRuinationIPA.jpg","beer_abv":7.7,"beer_ibu":0,"beer_style":"Imperial
+        Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":3.986},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
+        Head Craft Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
+        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","instagram":"dogfishbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099},"brewery_active":1}},{"first_checkin_id":734270,"first_created_at":"Mon,
+        25 Apr 2011 06:49:45 +0000","recent_checkin_id":734270,"recent_created_at":"Mon,
+        25 Apr 2011 06:49:45 +0000","recent_created_at_timezone":"-4","rating_score":0,"first_had":"Mon,
+        25 Apr 2011 06:49:45 +0000","count":1,"beer":{"bid":1382,"beer_name":"Stone
+        Ruination IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-StoneRuinationIPA.jpg","beer_abv":8.2,"beer_ibu":100,"beer_slug":"stone-brewing-co-stone-ruination-ipa","beer_style":"Imperial
         \/ Double IPA","beer_description":"Wonderfully delicious and intensely bitter
         flavor on a refreshing malt base. Those who seek, crave and rejoice in beers
         with big, bold, bitter character will find true nirvana.","created_at":"Sat,
-        21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":4.164},"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"recent_created_at":"Thu,
-        14 Apr 2011 09:58:28 +0000","rating_score":0,"first_had":"Wed, 30 Mar 2011
-        20:03:03 +0000","count":2,"beer":{"bid":4665,"beer_name":"Aprihop","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-dfhAprihop.jpg","beer_abv":7,"beer_ibu":0,"beer_style":"American
+        21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":4.073},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"first_checkin_id":551239,"first_created_at":"Wed,
+        30 Mar 2011 16:03:03 +0000","recent_checkin_id":651116,"recent_created_at":"Thu,
+        14 Apr 2011 05:58:28 +0000","recent_created_at_timezone":"-4","rating_score":0,"first_had":"Wed,
+        30 Mar 2011 16:03:03 +0000","count":2,"beer":{"bid":4665,"beer_name":"Aprihop","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_4665_sm.jpeg","beer_abv":7,"beer_ibu":50,"beer_slug":"dogfish-head-craft-brewery-aprihop","beer_style":"American
         IPA","beer_description":"Brewed with Pilsner and Cystal malts massively hopped
         in in the continuous fashion. The flavor is complimented by the addition of
         Apricots. After fermentation the beer is dry hopped with irresponsible amounts
         of Amarillo hops. A \"fruit beer for hop heads...\" --Ale Street News","created_at":"Sat,
-        21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":3.801},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
-        Head Craft Brewery","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
-        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099}}},{"recent_created_at":"Mon,
-        07 Mar 2011 01:45:07 +0000","rating_score":3,"first_had":"Mon, 07 Mar 2011
-        01:45:07 +0000","count":1,"beer":{"bid":3919,"beer_name":"Samuel Adams Winter
-        Lager","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-_3919_5a06caba28f60ec2bf3b9ff41126.jpeg","beer_abv":5.6,"beer_ibu":0,"beer_style":"Winter
+        21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":3.709},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
+        Head Craft Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
+        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","instagram":"dogfishbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099},"brewery_active":1}},{"first_checkin_id":413105,"first_created_at":"Sun,
+        06 Mar 2011 20:45:07 +0000","recent_checkin_id":413105,"recent_created_at":"Sun,
+        06 Mar 2011 20:45:07 +0000","recent_created_at_timezone":"-5","rating_score":3,"first_had":"Sun,
+        06 Mar 2011 20:45:07 +0000","count":1,"beer":{"bid":3919,"beer_name":"Samuel
+        Adams Winter Lager","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_3919_5a06caba28f60ec2bf3b9ff41126.jpeg","beer_abv":5.6,"beer_ibu":0,"beer_slug":"boston-beer-company-samuel-adams-samuel-adams-winter-lager","beer_style":"Winter
         Lager","beer_description":"Bold and rich, with a touch of holiday spice\nThe
         first thing one notices in a Samuel Adams\u00ae Winter Lager is its color:
         the deep brown of winter. Then comes the magical aroma which promises something
         special on the tongue. The warm aroma of cinnamon and ginger which blends
         with the toasty sweetness of the malted barley and hint of citrus.","created_at":"Sat,
-        21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":3.343},"brewery":{"brewery_id":157,"brewery_name":"Boston
-        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
-        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}}}]}}}'
+        21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false,"rating_score":3.381},"brewery":{"brewery_id":157,"brewery_name":"Boston
+        Beer Company (Samuel Adams)","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
+        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","instagram":"samueladamsbeer","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034},"brewery_active":1}}]}}}'
     http_version: '1.1'
-  recorded_at: Tue, 04 Dec 2012 02:51:21 GMT
+  recorded_at: Fri, 19 Sep 2014 03:53:31 GMT
 recorded_with: VCR 2.3.0

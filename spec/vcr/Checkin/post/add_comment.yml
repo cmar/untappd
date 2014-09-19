@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.untappd.com/v4/checkin/addcomment/17831896?access_token=<UNTAPPD_ACCESS_TOKEN>
+    uri: https://api.untappd.com/v4/checkin/addcomment/17831896?access_token=<UNTAPPD_ACCESS_TOKEN>
     body:
       encoding: US-ASCII
       string: comment=test%20comment
@@ -13,35 +13,41 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Fri, 14 Dec 2012 01:13:01 GMT
+      - Fri, 19 Sep 2014 03:53:17 GMT
       server:
-      - Apache
-      set-cookie:
-      - BALANCEID=balancer.as1; path=/; domain=.untappd.com
+      - Apache/2.2.22 (Ubuntu)
       x-powered-by:
-      - PHP/5.3.3-1ubuntu9.3
+      - PHP/5.4.6-1ubuntu1.4
       x-ratelimit-limit:
       - '100'
       x-ratelimit-remaining:
       - '95'
       x-auth-type:
       - user
+      x-api-version:
+      - '4'
+      x-http-protocol:
+      - '443'
+      vary:
+      - Accept-Encoding
       cache-control:
       - no-cache
       access-control-allow-origin:
       - ! '*'
+      access-control-allow-headers:
+      - X-Untappd-App
       content-length:
-      - '1873'
+      - '2200'
       connection:
       - close
       content-type:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"meta":{"code":200,"response_time":{"time":0.051,"measure":"seconds"}},"notifications":{"type":"notifications","unread_count":{"comments":0,"toasts":0,"friends":0,"messages":0,"news":0}},"response":{"result":"success","comments":{"count":3,"items":[{"user":{"uid":25539,"user_name":"darbyfrey","first_name":"darby","last_name":"frey","is_supporter":0,"user_avatar":"https:\/\/gravatar.com\/avatar\/86c338232f03869122eb323bf3aafbf4?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","user_link":"http:\/\/untappd.com\/user\/darbyfrey","account_type":"user","brewery_details":[]},"comment_id":"1326083","comment_owner":true,"comment_editor":true,"comment":"test
-        comment","created_at":"Fri, 14 Dec 2012 01:09:45 +0000","comment_source":"mobile"},{"user":{"uid":25539,"user_name":"darbyfrey","first_name":"darby","last_name":"frey","is_supporter":0,"user_avatar":"https:\/\/gravatar.com\/avatar\/86c338232f03869122eb323bf3aafbf4?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","user_link":"http:\/\/untappd.com\/user\/darbyfrey","account_type":"user","brewery_details":[]},"comment_id":"1326097","comment_owner":true,"comment_editor":true,"comment":"test
-        comment","created_at":"Fri, 14 Dec 2012 01:10:44 +0000","comment_source":"mobile"},{"user":{"uid":25539,"user_name":"darbyfrey","first_name":"darby","last_name":"frey","is_supporter":0,"user_avatar":"https:\/\/gravatar.com\/avatar\/86c338232f03869122eb323bf3aafbf4?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","user_link":"http:\/\/untappd.com\/user\/darbyfrey","account_type":"user","brewery_details":[]},"comment_id":"1326119","comment_owner":true,"comment_editor":true,"comment":"test
-        comment","created_at":"Fri, 14 Dec 2012 01:13:01 +0000","comment_source":"mobile"}]}}}'
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.116,"measure":"seconds"},"init_time":{"time":0.018,"measure":"seconds"}},"notifications":{"type":"notifications","unread_count":{"comments":0,"toasts":0,"friends":0,"messages":0,"news":0}},"response":{"result":"success","comments":{"total_count":3,"count":3,"items":[{"user":{"uid":25539,"user_name":"darbyfrey","first_name":"darby","last_name":"frey","bio":"","location":"chicago","relationship":"self","is_supporter":0,"user_avatar":"https:\/\/gravatar.com\/avatar\/86c338232f03869122eb323bf3aafbf4?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","user_link":"https:\/\/untappd.com\/user\/darbyfrey","account_type":"user","brewery_details":[]},"checkin_id":17831896,"comment_id":1326097,"comment_owner":true,"comment_editor":true,"comment":"test
+        comment","created_at":"Fri, 14 Dec 2012 01:10:44 +0000","comment_source":"mobile"},{"user":{"uid":25539,"user_name":"darbyfrey","first_name":"darby","last_name":"frey","bio":"","location":"chicago","relationship":"self","is_supporter":0,"user_avatar":"https:\/\/gravatar.com\/avatar\/86c338232f03869122eb323bf3aafbf4?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","user_link":"https:\/\/untappd.com\/user\/darbyfrey","account_type":"user","brewery_details":[]},"checkin_id":17831896,"comment_id":1326119,"comment_owner":true,"comment_editor":true,"comment":"test
+        comment","created_at":"Fri, 14 Dec 2012 01:13:01 +0000","comment_source":"mobile"},{"user":{"uid":25539,"user_name":"darbyfrey","first_name":"darby","last_name":"frey","bio":"","location":"chicago","relationship":"self","is_supporter":0,"user_avatar":"https:\/\/gravatar.com\/avatar\/86c338232f03869122eb323bf3aafbf4?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","user_link":"https:\/\/untappd.com\/user\/darbyfrey","account_type":"user","brewery_details":[]},"checkin_id":17831896,"comment_id":9635683,"comment_owner":true,"comment_editor":true,"comment":"test
+        comment","created_at":"Fri, 19 Sep 2014 03:53:17 +0000","comment_source":"API"}]}}}'
     http_version: '1.1'
-  recorded_at: Fri, 14 Dec 2012 01:12:42 GMT
+  recorded_at: Fri, 19 Sep 2014 03:53:23 GMT
 recorded_with: VCR 2.3.0

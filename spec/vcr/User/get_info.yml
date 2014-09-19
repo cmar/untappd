@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.untappd.com/v4/user/info/cmar?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
+    uri: https://api.untappd.com/v4/user/info/cmar?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
     body:
       encoding: US-ASCII
       string: ''
@@ -13,21 +13,27 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Tue, 04 Dec 2012 02:51:29 GMT
+      - Fri, 19 Sep 2014 03:53:14 GMT
       server:
-      - Apache
-      set-cookie:
-      - BALANCEID=balancer.as2; path=/; domain=.untappd.com
+      - Apache/2.2.22 (Ubuntu)
       x-powered-by:
-      - PHP/5.3.3-1ubuntu9.3
+      - PHP/5.4.6-1ubuntu1.4
       x-ratelimit-limit:
       - '100'
       x-ratelimit-remaining:
-      - '14'
+      - '66'
       x-auth-type:
       - key
+      x-api-version:
+      - '4'
+      x-http-protocol:
+      - '443'
+      vary:
+      - Accept-Encoding
       access-control-allow-origin:
       - ! '*'
+      access-control-allow-headers:
+      - X-Untappd-App
       connection:
       - close
       transfer-encoding:
@@ -36,74 +42,274 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"meta":{"code":200,"response_time":{"time":0.099,"measure":"seconds"}},"notifications":[],"response":{"user":{"uid":10824,"id":10824,"user_name":"cmar","first_name":"cmar","last_name":"","user_avatar":"http:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"location":"Leesburg,
-        VA","url":"","bio":"","is_supporter":0,"relationship":null,"untappd_url":"http:\/\/untappd.com\/user\/cmar","account_type":"user","stats":{"total_badges":1,"total_friends":1,"total_checkins":5,"total_beers":4,"total_created_beers":0},"recent_brews":{"count":4,"items":[{"beer":{"bid":4487,"beer_name":"Palo
-        Santo Marron","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-dfhPaloSantoMarron.jpg","beer_abv":12,"beer_description":"Palo
-        Santo Marron (Holy Tree Brown)\n\nAn unfiltered, unfettered, unprecedented
-        brown ale aged in handmade wooden brewing vessels. The caramel and vanilla
-        complexity unique to this beer comes from the exotic Paraguayan Palo Santo
-        wood from which these tanks were crafted. Palo Santo means \\holy tree\\\"
-        and it''s wood has been used in South American wine-making communities. \n\nThis
-        beer is a 12% abv","beer_style":"Imperial \/ Double Brown Ale","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
-        Head Craft Brewery","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
-        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099}}},{"beer":{"bid":1382,"beer_name":"Stone
-        Ruination IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-StoneRuinationIPA.jpg","beer_abv":7.7,"beer_description":"Wonderfully
-        delicious and intensely bitter flavor on a refreshing malt base. Those who
-        seek, crave and rejoice in beers with big, bold, bitter character will find
-        true nirvana.","beer_style":"Imperial \/ Double IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":4665,"beer_name":"Aprihop","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-dfhAprihop.jpg","beer_abv":7,"beer_description":"Brewed
-        with Pilsner and Cystal malts massively hopped in in the continuous fashion.
-        The flavor is complimented by the addition of Apricots. After fermentation
-        the beer is dry hopped with irresponsible amounts of Amarillo hops. A \"fruit
-        beer for hop heads...\" --Ale Street News","beer_style":"American IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
-        Head Craft Brewery","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
-        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099}}},{"beer":{"bid":3919,"beer_name":"Samuel
-        Adams Winter Lager","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-_3919_5a06caba28f60ec2bf3b9ff41126.jpeg","beer_abv":5.6,"beer_description":"Bold
-        and rich, with a touch of holiday spice\nThe first thing one notices in a
-        Samuel Adams\u00ae Winter Lager is its color: the deep brown of winter. Then
-        comes the magical aroma which promises something special on the tongue. The
-        warm aroma of cinnamon and ginger which blends with the toasty sweetness of
-        the malted barley and hint of citrus.","beer_style":"Winter Lager","auth_rating":3,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
-        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
-        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}}}]},"checkins":{"count":5,"items":[{"checkin_id":922857,"created_at":"Sat,
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.49,"measure":"seconds"},"init_time":{"time":0.013,"measure":"seconds"}},"notifications":[],"response":{"user":{"uid":10824,"id":10824,"user_name":"cmar","first_name":"cmar","last_name":"","user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","user_avatar_hd":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=125&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","user_cover_photo":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/v3\/images\/cover_default.jpg","user_cover_photo_offset":0,"is_private":0,"location":"Leesburg,
+        VA","url":"","bio":"","is_supporter":0,"relationship":null,"untappd_url":"http:\/\/untappd.com\/user\/cmar","account_type":"user","stats":{"total_badges":10,"total_friends":2,"total_checkins":19,"total_beers":18,"total_created_beers":1,"total_followings":1,"total_photos":3},"recent_brews":{"count":5,"items":[{"beer":{"bid":5724,"beer_name":"Jai
+        Alai IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-5724_64765_sm.jpeg","beer_abv":7.5,"beer_description":"Jai
+        Alai IPA is a monster interpretation of an American IPA. In fact, it is so
+        big that it equals the alcohol of some double IPAs on the market. Our IPA
+        uses 6 different hop varietals, with Simcoe hops only being used for dry hopping.
+        The rest of the hop additions are blended at different IBU''s (International
+        Bittering Units) in groups of three hops per addition in order to create more
+        hop complexity. At CCB, we love hops but also feel that balance is important
+        for IPAs. So Jai Alai features a sturday caramel malt component which helps
+        to create balance, staving off hop astringency. Ultimately, Jai Alai is a
+        very strong interpretation of a single American IPA. We hope that it makes
+        Tampa Bay natives happy because this is head brewer Wayne Wamble''s favorite
+        Cigar City beer and he''d love to share one with you!","beer_style":"American
+        IPA","auth_rating":4,"wish_list":false},"brewery":{"brewery_id":379,"brewery_name":"Cigar
+        City Brewing","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-CigarCityBrewing_379.jpeg","country_name":"United
+        States","contact":{"twitter":"CigarCityBeer","facebook":"http:\/\/www.facebook.com\/cigarcitybeer","instagram":"cigarcitybrewing","url":"http:\/\/cigarcitybrewing.com\/"},"location":{"brewery_city":"Tampa","brewery_state":"FL","lat":27.9593,"lng":-82.5092},"brewery_active":1}},{"beer":{"bid":1148,"beer_name":"Oaked
+        Big Hoppy Monster (2012)","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-BigHoppyMonster2012_1148.jpeg","beer_abv":9.1,"beer_description":"Terrapin''s
+        fall Monster Beer is back with an upgrade for 2012... we aged the entire batch
+        on oak! Oaked Big Hoppy Monster Imperial Red Ale pours a luscious garnet color.
+        Expect this brew to lead with big American style hop aroma, which is quickly
+        complemented by a monstrous malt backbone rounded with rich oaky notes and
+        hints of vanilla. A bit of alcohol warmth and a multitude of malty goodness,
+        with just a snarl of hop bitterness, awaits at the finish. This enormous beer
+        will go down smooth\u2026 but watch out; this Monster bites!","beer_style":"Imperial
+        \/ Double Red Ale","auth_rating":3.5,"wish_list":false},"brewery":{"brewery_id":1243,"brewery_name":"Terrapin
+        Beer Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-TerrapinBeerCompany_1243.jpeg","country_name":"United
+        States","contact":{"twitter":"TerrapinBeerCo","facebook":"http:\/\/www.facebook.com\/terrapinbeerco","instagram":"","url":"http:\/\/terrapinbeer.com\/"},"location":{"brewery_city":"Athens","brewery_state":"GA","lat":33.9804,"lng":-83.3957},"brewery_active":1}},{"beer":{"bid":373608,"beer_name":"Hop
+        It Like It''s Hot","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/assets\/images\/temp\/badge-beer-default.png","beer_abv":0,"beer_description":"Amber
+        IPA","beer_style":"American Amber \/ Red Ale","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
+        Head Craft Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
+        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","instagram":"dogfishbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099},"brewery_active":1}},{"beer":{"bid":5011,"beer_name":"Hop
+        Head Red (-2013 Retired)","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_5011_sm_9666df92b1db93b09c4fc01ef26f6d.jpeg","beer_abv":7,"beer_description":"This
+        is the 2013 and prior version and has been retired.\nA full-bodied dazzler
+        that will stun your taste buds. Resinous hop characteristics emerge from an
+        enormous hopping with Columbus, Nugget and Amarillo overtaking the rich caramel
+        malt base. To add luscious?hop flavors and enticingly floral hop aromas, we
+        dry-hop the brew with bucket loads of Amarillo hops. Welcome to the world
+        of Red IPA. This ideal combo of India Pale and Red Ale makes our fine brew
+        stand out from the crowd. Experience love at first sip.\n","beer_style":"American
+        IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":609,"brewery_name":"Green
+        Flash Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-GreenFlashBrewingCo_609.jpeg","country_name":"United
+        States","contact":{"twitter":"GreenFlashBeer","facebook":"http:\/\/www.facebook.com\/GreenFlashBrew","instagram":"","url":"http:\/\/www.greenflashbrew.com"},"location":{"brewery_city":"San
+        Diego","brewery_state":"CA","lat":32.9073,"lng":-117.178},"brewery_active":1}},{"beer":{"bid":315120,"beer_name":"GrayJacket","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_315120_sm_d56e7349c8c4dee934ca8e3b47dbab.jpeg","beer_abv":5.4,"beer_description":"Collaboration
+        with BlueJacket.","beer_style":"Saison \/ Farmhouse Ale","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":176,"brewery_name":"Brasserie
+        de la Senne","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-BrasseriedelaSenne_176.jpeg","country_name":"Belgium","contact":{"twitter":"","facebook":"","instagram":"","url":"http:\/\/www.brasseriedelasenne.be"},"location":{"brewery_city":"1080
+        Bruxelles","brewery_state":"Bruxelles-Capitale","lat":50.8601,"lng":4.30842},"brewery_active":1}}]},"checkins":{"count":15,"items":[{"checkin_id":55010886,"created_at":"Sat,
+        23 Nov 2013 01:29:55 +0000","checkin_comment":"","rating_score":4,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
+        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0,"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785}},"beer":{"bid":5724,"beer_name":"Jai
+        Alai IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-5724_64765_sm.jpeg","beer_style":"American
+        IPA","beer_abv":7.5,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":379,"brewery_name":"Cigar
+        City Brewing","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-CigarCityBrewing_379.jpeg","country_name":"United
+        States","contact":{"twitter":"CigarCityBeer","facebook":"http:\/\/www.facebook.com\/cigarcitybeer","instagram":"cigarcitybrewing","url":"http:\/\/cigarcitybrewing.com\/"},"location":{"brewery_city":"Tampa","brewery_state":"FL","lat":27.9593,"lng":-82.5092},"brewery_active":1},"venue":{"venue_id":705331,"venue_name":"Alamo
+        Drafthouse One Loudoun","primary_category":"Arts & Entertainment","parent_category_id":"4d4b7104d754a06370d81259","categories":{"count":2,"items":[{"category_name":"Movie
+        Theater","category_id":"4bf58dd8d48988d17f941735","is_primary":true},{"category_name":"Multiplex","category_id":"4bf58dd8d48988d180941735","is_primary":false}]},"location":{"venue_address":"20575
+        E Hampton Plz","venue_city":"Ashburn","venue_state":"VA","venue_country":"United
+        States","lat":39.0459,"lng":-77.4537},"contact":{"twitter":"@alamodc","venue_url":"http:\/\/drafthouse.com\/dc"},"public_venue":true,"foursquare":{"foursquare_id":"513514fc39501a298d00de1c","foursquare_url":"http:\/\/4sq.com\/179XWIs"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/arts_entertainment\/movietheater_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/arts_entertainment\/movietheater_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/arts_entertainment\/movietheater_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":1,"items":[{"photo_id":7853730,"photo":{"photo_img_sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_11_23\/a0f03c12a1dbdc14f7a713553c82d1e7_100x100.jpg","photo_img_md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_11_23\/a0f03c12a1dbdc14f7a713553c82d1e7_320x320.jpg","photo_img_lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_11_23\/a0f03c12a1dbdc14f7a713553c82d1e7_640x640.jpg","photo_img_og":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_11_23\/a0f03c12a1dbdc14f7a713553c82d1e7_raw.jpg"}}]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":0,"items":[]}},{"checkin_id":49904197,"created_at":"Fri,
+        18 Oct 2013 21:18:47 +0000","checkin_comment":"","rating_score":3.5,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
+        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0,"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785}},"beer":{"bid":1148,"beer_name":"Oaked
+        Big Hoppy Monster (2012)","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-BigHoppyMonster2012_1148.jpeg","beer_style":"Imperial
+        \/ Double Red Ale","beer_abv":9.1,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":1243,"brewery_name":"Terrapin
+        Beer Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-TerrapinBeerCompany_1243.jpeg","country_name":"United
+        States","contact":{"twitter":"TerrapinBeerCo","facebook":"http:\/\/www.facebook.com\/terrapinbeerco","instagram":"","url":"http:\/\/terrapinbeer.com\/"},"location":{"brewery_city":"Athens","brewery_state":"GA","lat":33.9804,"lng":-83.3957},"brewery_active":1},"venue":{"venue_id":14012,"venue_name":"Fireworks
+        Pizza","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":2,"items":[{"category_name":"Pizza
+        Place","category_id":"4bf58dd8d48988d1ca941735","is_primary":true},{"category_name":"American
+        Restaurant","category_id":"4bf58dd8d48988d14e941735","is_primary":false}]},"location":{"venue_address":"201
+        Harrison St SE","venue_city":"Leesburg","venue_state":"VA","venue_country":"United
+        States","lat":39.1129,"lng":-77.5627},"contact":{"twitter":"","venue_url":"http:\/\/fireworkspizza.com"},"public_venue":true,"foursquare":{"foursquare_id":"4b03080af964a5201c4c22e3","foursquare_url":"http:\/\/4sq.com\/6QQHxK"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/pizza_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/pizza_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/pizza_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":0,"items":[]}},{"checkin_id":31887636,"created_at":"Mon,
+        27 May 2013 16:02:28 +0000","checkin_comment":"","rating_score":0,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
+        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0,"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785}},"beer":{"bid":373608,"beer_name":"Hop
+        It Like It''s Hot","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/assets\/images\/temp\/badge-beer-default.png","beer_style":"American
+        Amber \/ Red Ale","beer_abv":0,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
+        Head Craft Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
+        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","instagram":"dogfishbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099},"brewery_active":1},"venue":{"venue_id":1803,"venue_name":"Dogfish
+        Head Brewings & Eats","primary_category":"Nightlife Spot","parent_category_id":"4d4b7105d754a06376d81259","categories":{"count":3,"items":[{"category_name":"Pub","category_id":"4bf58dd8d48988d11b941735","is_primary":true},{"category_name":"Brewery","category_id":"50327c8591d4c4b30a586d5d","is_primary":false},{"category_name":"American
+        Restaurant","category_id":"4bf58dd8d48988d14e941735","is_primary":false}]},"location":{"venue_address":"320
+        Rehoboth Ave.","venue_city":"Rehoboth Beach","venue_state":"DE","venue_country":"United
+        States","lat":38.7153,"lng":-75.0871},"contact":{"twitter":"@dogfishbeer","venue_url":"http:\/\/www.dogfish.com"},"public_venue":true,"foursquare":{"foursquare_id":"4aee22eef964a5206dd221e3","foursquare_url":"http:\/\/4sq.com\/bIRXKq"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/nightlife\/pub_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/nightlife\/pub_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/nightlife\/pub_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":0,"items":[]}},{"checkin_id":31022120,"created_at":"Sun,
+        19 May 2013 18:47:21 +0000","checkin_comment":"","rating_score":0,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
+        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0,"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785}},"beer":{"bid":5011,"beer_name":"Hop
+        Head Red (-2013 Retired)","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_5011_sm_9666df92b1db93b09c4fc01ef26f6d.jpeg","beer_style":"American
+        IPA","beer_abv":7,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":609,"brewery_name":"Green
+        Flash Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-GreenFlashBrewingCo_609.jpeg","country_name":"United
+        States","contact":{"twitter":"GreenFlashBeer","facebook":"http:\/\/www.facebook.com\/GreenFlashBrew","instagram":"","url":"http:\/\/www.greenflashbrew.com"},"location":{"brewery_city":"San
+        Diego","brewery_state":"CA","lat":32.9073,"lng":-117.178},"brewery_active":1},"venue":{"venue_id":1545,"venue_name":"ChurchKey","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":2,"items":[{"category_name":"Gastropub","category_id":"4bf58dd8d48988d155941735","is_primary":true},{"category_name":"Bar","category_id":"4bf58dd8d48988d116941735","is_primary":false}]},"location":{"venue_address":"1337
+        14th St NW","venue_city":"Washington","venue_state":"D.C.","venue_country":"United
+        States","lat":38.9085,"lng":-77.0316},"contact":{"twitter":"@churchkeydc","venue_url":"http:\/\/www.churchkeydc.com"},"public_venue":true,"foursquare":{"foursquare_id":"4adf1a1ff964a520957721e3","foursquare_url":"http:\/\/4sq.com\/1DxuDE"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/gastropub_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/gastropub_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/gastropub_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":2,"items":[{"badge_id":246,"user_badge_id":4640101,"badge_name":"American
+        Craft Beer Week (2013)","badge_description":"With new breweries popping up
+        every day, there''s no doubt the craft beer movement is strong in the US.
+        Celebrate American Craft Beer Week and show your support!","created_at":"Sun,
+        19 May 2013 18:47:22 +0000","badge_image":{"sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_acbw2013_sm.jpg","md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_acbw2013_md.jpg","lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_acbw2013_lg.jpg"}},{"badge_id":60,"user_badge_id":4640098,"badge_name":"I
+        Believe in IPA!","badge_description":"We believe in IPA and you should too.
+        You certainly have a taste for the hops! That''s 5 different IPAs. Try 5 more
+        for Level 2","created_at":"Sun, 19 May 2013 18:47:21 +0000","badge_image":{"sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_hoptopia_sm.jpg","md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_hoptopia_md.jpg","lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_hoptopia_lg.jpg"}}]}},{"checkin_id":31022013,"created_at":"Sun,
+        19 May 2013 18:46:29 +0000","checkin_comment":"","rating_score":0,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
+        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0,"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785}},"beer":{"bid":315120,"beer_name":"GrayJacket","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_315120_sm_d56e7349c8c4dee934ca8e3b47dbab.jpeg","beer_style":"Saison
+        \/ Farmhouse Ale","beer_abv":5.4,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":176,"brewery_name":"Brasserie
+        de la Senne","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-BrasseriedelaSenne_176.jpeg","country_name":"Belgium","contact":{"twitter":"","facebook":"","instagram":"","url":"http:\/\/www.brasseriedelasenne.be"},"location":{"brewery_city":"1080
+        Bruxelles","brewery_state":"Bruxelles-Capitale","lat":50.8601,"lng":4.30842},"brewery_active":1},"venue":{"venue_id":1545,"venue_name":"ChurchKey","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":2,"items":[{"category_name":"Gastropub","category_id":"4bf58dd8d48988d155941735","is_primary":true},{"category_name":"Bar","category_id":"4bf58dd8d48988d116941735","is_primary":false}]},"location":{"venue_address":"1337
+        14th St NW","venue_city":"Washington","venue_state":"D.C.","venue_country":"United
+        States","lat":38.9085,"lng":-77.0316},"contact":{"twitter":"@churchkeydc","venue_url":"http:\/\/www.churchkeydc.com"},"public_venue":true,"foursquare":{"foursquare_id":"4adf1a1ff964a520957721e3","foursquare_url":"http:\/\/4sq.com\/1DxuDE"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/gastropub_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/gastropub_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/gastropub_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":0,"items":[]}},{"checkin_id":28756552,"created_at":"Sat,
+        27 Apr 2013 17:47:32 +0000","checkin_comment":"","rating_score":0,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
+        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0,"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785}},"beer":{"bid":104828,"beer_name":"Woody
+        Stout","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-WoodyStout_104828.jpeg","beer_style":"American
+        Stout","beer_abv":6.8,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":11259,"brewery_name":"Lost
+        Rhino Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-LostRhinoBrewingCompany_11259.jpeg","country_name":"United
+        States","contact":{"twitter":"lostrhino","facebook":"http:\/\/www.facebook.com\/LostRhino","instagram":"","url":"http:\/\/www.lostrhino.com\/"},"location":{"brewery_city":"Ashburn","brewery_state":"VA","lat":39.0175,"lng":-77.4771},"brewery_active":1},"venue":{"venue_id":26723,"venue_name":"Lost
+        Rhino Brewing Company","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":2,"items":[{"category_name":"Brewery","category_id":"50327c8591d4c4b30a586d5d","is_primary":true},{"category_name":"Building","category_id":"4bf58dd8d48988d130941735","is_primary":false}]},"location":{"venue_address":"21730
+        Red Rum Dr","venue_city":"Ashburn","venue_state":"VA","venue_country":"United
+        States","lat":39.0161,"lng":-77.476},"contact":{"twitter":"@lostrhino","venue_url":"http:\/\/www.lostrhino.com"},"public_venue":true,"foursquare":{"foursquare_id":"4d49d64ab73fb1f7dcf7ab32","foursquare_url":"http:\/\/4sq.com\/gAOVHc"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/brewery_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/brewery_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/brewery_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":1,"items":[{"badge_id":221,"user_badge_id":4263979,"badge_name":"Beer
+        Gathering","badge_description":"Beer is often better with friends. Besides,
+        drinking socially is what we''re all about! You''ve checked in with at least
+        10 other people within 5 hours.","created_at":"Sat, 27 Apr 2013 17:47:32 +0000","badge_image":{"sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_beerGathering_sm.jpg","md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_beerGathering_md.jpg","lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_beerGathering_lg.jpg"}}]}},{"checkin_id":25067344,"created_at":"Sun,
+        17 Mar 2013 22:15:58 +0000","checkin_comment":"","rating_score":0,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
+        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0,"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785}},"beer":{"bid":4473,"beer_name":"Guinness
+        Draught","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_4473_8122008947804818c90640a06d83.jpeg","beer_style":"Irish
+        Dry Stout","beer_abv":4.3,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":49,"brewery_name":"Guinness","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-guinness.jpg","country_name":"Ireland","contact":{"twitter":"GuinnessIreland","facebook":"","instagram":"","url":"http:\/\/www.guinness.com"},"location":{"brewery_city":"Dublin
+        8","brewery_state":"Ireland","lat":53.3614,"lng":-6.24792},"brewery_active":1},"venue":[],"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":1,"items":[{"badge_id":230,"user_badge_id":3700174,"badge_name":"St.
+        Patrick''s Day (2013)","badge_description":"Happy St. Patrick''s day! Here''s
+        hoping you''re enjoying some fine beers, especially the green kind. Cheers
+        from all of us at Untappd!","created_at":"Sun, 17 Mar 2013 22:15:58 +0000","badge_image":{"sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_StPatirkcs2013_sm.jpg","md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_StPatirkcs2013_md.jpg","lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_StPatirkcs2013_lg.jpg"}}]}},{"checkin_id":24554137,"created_at":"Tue,
+        12 Mar 2013 22:05:52 +0000","checkin_comment":"","rating_score":4,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
+        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0,"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785}},"beer":{"bid":297618,"beer_name":"B\/A\/Y\/S
+        - Rye Barrel (Ghost 004)","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_297618_464be029bfdb7ccfc42193c7ae19.jpeg","beer_style":"Russian
+        Imperial Stout","beer_abv":9.1,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":33686,"brewery_name":"Adroit
+        Theory","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-AdroitTheory_33686.jpeg","country_name":"United
+        States","contact":{"twitter":"AdroitTheory","facebook":"http:\/\/www.facebook.com\/AdroitTheory","instagram":"AdroitTheory","url":"http:\/\/www.adroit-theory.com"},"location":{"brewery_city":"Purcellville","brewery_state":"VA","lat":39.1439,"lng":-77.7202},"brewery_active":1},"venue":[],"comments":{"total_count":1,"count":1,"items":[{"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","bio":"","location":"Leesburg,
+        VA","relationship":"none","is_supporter":0,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","user_link":"https:\/\/untappd.com\/user\/cmar","account_type":"user","brewery_details":[]},"checkin_id":24554137,"comment_id":1967914,"comment_owner":false,"comment_editor":false,"comment":"Seriously
+        rich and chocolately","created_at":"Tue, 12 Mar 2013 22:13:49 +0000","comment_source":"mobile"}]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":1,"items":[{"photo_id":2552888,"photo":{"photo_img_sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_03_12\/b114c86e7c59696787314d7967913efe_100x100.jpg","photo_img_md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_03_12\/b114c86e7c59696787314d7967913efe_320x320.jpg","photo_img_lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_03_12\/b114c86e7c59696787314d7967913efe_640x640.jpg","photo_img_og":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_03_12\/b114c86e7c59696787314d7967913efe_raw.jpg"}}]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":1,"items":[{"badge_id":78,"user_badge_id":3601760,"badge_name":"Playing
+        the Field","badge_description":"Does the word picking favorites mean anything
+        to you? Obviously not. That''s 10 different beers in a row.","created_at":"Tue,
+        12 Mar 2013 22:05:52 +0000","badge_image":{"sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_playingTheField_sm.jpg","md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_playingTheField_md.jpg","lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_playingTheField_lg.jpg"}}]}},{"checkin_id":23484641,"created_at":"Thu,
+        28 Feb 2013 00:29:40 +0000","checkin_comment":"","rating_score":0,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
+        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0,"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785}},"beer":{"bid":2384,"beer_name":"Rare
+        Vos","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_2384_sm_05050d51c1084a3a8b2bb457646dff.jpeg","beer_style":"Belgian
+        Pale Ale","beer_abv":6.5,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":249,"brewery_name":"Brewery
+        Ommegang","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-BreweryOmmegang_249.jpeg","country_name":"United
+        States","contact":{"twitter":"BreweryOmmegang","facebook":"http:\/\/www.facebook.com\/ommegang","instagram":"","url":"http:\/\/www.ommegang.com\/"},"location":{"brewery_city":"Cooperstown","brewery_state":"NY","lat":42.6818,"lng":-74.9255},"brewery_active":1},"venue":{"venue_id":494814,"venue_name":"Matchbox
+        Vintage Pizza Bistro","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":2,"items":[{"category_name":"Pizza
+        Place","category_id":"4bf58dd8d48988d1ca941735","is_primary":true},{"category_name":"American
+        Restaurant","category_id":"4bf58dd8d48988d14e941735","is_primary":false}]},"location":{"venue_address":"1901
+        14th St NW","venue_city":"Washington","venue_state":"D.C.","venue_country":"United
+        States","lat":38.9156,"lng":-77.0316},"contact":{"twitter":"@matchboxdc","venue_url":"http:\/\/matchbox14thstreet.com"},"public_venue":true,"foursquare":{"foursquare_id":"509ad1bfe4b0d26d34f71d56","foursquare_url":"http:\/\/4sq.com\/RiBYLS"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/pizza_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/pizza_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/pizza_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":0,"items":[]}},{"checkin_id":23484373,"created_at":"Thu,
+        28 Feb 2013 00:29:02 +0000","checkin_comment":"","rating_score":0,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
+        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0,"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785}},"beer":{"bid":31961,"beer_name":"Troegenator
+        Doublebock","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-troegTroegenator.jpg","beer_style":"Doppelbock
+        ","beer_abv":8.2,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":2583,"brewery_name":"Tr\u00f6egs
+        Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-troegs.jpg","country_name":"United
+        States","contact":{"twitter":"TroegsBeer","facebook":"https:\/\/www.facebook.com\/troegsbrewingco","instagram":"troegsbeer","url":"http:\/\/www.troegs.com\/"},"location":{"brewery_city":"Hershey","brewery_state":"PA","lat":40.2933,"lng":-76.6576},"brewery_active":1},"venue":{"venue_id":494814,"venue_name":"Matchbox
+        Vintage Pizza Bistro","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":2,"items":[{"category_name":"Pizza
+        Place","category_id":"4bf58dd8d48988d1ca941735","is_primary":true},{"category_name":"American
+        Restaurant","category_id":"4bf58dd8d48988d14e941735","is_primary":false}]},"location":{"venue_address":"1901
+        14th St NW","venue_city":"Washington","venue_state":"D.C.","venue_country":"United
+        States","lat":38.9156,"lng":-77.0316},"contact":{"twitter":"@matchboxdc","venue_url":"http:\/\/matchbox14thstreet.com"},"public_venue":true,"foursquare":{"foursquare_id":"509ad1bfe4b0d26d34f71d56","foursquare_url":"http:\/\/4sq.com\/RiBYLS"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/pizza_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/pizza_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/pizza_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":0,"items":[]}},{"checkin_id":22454066,"created_at":"Fri,
+        15 Feb 2013 19:04:55 +0000","checkin_comment":"","rating_score":0,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
+        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0,"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785}},"beer":{"bid":4133,"beer_name":"Two
+        Hearted Ale","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-TwoHeartedAle_4133.jpeg","beer_style":"American
+        IPA","beer_abv":7,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":2507,"brewery_name":"Bell''s
+        Brewery, Inc.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-BellsBreweryInc_2507.jpeg","country_name":"United
+        States","contact":{"twitter":"BellsBrewery","facebook":"http:\/\/www.facebook.com\/BellsBreweryInc","instagram":"bellsbrewery","url":"http:\/\/www.bellsbeer.com\/"},"location":{"brewery_city":"Galesburg\/Comstock
+        & Kalamazoo","brewery_state":"MI","lat":42.2917,"lng":-85.5872},"brewery_active":1},"venue":{"venue_id":26978,"venue_name":"American
+        Tap Room","primary_category":"Nightlife Spot","parent_category_id":"4d4b7105d754a06376d81259","categories":{"count":3,"items":[{"category_name":"Sports
+        Bar","category_id":"4bf58dd8d48988d11d941735","is_primary":true},{"category_name":"Bar","category_id":"4bf58dd8d48988d116941735","is_primary":false},{"category_name":"American
+        Restaurant","category_id":"4bf58dd8d48988d14e941735","is_primary":false}]},"location":{"venue_address":"1811
+        Library St","venue_city":"Reston","venue_state":"VA","venue_country":"United
+        States","lat":38.9584,"lng":-77.3586},"contact":{"twitter":"","venue_url":"http:\/\/www.americantaproom.com"},"public_venue":true,"foursquare":{"foursquare_id":"4ab455aff964a520ea7020e3","foursquare_url":"http:\/\/4sq.com\/4Xq7Om"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/nightlife\/sportsbar_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/nightlife\/sportsbar_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/nightlife\/sportsbar_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":0,"items":[]}},{"checkin_id":21864820,"created_at":"Fri,
+        08 Feb 2013 00:48:43 +0000","checkin_comment":"","rating_score":0,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
+        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0,"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785}},"beer":{"bid":65937,"beer_name":"Snow
+        Day","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-SnowDay_65937.jpeg","beer_style":"Winter
+        Ale","beer_abv":6.2,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":905,"brewery_name":"New
+        Belgium Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-905_2ddc7.jpeg","country_name":"United
+        States","contact":{"twitter":"newbelgium","facebook":"http:\/\/www.facebook.com\/newbelgium","instagram":"newbelgium","url":"http:\/\/www.newbelgium.com"},"location":{"brewery_city":"Fort
+        Collins","brewery_state":"CO","lat":40.5934,"lng":-105.067},"brewery_active":1},"venue":[],"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":1,"items":[{"badge_id":84,"user_badge_id":3235491,"badge_name":"Untappd
+        Groupie","badge_description":"Woah! You\u2019ve had at least five beers that
+        the Untappd founders have had. That\u2019s tough since we like a wide variety
+        of beers. Obviously you\u2019re just trying to be cool like us!","created_at":"Fri,
+        08 Feb 2013 00:48:43 +0000","badge_image":{"sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_groupie_sm.jpg","md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_groupie_md.jpg","lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_groupie_lg.jpg"}}]}},{"checkin_id":21817585,"created_at":"Thu,
+        07 Feb 2013 02:12:28 +0000","checkin_comment":"","rating_score":4,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
+        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0,"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785}},"beer":{"bid":219320,"beer_name":"Birra
+        Etrusca Bronze","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-BirraEtrusca_219320.jpeg","beer_style":"Gruit
+        \/ Ancient Herbed Ale","beer_abv":8.5,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
+        Head Craft Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
+        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","instagram":"dogfishbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099},"brewery_active":1},"venue":{"venue_id":2242,"venue_name":"Dogfish
+        Head Alehouse","primary_category":"Nightlife Spot","parent_category_id":"4d4b7105d754a06376d81259","categories":{"count":2,"items":[{"category_name":"Bar","category_id":"4bf58dd8d48988d116941735","is_primary":true},{"category_name":"American
+        Restaurant","category_id":"4bf58dd8d48988d14e941735","is_primary":false}]},"location":{"venue_address":"13041
+        Lee Jackson Memorial Hwy","venue_city":"Fairfax","venue_state":"VA","venue_country":"United
+        States","lat":38.8797,"lng":-77.3975},"contact":{"twitter":"@dogfish_ale","venue_url":"http:\/\/www.dogfishalehouse.com\/locations\/dfha-fairfax"},"public_venue":true,"foursquare":{"foursquare_id":"4aa3f501f964a5208f4420e3","foursquare_url":"http:\/\/4sq.com\/6TcO1I"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/nightlife\/pub_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/nightlife\/pub_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/nightlife\/pub_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":1,"items":[{"photo_id":2161447,"photo":{"photo_img_sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_02_07\/c6e23b64f04b32f4e08c043807373acb_100x100.jpg","photo_img_md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_02_07\/c6e23b64f04b32f4e08c043807373acb_320x320.jpg","photo_img_lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_02_07\/c6e23b64f04b32f4e08c043807373acb_640x640.jpg","photo_img_og":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_02_07\/c6e23b64f04b32f4e08c043807373acb_raw.jpg"}}]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":2,"items":[{"badge_id":13,"user_badge_id":3228404,"badge_name":"Beer
+        Party","badge_description":"Drinking with friends is fun. Right? You''ve checked
+        in with at least 4 other people within 2 hours.","created_at":"Thu, 07 Feb
+        2013 02:12:28 +0000","badge_image":{"sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_beerParty_sm.jpg","md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_beerParty_md.jpg","lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_beerParty_lg.jpg"}},{"badge_id":23,"user_badge_id":3228407,"badge_name":"Night
+        Out","badge_description":"Enjoying a nice Night Out on the town? Thanks for
+        taking untappd along.","created_at":"Thu, 07 Feb 2013 02:12:33 +0000","badge_image":{"sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_barCrawl_sm.jpg","md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_barCrawl_md.jpg","lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_barCrawl_lg.jpg"}}]}},{"checkin_id":21677681,"created_at":"Mon,
+        04 Feb 2013 03:15:09 +0000","checkin_comment":"","rating_score":4,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
+        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0,"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785}},"beer":{"bid":54180,"beer_name":"Chinook
+        IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/assets\/images\/temp\/badge-beer-default.png","beer_style":"American
+        IPA","beer_abv":0,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":2718,"brewery_name":"Northern
+        Brewer Homebrew Supply","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
+        States","contact":{"twitter":"","facebook":"","instagram":"","url":""},"location":{"brewery_city":"Minneapolis","brewery_state":"mn","lat":44.9833,"lng":-93.2667},"brewery_active":1},"venue":[],"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":1,"items":[{"badge_id":223,"user_badge_id":3209508,"badge_name":"Brew
+        Bowl XLVII","badge_description":"Whether you''re in your living room or tail
+        gating at the Super Dome, it''s game day and you''re enjoying a great beer.
+        Could life get any better? Oh wait, it just did because you unlocked the Brew
+        Bowl XLVII badge!","created_at":"Mon, 04 Feb 2013 03:15:09 +0000","badge_image":{"sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_BrewBowlXLVII_sm.jpg","md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_BrewBowlXLVII_md.jpg","lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_BrewBowlXLVII_lg.jpg"}}]}},{"checkin_id":922857,"created_at":"Sat,
         21 May 2011 04:03:04 +0000","checkin_comment":"","rating_score":0,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
-        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":{"twitter":"cmar","facebook":500011785,"foursquare":990366}},"beer":{"bid":4487,"beer_name":"Palo
-        Santo Marron","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-dfhPaloSantoMarron.jpg","beer_style":"Imperial
-        \/ Double Brown Ale","beer_abv":12,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
-        Head Craft Brewery","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
-        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099}},"venue":[],"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"iTappd","app_website":"anpret.com"}},{"checkin_id":734270,"created_at":"Mon,
-        25 Apr 2011 10:49:45 +0000","checkin_comment":"","rating_score":0,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
-        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":{"twitter":"cmar","facebook":500011785,"foursquare":990366}},"beer":{"bid":1382,"beer_name":"Stone
-        Ruination IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-StoneRuinationIPA.jpg","beer_style":"Imperial
-        \/ Double IPA","beer_abv":7.7,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}},"venue":{"venue_id":40147,"venue_name":"Shenandoah
-        American Grill","primary_category":"Other","parent_category_id":"4d4b7105d754a06379d81251","categories":{"count":0,"items":[]},"location":{"venue_address":"44630
-        Waxpool Road","venue_city":"Ashburn","venue_state":"VA","lat":39.0137,"lng":-77.4604},"contact":{"twitter":"","venue_url":null},"foursquare":{"foursquare_id":"4d8cbcfb5dff8eec8b4afbcf","foursquare_url":"http:\/\/4sq.com\/ekQa5R"},"venue_icon":{"sm":"http:\/\/foursquare.com\/img\/categories\/none_64.png","md":"http:\/\/foursquare.com\/img\/categories\/none_88.png","lg":"http:\/\/foursquare.com\/img\/categories\/none_256.png"}},"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"iTappd","app_website":"anpret.com"}},{"checkin_id":651116,"created_at":"Thu,
-        14 Apr 2011 09:58:28 +0000","checkin_comment":"","rating_score":0,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
-        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":{"twitter":"cmar","facebook":500011785,"foursquare":990366}},"beer":{"bid":4665,"beer_name":"Aprihop","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-dfhAprihop.jpg","beer_style":"American
-        IPA","beer_abv":7,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
-        Head Craft Brewery","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
-        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099}},"venue":{"venue_id":29296,"venue_name":"Terminal
-        5","primary_category":"Travel & Transport","parent_category_id":"4d4b7105d754a06379d81259","categories":{"count":1,"items":[{"category_name":"Airport
-        Terminal","category_id":"4bf58dd8d48988d1eb931735","is_primary":true}]},"location":{"venue_address":"London
-        Heathrow Airport (LHR)","venue_city":"Hounslow","venue_state":"Middlesex","lat":51.4715,"lng":-0.488334},"contact":{"twitter":"@heathrowairport","venue_url":"http:\/\/www.heathrow.com"},"foursquare":{"foursquare_id":"4ad6bf91f964a520380821e3","foursquare_url":"http:\/\/4sq.com\/8Nxc2S"},"venue_icon":{"sm":"https:\/\/foursquare.com\/img\/categories\/travel\/airport_terminal_64.png","md":"https:\/\/foursquare.com\/img\/categories\/travel\/airport_terminal_88.png","lg":"https:\/\/foursquare.com\/img\/categories\/travel\/airport_terminal_256.png"}},"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"TBD","app_website":"TBD"}},{"checkin_id":551239,"created_at":"Wed,
-        30 Mar 2011 20:03:03 +0000","checkin_comment":"Love this beer. Similar to
-        Magic Hat #9","rating_score":0,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
-        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":{"twitter":"cmar","facebook":500011785,"foursquare":990366}},"beer":{"bid":4665,"beer_name":"Aprihop","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-dfhAprihop.jpg","beer_style":"American
-        IPA","beer_abv":7,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
-        Head Craft Brewery","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
-        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099}},"venue":[],"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
-        Web","app_website":"http:\/\/untappd.com"}},{"checkin_id":413105,"created_at":"Mon,
-        07 Mar 2011 01:45:07 +0000","checkin_comment":"","rating_score":3,"user":{"uid":10824,"user_name":"cmar","first_name":"cmar","last_name":"","location":"Leesburg,
-        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0,"contact":{"twitter":"cmar","facebook":500011785,"foursquare":990366}},"beer":{"bid":3919,"beer_name":"Samuel
-        Adams Winter Lager","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-_3919_5a06caba28f60ec2bf3b9ff41126.jpeg","beer_style":"Winter
-        Lager","beer_abv":5.6,"auth_rating":0,"wish_list":false},"brewery":{"brewery_id":157,"brewery_name":"Boston
-        Beer Company (Samuel Adams)","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-SamuelAdams.jpg","country_name":"United
-        States","contact":{"twitter":"SamuelAdamsBeer","facebook":"http:\/\/www.facebook.com\/pages\/Samuel-Adams-for-the-love-of-beer\/117341921610","url":"http:\/\/www.samueladams.com"},"location":{"brewery_city":"Boston","brewery_state":"MA","lat":42.3144,"lng":-71.1034}},"venue":[],"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
-        Web","app_website":"http:\/\/untappd.com"}}]},"media":{"count":0,"items":[]},"contact":{"twitter":"cmar","facebook":500011785,"foursquare":990366},"date_joined":"Thu,
+        VA","is_supporter":0,"url":"","bio":"","relationship":null,"user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0,"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785}},"beer":{"bid":4487,"beer_name":"Palo
+        Santo Marron","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-dfhPaloSantoMarron.jpg","beer_style":"Imperial
+        \/ Double Brown Ale","beer_abv":12,"auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
+        Head Craft Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
+        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","instagram":"dogfishbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099},"brewery_active":1},"venue":[],"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"iTappd","app_website":"anpret.com"},"badges":{"count":0,"items":[]}}]},"media":{"count":3,"items":[{"photo_id":7853730,"photo":{"photo_img_sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_11_23\/a0f03c12a1dbdc14f7a713553c82d1e7_100x100.jpg","photo_img_md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_11_23\/a0f03c12a1dbdc14f7a713553c82d1e7_320x320.jpg","photo_img_lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_11_23\/a0f03c12a1dbdc14f7a713553c82d1e7_640x640.jpg","photo_img_og":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_11_23\/a0f03c12a1dbdc14f7a713553c82d1e7_raw.jpg"},"created_at":"Sat,
+        23 Nov 2013 01:29:58 +0000","checkin_id":55010886,"user":{"uid":10824,"user_name":"cmar","location":"Leesburg,
+        VA","bio":"","first_name":"cmar","last_name":"","user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","account_type":"user","url":""},"beer":{"bid":5724,"beer_name":"Jai
+        Alai IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-5724_64765_sm.jpeg","beer_abv":7.5,"beer_style":"American
+        IPA","beer_description":"Jai Alai IPA is a monster interpretation of an American
+        IPA. In fact, it is so big that it equals the alcohol of some double IPAs
+        on the market. Our IPA uses 6 different hop varietals, with Simcoe hops only
+        being used for dry hopping. The rest of the hop additions are blended at different
+        IBU''s (International Bittering Units) in groups of three hops per addition
+        in order to create more hop complexity. At CCB, we love hops but also feel
+        that balance is important for IPAs. So Jai Alai features a sturday caramel
+        malt component which helps to create balance, staving off hop astringency.
+        Ultimately, Jai Alai is a very strong interpretation of a single American
+        IPA. We hope that it makes Tampa Bay natives happy because this is head brewer
+        Wayne Wamble''s favorite Cigar City beer and he''d love to share one with
+        you!","auth_rating":4,"wish_list":false},"brewery":{"brewery_id":379,"brewery_name":"Cigar
+        City Brewing","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-CigarCityBrewing_379.jpeg","country_name":"United
+        States","contact":{"twitter":"CigarCityBeer","facebook":"http:\/\/www.facebook.com\/cigarcitybeer","instagram":"cigarcitybrewing","url":"http:\/\/cigarcitybrewing.com\/"},"location":{"brewery_city":"Tampa","brewery_state":"FL","lat":27.9593,"lng":-82.5092},"brewery_active":1},"venue":{"venue_id":705331,"venue_name":"Alamo
+        Drafthouse One Loudoun","primary_category":"Arts & Entertainment","parent_category_id":"4d4b7104d754a06370d81259","categories":{"count":2,"items":[{"category_name":"Movie
+        Theater","category_id":"4bf58dd8d48988d17f941735","is_primary":true},{"category_name":"Multiplex","category_id":"4bf58dd8d48988d180941735","is_primary":false}]},"location":{"venue_address":"20575
+        E Hampton Plz","venue_city":"Ashburn","venue_state":"VA","venue_country":"United
+        States","lat":39.0459,"lng":-77.4537},"contact":{"twitter":"@alamodc","venue_url":"http:\/\/drafthouse.com\/dc"},"public_venue":true,"foursquare":{"foursquare_id":"513514fc39501a298d00de1c","foursquare_url":"http:\/\/4sq.com\/179XWIs"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/arts_entertainment\/movietheater_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/arts_entertainment\/movietheater_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/arts_entertainment\/movietheater_bg_88.png"}}},{"photo_id":2552888,"photo":{"photo_img_sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_03_12\/b114c86e7c59696787314d7967913efe_100x100.jpg","photo_img_md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_03_12\/b114c86e7c59696787314d7967913efe_320x320.jpg","photo_img_lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_03_12\/b114c86e7c59696787314d7967913efe_640x640.jpg","photo_img_og":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_03_12\/b114c86e7c59696787314d7967913efe_raw.jpg"},"created_at":"Tue,
+        12 Mar 2013 22:05:57 +0000","checkin_id":24554137,"user":{"uid":10824,"user_name":"cmar","location":"Leesburg,
+        VA","bio":"","first_name":"cmar","last_name":"","user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","account_type":"user","url":""},"beer":{"bid":297618,"beer_name":"B\/A\/Y\/S
+        - Rye Barrel (Ghost 004)","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_297618_464be029bfdb7ccfc42193c7ae19.jpeg","beer_abv":9.1,"beer_style":"Russian
+        Imperial Stout","beer_description":"As part of our revamped version of our
+        original Imperial Russian Stout, we split off some to age in bourbon barrels.
+        This beer is identical to Ghost 002, but aged in Finger Lakes Distilling Co.
+        Barrel.","auth_rating":4,"wish_list":false},"brewery":{"brewery_id":33686,"brewery_name":"Adroit
+        Theory","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-AdroitTheory_33686.jpeg","country_name":"United
+        States","contact":{"twitter":"AdroitTheory","facebook":"http:\/\/www.facebook.com\/AdroitTheory","instagram":"AdroitTheory","url":"http:\/\/www.adroit-theory.com"},"location":{"brewery_city":"Purcellville","brewery_state":"VA","lat":39.1439,"lng":-77.7202},"brewery_active":1},"venue":[]},{"photo_id":2161447,"photo":{"photo_img_sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_02_07\/c6e23b64f04b32f4e08c043807373acb_100x100.jpg","photo_img_md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_02_07\/c6e23b64f04b32f4e08c043807373acb_320x320.jpg","photo_img_lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_02_07\/c6e23b64f04b32f4e08c043807373acb_640x640.jpg","photo_img_og":"https:\/\/d1c8v1qci5en44.cloudfront.net\/photo\/2013_02_07\/c6e23b64f04b32f4e08c043807373acb_raw.jpg"},"created_at":"Thu,
+        07 Feb 2013 02:12:52 +0000","checkin_id":21817585,"user":{"uid":10824,"user_name":"cmar","location":"Leesburg,
+        VA","bio":"","first_name":"cmar","last_name":"","user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","account_type":"user","url":""},"beer":{"bid":219320,"beer_name":"Birra
+        Etrusca Bronze","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-BirraEtrusca_219320.jpeg","beer_abv":8.5,"beer_style":"Gruit
+        \/ Ancient Herbed Ale","beer_description":"The backbone of Birra Etrusca comes
+        from two-row malted barley and an heirloom Italian wheat. Specialty ingredients
+        include hazelnut flour, pomegranates, Italian chestnut honey, Delaware wildflower
+        honey and clover honey. A handful of whole-flower hops are added, but the
+        bulk of the bitterness comes from gentian root and the sarsaparilla-like Ethiopian
+        myrrh resin.","auth_rating":4,"wish_list":false},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
+        Head Craft Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
+        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","instagram":"dogfishbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099},"brewery_active":1},"venue":{"venue_id":2242,"venue_name":"Dogfish
+        Head Alehouse","primary_category":"Nightlife Spot","parent_category_id":"4d4b7105d754a06376d81259","categories":{"count":2,"items":[{"category_name":"Bar","category_id":"4bf58dd8d48988d116941735","is_primary":true},{"category_name":"American
+        Restaurant","category_id":"4bf58dd8d48988d14e941735","is_primary":false}]},"location":{"venue_address":"13041
+        Lee Jackson Memorial Hwy","venue_city":"Fairfax","venue_state":"VA","venue_country":"United
+        States","lat":38.8797,"lng":-77.3975},"contact":{"twitter":"@dogfish_ale","venue_url":"http:\/\/www.dogfishalehouse.com\/locations\/dfha-fairfax"},"public_venue":true,"foursquare":{"foursquare_id":"4aa3f501f964a5208f4420e3","foursquare_url":"http:\/\/4sq.com\/6TcO1I"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/nightlife\/pub_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/nightlife\/pub_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/nightlife\/pub_bg_88.png"}}}]},"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785},"date_joined":"Thu,
         23 Dec 2010 17:22:26 +0000","settings":[]}}}'
     http_version: '1.1'
-  recorded_at: Tue, 04 Dec 2012 02:51:20 GMT
+  recorded_at: Fri, 19 Sep 2014 03:53:29 GMT
 recorded_with: VCR 2.3.0
