@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.untappd.com/v4/checkin/toast/17831896?access_token=<UNTAPPD_ACCESS_TOKEN>
+    uri: https://api.untappd.com/v4/checkin/toast/17831896?access_token=<UNTAPPD_ACCESS_TOKEN>
     body:
       encoding: US-ASCII
       string: ''
@@ -13,32 +13,38 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Fri, 14 Dec 2012 01:38:25 GMT
+      - Fri, 19 Sep 2014 03:52:59 GMT
       server:
-      - Apache
-      set-cookie:
-      - BALANCEID=balancer.as2; path=/; domain=.untappd.com
+      - Apache/2.2.22 (Ubuntu)
       x-powered-by:
-      - PHP/5.3.3-1ubuntu9.3
+      - PHP/5.4.6-1ubuntu1.4
       x-ratelimit-limit:
       - '100'
       x-ratelimit-remaining:
-      - '86'
+      - '97'
       x-auth-type:
       - user
+      x-api-version:
+      - '4'
+      x-http-protocol:
+      - '443'
+      vary:
+      - Accept-Encoding
       cache-control:
       - no-cache
       access-control-allow-origin:
       - ! '*'
+      access-control-allow-headers:
+      - X-Untappd-App
       content-length:
-      - '294'
+      - '356'
       connection:
       - close
       content-type:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"meta":{"code":200,"response_time":{"time":0.028,"measure":"seconds"}},"notifications":{"type":"notifications","unread_count":{"comments":0,"toasts":0,"friends":0,"messages":0,"news":0}},"response":{"result":"success","like_type":"un-toast","toasts":{"count":0,"auth_toast":false,"items":[]}}}'
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.034,"measure":"seconds"},"init_time":{"time":0.018,"measure":"seconds"}},"notifications":{"type":"notifications","unread_count":{"comments":0,"toasts":0,"friends":0,"messages":0,"news":0}},"response":{"result":"success","like_type":"un-toast","toasts":{"total_count":0,"count":0,"auth_toast":true,"items":[]}}}'
     http_version: '1.1'
-  recorded_at: Fri, 14 Dec 2012 01:38:06 GMT
+  recorded_at: Fri, 19 Sep 2014 03:53:07 GMT
 recorded_with: VCR 2.3.0

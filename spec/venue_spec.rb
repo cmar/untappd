@@ -7,8 +7,8 @@ describe "Venue" do
 
   it "gets the feed", :vcr do
     feed = Untappd::Venue.feed(18099)
-    feed.checkins.items.first.beer.beer_name.should == "Pale Ale"
-    feed.checkins.items.first.brewery.brewery_name.should == "Sierra Nevada Brewing Co."
+    feed.checkins.items.first.beer.beer_name.should == "Big Bad Baptist (Release #15)"
+    feed.checkins.items.first.brewery.brewery_name.should == "Epic Brewing Co. (Utah, Colorado)"
   end
 
   it "gets info", :vcr do

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.untappd.com/v4/venue/checkins/18099?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
+    uri: https://api.untappd.com/v4/venue/checkins/18099?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
     body:
       encoding: US-ASCII
       string: ''
@@ -13,53 +13,146 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Tue, 04 Dec 2012 02:51:42 GMT
+      - Fri, 19 Sep 2014 03:53:32 GMT
       server:
-      - Apache
-      set-cookie:
-      - BALANCEID=balancer.as0; path=/; domain=.untappd.com
+      - Apache/2.2.22 (Ubuntu)
       x-powered-by:
-      - PHP/5.3.3-1ubuntu9.3
+      - PHP/5.4.6-1ubuntu1.4
       x-ratelimit-limit:
       - '100'
       x-ratelimit-remaining:
-      - '8'
+      - '59'
       x-auth-type:
       - key
+      x-api-version:
+      - '4'
+      x-http-protocol:
+      - '443'
+      vary:
+      - Accept-Encoding
       access-control-allow-origin:
       - ! '*'
-      content-length:
-      - '5727'
+      access-control-allow-headers:
+      - X-Untappd-App
       connection:
       - close
+      transfer-encoding:
+      - chunked
       content-type:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"meta":{"code":200,"response_time":{"time":0.034,"measure":"seconds"}},"notifications":[],"response":{"pagination":{"since_url":"http:\/\/api.untappd.com\/v4\/venue\/checkins\/18099?min_id=13475007","next_url":"http:\/\/api.untappd.com\/v4\/venue\/checkins\/18099?min_id=227102","max_id":227102},"checkins":{"count":3,"items":[{"checkin_id":13475007,"created_at":"Thu,
-        27 Sep 2012 23:59:39 +0000","rating_score":4,"checkin_comment":"","user":{"uid":117736,"user_name":"gotham84","first_name":"Handsome","last_name":"S.","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/f9dff3741f9323ba6cade892319d6ce5?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0},"beer":{"bid":6284,"beer_name":"Pale
-        Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-PaleAle_6284.jpeg","beer_style":"American
-        Pale Ale","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1142,"brewery_name":"Sierra
-        Nevada Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-sierraNevada.jpg","country_name":"United
-        States","contact":{"twitter":"SierraNevada","facebook":"http:\/\/www.facebook.com\/sierranevadabeer","url":"http:\/\/www.sierranevada.com\/"},"location":{"brewery_city":"Chico","brewery_state":"CA","lat":39.7246,"lng":-121.816}},"venue":{"venue_id":18099,"venue_name":"Mo''s
-        Diner","primary_category":"Food","location":{"venue_address":"306 E. Hargett
-        Street","venue_city":"Raleigh","venue_state":"NC","lat":35.7781,"lng":-78.6347},"contact":{"twitter":"","venue_url":""},"categories":{"count":1,"items":[{"category_name":"Diner","category_id":"4bf58dd8d48988d147941735","is_primary":true}]},"venue_icon":{"sm":"https:\/\/foursquare.com\/img\/categories\/food\/default_64.png","md":"https:\/\/foursquare.com\/img\/categories\/food\/default_88.png","lg":"https:\/\/foursquare.com\/img\/categories\/food\/default_256.png"}},"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
-        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"}},{"checkin_id":13472124,"created_at":"Thu,
-        27 Sep 2012 23:24:23 +0000","rating_score":4,"checkin_comment":"","user":{"uid":117736,"user_name":"gotham84","first_name":"Handsome","last_name":"S.","relationship":null,"user_avatar":"http:\/\/gravatar.com\/avatar\/f9dff3741f9323ba6cade892319d6ce5?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar.jpg","is_private":0},"beer":{"bid":3776,"beer_name":"#9","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-magicHat9.jpg","beer_style":"American
-        Pale Ale","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":812,"brewery_name":"Magic
-        Hat Brewing Company","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-magicHat.jpg","country_name":"United
-        States","contact":{"twitter":"magichat","facebook":"http:\/\/facebook.com\/magichatbrewing","url":"http:\/\/www.magichat.net\/"},"location":{"brewery_city":"South
-        Burlington","brewery_state":"VT","lat":44.4284,"lng":-73.2132}},"venue":{"venue_id":18099,"venue_name":"Mo''s
-        Diner","primary_category":"Food","location":{"venue_address":"306 E. Hargett
-        Street","venue_city":"Raleigh","venue_state":"NC","lat":35.7781,"lng":-78.6347},"contact":{"twitter":"","venue_url":""},"categories":{"count":1,"items":[{"category_name":"Diner","category_id":"4bf58dd8d48988d147941735","is_primary":true}]},"venue_icon":{"sm":"https:\/\/foursquare.com\/img\/categories\/food\/default_64.png","md":"https:\/\/foursquare.com\/img\/categories\/food\/default_88.png","lg":"https:\/\/foursquare.com\/img\/categories\/food\/default_256.png"}},"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
-        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"}},{"checkin_id":227102,"created_at":"Fri,
-        28 Jan 2011 01:13:51 +0000","rating_score":4,"checkin_comment":"","user":{"uid":151,"user_name":"Baker","first_name":"Jon","last_name":"B.","relationship":null,"user_avatar":"https:\/\/untappd.s3.amazonaws.com\/profile\/ef150b20993acb1ecc57ac4a4368f4a2_thumb.JPG","is_private":0},"beer":{"bid":4573,"beer_name":"Angry
-        Angel","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-BigBossAngryAngel.jpg","beer_style":"K\u00f6lsch","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":113,"brewery_name":"Big
-        Boss Brewing Company","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-BigBossBrewingCompany_113.jpeg","country_name":"United
-        States","contact":{"twitter":"bigbossbeer","facebook":"http:\/\/www.facebook.com\/pages\/Big-Boss-Brewery\/177203328692","url":"http:\/\/bigbossbrewing.com\/"},"location":{"brewery_city":"Raleigh","brewery_state":"NC","lat":35.8098,"lng":-78.6172}},"venue":{"venue_id":18099,"venue_name":"Mo''s
-        Diner","primary_category":"Food","location":{"venue_address":"306 E. Hargett
-        Street","venue_city":"Raleigh","venue_state":"NC","lat":35.7781,"lng":-78.6347},"contact":{"twitter":"","venue_url":""},"categories":{"count":1,"items":[{"category_name":"Diner","category_id":"4bf58dd8d48988d147941735","is_primary":true}]},"venue_icon":{"sm":"https:\/\/foursquare.com\/img\/categories\/food\/default_64.png","md":"https:\/\/foursquare.com\/img\/categories\/food\/default_88.png","lg":"https:\/\/foursquare.com\/img\/categories\/food\/default_256.png"}},"comments":{"count":0,"items":[]},"toasts":{"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
-        Mobile","app_website":null}}]}}}'
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.303,"measure":"seconds"},"init_time":{"time":0.037,"measure":"seconds"}},"notifications":[],"response":{"type":"full","pagination":{"since_url":"http:\/\/api.untappd.com\/v4\/venue\/checkins\/18099?min_id=101540499","next_url":"http:\/\/api.untappd.com\/v4\/venue\/checkins\/18099?max_id=227102","max_id":227102},"checkins":{"count":10,"items":[{"checkin_id":101540499,"created_at":"Wed,
+        23 Jul 2014 03:14:48 +0000","rating_score":5,"checkin_comment":"Hells yeah!
+        Meal might have been better...","user":{"uid":91498,"user_name":"mick1907","first_name":"mick","last_name":"c.","relationship":null,"is_supporter":0,"user_avatar":"https:\/\/d1c8v1qci5en44.cloudfront.net\/profile\/bff2994c893515a15ab973a49970ac92_thumb.jpg","is_private":0},"beer":{"bid":450600,"beer_name":"Big
+        Bad Baptist (Release #15)","beer_abv":11.4,"beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_450600_sm_e281f39ff5c8880960f3409716d6b8.jpeg","beer_style":"American
+        Imperial \/ Double Stout","auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":7216,"brewery_name":"Epic
+        Brewing Co. (Utah, Colorado)","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-EpicBrewingCo_7216.jpeg","country_name":"United
+        States","contact":{"twitter":"EpicBrewing","facebook":"http:\/\/www.facebook.com\/pages\/Epic-Brewing-Company\/278554429300","instagram":"","url":"http:\/\/www.epicbrewing.com\/"},"location":{"brewery_city":"Salt
+        Lake City","brewery_state":"UT","lat":40.7512,"lng":-111.888},"brewery_active":1},"venue":{"venue_id":18099,"venue_name":"Mo''s
+        Diner","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":1,"items":[{"category_name":"Diner","category_id":"4bf58dd8d48988d147941735","is_primary":true}]},"location":{"venue_address":"306
+        E Hargett St","venue_city":"Raleigh","venue_state":"NC","venue_country":"United
+        States","lat":35.7781,"lng":-78.6347},"contact":{"twitter":"","venue_url":""},"public_venue":true,"foursquare":{"foursquare_id":"4b034d30f964a5206a4e22e3","foursquare_url":"http:\/\/4sq.com\/d2KRrl"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":1,"count":1,"auth_toast":null,"items":[{"uid":170531,"user":{"uid":170531,"user_name":"wendi0616","first_name":"WENDI","last_name":"G.","bio":"","location":"","user_avatar":"https:\/\/d1c8v1qci5en44.cloudfront.net\/profile\/894eef8143cc571d116404408d0c64be_thumb.jpg","user_link":"https:\/\/untappd.com\/user\/wendi0616","account_type":"user","brewery_details":[]},"like_id":45885124,"like_owner":false,"created_at":"Wed,
+        23 Jul 2014 16:03:22 +0000"}]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for Android - (V2)","app_website":"http:\/\/untpd.it\/androidapp"},"badges":{"count":0,"items":[]}},{"checkin_id":101531254,"created_at":"Wed,
+        23 Jul 2014 02:35:00 +0000","rating_score":5,"checkin_comment":"","user":{"uid":170531,"user_name":"wendi0616","first_name":"WENDI","last_name":"G.","relationship":null,"is_supporter":1,"user_avatar":"https:\/\/d1c8v1qci5en44.cloudfront.net\/profile\/894eef8143cc571d116404408d0c64be_thumb.jpg","is_private":0},"beer":{"bid":450600,"beer_name":"Big
+        Bad Baptist (Release #15)","beer_abv":11.4,"beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_450600_sm_e281f39ff5c8880960f3409716d6b8.jpeg","beer_style":"American
+        Imperial \/ Double Stout","auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":7216,"brewery_name":"Epic
+        Brewing Co. (Utah, Colorado)","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-EpicBrewingCo_7216.jpeg","country_name":"United
+        States","contact":{"twitter":"EpicBrewing","facebook":"http:\/\/www.facebook.com\/pages\/Epic-Brewing-Company\/278554429300","instagram":"","url":"http:\/\/www.epicbrewing.com\/"},"location":{"brewery_city":"Salt
+        Lake City","brewery_state":"UT","lat":40.7512,"lng":-111.888},"brewery_active":1},"venue":{"venue_id":18099,"venue_name":"Mo''s
+        Diner","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":1,"items":[{"category_name":"Diner","category_id":"4bf58dd8d48988d147941735","is_primary":true}]},"location":{"venue_address":"306
+        E Hargett St","venue_city":"Raleigh","venue_state":"NC","venue_country":"United
+        States","lat":35.7781,"lng":-78.6347},"contact":{"twitter":"","venue_url":""},"public_venue":true,"foursquare":{"foursquare_id":"4b034d30f964a5206a4e22e3","foursquare_url":"http:\/\/4sq.com\/d2KRrl"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":5,"count":5,"auth_toast":null,"items":[{"uid":1001080,"user":{"uid":1001080,"user_name":"MistiRose","first_name":"Misti","last_name":"G.","bio":"","location":"","user_avatar":"https:\/\/d1c8v1qci5en44.cloudfront.net\/profile\/4a6198059b074dd0f5743d0a09be645f_100x100.jpg","user_link":"https:\/\/untappd.com\/user\/MistiRose","account_type":"user","brewery_details":[]},"like_id":45885666,"like_owner":false,"created_at":"Wed,
+        23 Jul 2014 16:14:23 +0000"},{"uid":1092054,"user":{"uid":1092054,"user_name":"Justin_Ward","first_name":"Justin","last_name":"W.","bio":"","location":"","user_avatar":"https:\/\/gravatar.com\/avatar\/0298932eb2def60321dd15ae20870b1c?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","user_link":"https:\/\/untappd.com\/user\/Justin_Ward","account_type":"user","brewery_details":[]},"like_id":45867094,"like_owner":false,"created_at":"Wed,
+        23 Jul 2014 07:04:29 +0000"},{"uid":518511,"user":{"uid":518511,"user_name":"mlyounts","first_name":"Michael","last_name":"Y.","bio":"","location":"","user_avatar":"https:\/\/d1c8v1qci5en44.cloudfront.net\/profile\/94e455494a59df2dedf2fd665c84b6dc_thumb.jpg","user_link":"https:\/\/untappd.com\/user\/mlyounts","account_type":"user","brewery_details":[]},"like_id":45858698,"like_owner":false,"created_at":"Wed,
+        23 Jul 2014 04:28:15 +0000"},{"uid":55664,"user":{"uid":55664,"user_name":"planbee","first_name":"B","last_name":"R.","bio":"Music
+        biz lifer, writer, drinker, breather.","location":"Mebane, NC","user_avatar":"https:\/\/d1c8v1qci5en44.cloudfront.net\/profile\/49be40c110ee0083de842d341d27bfab_thumb.jpg","user_link":"https:\/\/untappd.com\/user\/planbee","account_type":"user","brewery_details":[]},"like_id":45855979,"like_owner":false,"created_at":"Wed,
+        23 Jul 2014 04:03:39 +0000"},{"uid":679681,"user":{"uid":679681,"user_name":"hhhumper","first_name":"Randy","last_name":"D.","bio":"","location":"Raleigh,
+        NC","user_avatar":"https:\/\/gravatar.com\/avatar\/f16114e2d58a67c45115e03c5c4a55c2?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","user_link":"https:\/\/untappd.com\/user\/hhhumper","account_type":"user","brewery_details":[]},"like_id":45850868,"like_owner":false,"created_at":"Wed,
+        23 Jul 2014 03:23:22 +0000"}]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":0,"items":[]}},{"checkin_id":101525521,"created_at":"Wed,
+        23 Jul 2014 02:12:57 +0000","rating_score":4,"checkin_comment":"Great night
+        with my squeeze!","user":{"uid":91498,"user_name":"mick1907","first_name":"mick","last_name":"c.","relationship":null,"is_supporter":0,"user_avatar":"https:\/\/d1c8v1qci5en44.cloudfront.net\/profile\/bff2994c893515a15ab973a49970ac92_thumb.jpg","is_private":0},"beer":{"bid":392036,"beer_name":"The
+        Abyss (2013)","beer_abv":11,"beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_392036_sm_0200e760fcb2b8faf24e9180241e5c.jpeg","beer_style":"American
+        Imperial \/ Double Stout","auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":441,"brewery_name":"Deschutes
+        Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-441_6df4d.jpeg","country_name":"United
+        States","contact":{"twitter":"deschutesbeer","facebook":"http:\/\/www.facebook.com\/deschutes.brewery","instagram":"deschutesbeer","url":"http:\/\/www.deschutesbrewery.com"},"location":{"brewery_city":"Bend","brewery_state":"OR","lat":44.0468,"lng":-121.322},"brewery_active":1},"venue":{"venue_id":18099,"venue_name":"Mo''s
+        Diner","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":1,"items":[{"category_name":"Diner","category_id":"4bf58dd8d48988d147941735","is_primary":true}]},"location":{"venue_address":"306
+        E Hargett St","venue_city":"Raleigh","venue_state":"NC","venue_country":"United
+        States","lat":35.7781,"lng":-78.6347},"contact":{"twitter":"","venue_url":""},"public_venue":true,"foursquare":{"foursquare_id":"4b034d30f964a5206a4e22e3","foursquare_url":"http:\/\/4sq.com\/d2KRrl"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":1,"count":1,"auth_toast":null,"items":[{"uid":170531,"user":{"uid":170531,"user_name":"wendi0616","first_name":"WENDI","last_name":"G.","bio":"","location":"","user_avatar":"https:\/\/d1c8v1qci5en44.cloudfront.net\/profile\/894eef8143cc571d116404408d0c64be_thumb.jpg","user_link":"https:\/\/untappd.com\/user\/wendi0616","account_type":"user","brewery_details":[]},"like_id":45842786,"like_owner":false,"created_at":"Wed,
+        23 Jul 2014 02:35:30 +0000"}]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for Android - (V2)","app_website":"http:\/\/untpd.it\/androidapp"},"badges":{"count":0,"items":[]}},{"checkin_id":101510272,"created_at":"Wed,
+        23 Jul 2014 01:22:13 +0000","rating_score":4.5,"checkin_comment":"","user":{"uid":170531,"user_name":"wendi0616","first_name":"WENDI","last_name":"G.","relationship":null,"is_supporter":1,"user_avatar":"https:\/\/d1c8v1qci5en44.cloudfront.net\/profile\/894eef8143cc571d116404408d0c64be_thumb.jpg","is_private":0},"beer":{"bid":392036,"beer_name":"The
+        Abyss (2013)","beer_abv":11,"beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_392036_sm_0200e760fcb2b8faf24e9180241e5c.jpeg","beer_style":"American
+        Imperial \/ Double Stout","auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":441,"brewery_name":"Deschutes
+        Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-441_6df4d.jpeg","country_name":"United
+        States","contact":{"twitter":"deschutesbeer","facebook":"http:\/\/www.facebook.com\/deschutes.brewery","instagram":"deschutesbeer","url":"http:\/\/www.deschutesbrewery.com"},"location":{"brewery_city":"Bend","brewery_state":"OR","lat":44.0468,"lng":-121.322},"brewery_active":1},"venue":{"venue_id":18099,"venue_name":"Mo''s
+        Diner","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":1,"items":[{"category_name":"Diner","category_id":"4bf58dd8d48988d147941735","is_primary":true}]},"location":{"venue_address":"306
+        E Hargett St","venue_city":"Raleigh","venue_state":"NC","venue_country":"United
+        States","lat":35.7781,"lng":-78.6347},"contact":{"twitter":"","venue_url":""},"public_venue":true,"foursquare":{"foursquare_id":"4b034d30f964a5206a4e22e3","foursquare_url":"http:\/\/4sq.com\/d2KRrl"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":3,"count":3,"auth_toast":null,"items":[{"uid":1001080,"user":{"uid":1001080,"user_name":"MistiRose","first_name":"Misti","last_name":"G.","bio":"","location":"","user_avatar":"https:\/\/d1c8v1qci5en44.cloudfront.net\/profile\/4a6198059b074dd0f5743d0a09be645f_100x100.jpg","user_link":"https:\/\/untappd.com\/user\/MistiRose","account_type":"user","brewery_details":[]},"like_id":45885740,"like_owner":false,"created_at":"Wed,
+        23 Jul 2014 16:15:36 +0000"},{"uid":1092054,"user":{"uid":1092054,"user_name":"Justin_Ward","first_name":"Justin","last_name":"W.","bio":"","location":"","user_avatar":"https:\/\/gravatar.com\/avatar\/0298932eb2def60321dd15ae20870b1c?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","user_link":"https:\/\/untappd.com\/user\/Justin_Ward","account_type":"user","brewery_details":[]},"like_id":45867100,"like_owner":false,"created_at":"Wed,
+        23 Jul 2014 07:03:49 +0000"},{"uid":679681,"user":{"uid":679681,"user_name":"hhhumper","first_name":"Randy","last_name":"D.","bio":"","location":"Raleigh,
+        NC","user_avatar":"https:\/\/gravatar.com\/avatar\/f16114e2d58a67c45115e03c5c4a55c2?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","user_link":"https:\/\/untappd.com\/user\/hhhumper","account_type":"user","brewery_details":[]},"like_id":45836517,"like_owner":false,"created_at":"Wed,
+        23 Jul 2014 02:04:12 +0000"}]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":0,"items":[]}},{"checkin_id":89051576,"created_at":"Thu,
+        29 May 2014 00:29:34 +0000","rating_score":4,"checkin_comment":"","user":{"uid":437661,"user_name":"cwrook","first_name":"Chris","last_name":"R.","relationship":null,"is_supporter":0,"user_avatar":"https:\/\/gravatar.com\/avatar\/272a4a8db29be6498480ba8c110e5ff6?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","is_private":0},"beer":{"bid":32404,"beer_name":"Spring
+        Bock","beer_abv":6.5,"beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_32404_sm_c0dad0065fc465aceaf63de7ba6ffd.jpeg","beer_style":"Bock","auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":1826,"brewery_name":"Carolina
+        Brewing Company (Holly Springs, NC)","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-CarolinaBrewingCompanyHollySpringsNC_1826_8e87d.jpeg","country_name":"United
+        States","contact":{"twitter":"CarolinaBrewing","facebook":"http:\/\/www.facebook.com\/pages\/Carolina-Brewing-Company\/106393626067978","instagram":"","url":"http:\/\/www.carolinabrew.com\/"},"location":{"brewery_city":"Holly
+        Springs","brewery_state":"NC","lat":35.6557,"lng":-78.8539},"brewery_active":1},"venue":{"venue_id":18099,"venue_name":"Mo''s
+        Diner","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":1,"items":[{"category_name":"Diner","category_id":"4bf58dd8d48988d147941735","is_primary":true}]},"location":{"venue_address":"306
+        E Hargett St","venue_city":"Raleigh","venue_state":"NC","venue_country":"United
+        States","lat":35.7781,"lng":-78.6347},"contact":{"twitter":"","venue_url":""},"public_venue":true,"foursquare":{"foursquare_id":"4b034d30f964a5206a4e22e3","foursquare_url":"http:\/\/4sq.com\/d2KRrl"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for Android - (V2)","app_website":"http:\/\/untpd.it\/androidapp"},"badges":{"count":1,"items":[{"badge_id":146,"user_badge_id":18652694,"badge_name":"Birthday
+        Brew (Level 2)","badge_description":"It''s been a year since your last birthday
+        on Untappd? Whoa - time flies! Happy birthday to you from all of us at Untappd!","created_at":"Wed,
+        28 May 2014 17:29:34 +0000","badge_image":{"sm":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_bdayBrew_sm.jpg","md":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_bdayBrew_md.jpg","lg":"https:\/\/d1c8v1qci5en44.cloudfront.net\/badges\/bdg_bdayBrew_lg.jpg"}}]}},{"checkin_id":22398397,"created_at":"Thu,
+        14 Feb 2013 23:41:54 +0000","rating_score":4,"checkin_comment":"","user":{"uid":163463,"user_name":"TubeTop","first_name":"TubeTop","last_name":"","relationship":null,"is_supporter":0,"user_avatar":"https:\/\/d1c8v1qci5en44.cloudfront.net\/profile\/bacf3008048a4eec3a4fa6dfe49d2d1b_thumb.jpg","is_private":0},"beer":{"bid":11563,"beer_name":"Hoppyum
+        IPA","beer_abv":6.25,"beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-HoppyumIPA_11563.jpeg","beer_style":"American
+        IPA","auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":543,"brewery_name":"Foothills
+        Brewing","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-FoothillsBrewing_543.jpeg","country_name":"United
+        States","contact":{"twitter":"FoothillsBeer","facebook":"http:\/\/www.facebook.com\/foothills.brewing","instagram":"","url":"http:\/\/www.foothillsbrewing.com\/"},"location":{"brewery_city":"Winston-Salem","brewery_state":"NC","lat":36.0973,"lng":-80.2509},"brewery_active":1},"venue":{"venue_id":18099,"venue_name":"Mo''s
+        Diner","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":1,"items":[{"category_name":"Diner","category_id":"4bf58dd8d48988d147941735","is_primary":true}]},"location":{"venue_address":"306
+        E Hargett St","venue_city":"Raleigh","venue_state":"NC","venue_country":"United
+        States","lat":35.7781,"lng":-78.6347},"contact":{"twitter":"","venue_url":""},"public_venue":true,"foursquare":{"foursquare_id":"4b034d30f964a5206a4e22e3","foursquare_url":"http:\/\/4sq.com\/d2KRrl"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":0,"items":[]}},{"checkin_id":18003669,"created_at":"Sun,
+        16 Dec 2012 01:08:52 +0000","rating_score":4,"checkin_comment":"12 oz bottle
+        with a frosted glas for a mere $8","user":{"uid":43268,"user_name":"shadsterblaster","first_name":"Shadoe","last_name":"S.","relationship":null,"is_supporter":0,"user_avatar":"https:\/\/d1c8v1qci5en44.cloudfront.net\/profile\/3a03104f9306343b120144f64ddd06db_thumb.jpg","is_private":0},"beer":{"bid":6284,"beer_name":"Pale
+        Ale","beer_abv":5.6,"beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-6284_6ddce_sm.jpeg","beer_style":"American
+        Pale Ale","auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":1142,"brewery_name":"Sierra
+        Nevada Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-sierraNevada.jpg","country_name":"United
+        States","contact":{"twitter":"SierraNevada","facebook":"http:\/\/www.facebook.com\/sierranevadabeer","instagram":"sierranevada","url":"http:\/\/www.sierranevada.com\/"},"location":{"brewery_city":"Chico","brewery_state":"CA","lat":39.7246,"lng":-121.816},"brewery_active":1},"venue":{"venue_id":18099,"venue_name":"Mo''s
+        Diner","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":1,"items":[{"category_name":"Diner","category_id":"4bf58dd8d48988d147941735","is_primary":true}]},"location":{"venue_address":"306
+        E Hargett St","venue_city":"Raleigh","venue_state":"NC","venue_country":"United
+        States","lat":35.7781,"lng":-78.6347},"contact":{"twitter":"","venue_url":""},"public_venue":true,"foursquare":{"foursquare_id":"4b034d30f964a5206a4e22e3","foursquare_url":"http:\/\/4sq.com\/d2KRrl"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":0,"items":[]}},{"checkin_id":13475007,"created_at":"Thu,
+        27 Sep 2012 23:59:39 +0000","rating_score":4,"checkin_comment":"","user":{"uid":117736,"user_name":"gotham84","first_name":"Handsome","last_name":"S.","relationship":null,"is_supporter":0,"user_avatar":"https:\/\/d1c8v1qci5en44.cloudfront.net\/profile\/6d67be46461499b4e69967ee675db449_100x100.jpg","is_private":0},"beer":{"bid":6284,"beer_name":"Pale
+        Ale","beer_abv":5.6,"beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-6284_6ddce_sm.jpeg","beer_style":"American
+        Pale Ale","auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":1142,"brewery_name":"Sierra
+        Nevada Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-sierraNevada.jpg","country_name":"United
+        States","contact":{"twitter":"SierraNevada","facebook":"http:\/\/www.facebook.com\/sierranevadabeer","instagram":"sierranevada","url":"http:\/\/www.sierranevada.com\/"},"location":{"brewery_city":"Chico","brewery_state":"CA","lat":39.7246,"lng":-121.816},"brewery_active":1},"venue":{"venue_id":18099,"venue_name":"Mo''s
+        Diner","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":1,"items":[{"category_name":"Diner","category_id":"4bf58dd8d48988d147941735","is_primary":true}]},"location":{"venue_address":"306
+        E Hargett St","venue_city":"Raleigh","venue_state":"NC","venue_country":"United
+        States","lat":35.7781,"lng":-78.6347},"contact":{"twitter":"","venue_url":""},"public_venue":true,"foursquare":{"foursquare_id":"4b034d30f964a5206a4e22e3","foursquare_url":"http:\/\/4sq.com\/d2KRrl"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":0,"items":[]}},{"checkin_id":13472124,"created_at":"Thu,
+        27 Sep 2012 23:24:23 +0000","rating_score":4,"checkin_comment":"","user":{"uid":117736,"user_name":"gotham84","first_name":"Handsome","last_name":"S.","relationship":null,"is_supporter":0,"user_avatar":"https:\/\/d1c8v1qci5en44.cloudfront.net\/profile\/6d67be46461499b4e69967ee675db449_100x100.jpg","is_private":0},"beer":{"bid":3776,"beer_name":"#9","beer_abv":5.1,"beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-magicHat9.jpg","beer_style":"American
+        Pale Ale","auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":812,"brewery_name":"Magic
+        Hat Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-magicHat.jpg","country_name":"United
+        States","contact":{"twitter":"magichat","facebook":"http:\/\/facebook.com\/magichatbrewing","instagram":"magichatbrewing","url":"http:\/\/www.magichat.net\/"},"location":{"brewery_city":"South
+        Burlington","brewery_state":"VT","lat":44.4284,"lng":-73.2132},"brewery_active":1},"venue":{"venue_id":18099,"venue_name":"Mo''s
+        Diner","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":1,"items":[{"category_name":"Diner","category_id":"4bf58dd8d48988d147941735","is_primary":true}]},"location":{"venue_address":"306
+        E Hargett St","venue_city":"Raleigh","venue_state":"NC","venue_country":"United
+        States","lat":35.7781,"lng":-78.6347},"contact":{"twitter":"","venue_url":""},"public_venue":true,"foursquare":{"foursquare_id":"4b034d30f964a5206a4e22e3","foursquare_url":"http:\/\/4sq.com\/d2KRrl"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        for iPhone - (V2)","app_website":"http:\/\/untpd.it\/iphoneapp"},"badges":{"count":0,"items":[]}},{"checkin_id":227102,"created_at":"Fri,
+        28 Jan 2011 01:13:51 +0000","rating_score":4,"checkin_comment":"","user":{"uid":151,"user_name":"Baker","first_name":"Jon","last_name":"B.","relationship":null,"is_supporter":1,"user_avatar":"https:\/\/d1c8v1qci5en44.cloudfront.net\/profile\/402c7429d442106323c0dbc3c3477bef_thumb.jpg","is_private":0},"beer":{"bid":4573,"beer_name":"Angry
+        Angel","beer_abv":4.5,"beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-BigBossAngryAngel.jpg","beer_style":"K\u00f6lsch","auth_rating":0,"wish_list":false,"beer_active":1},"brewery":{"brewery_id":113,"brewery_name":"Big
+        Boss Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-BigBossBrewingCompany_113.jpeg","country_name":"United
+        States","contact":{"twitter":"bigbossbeer","facebook":"http:\/\/www.facebook.com\/pages\/Big-Boss-Brewery\/177203328692","instagram":"","url":"http:\/\/bigbossbrewing.com\/"},"location":{"brewery_city":"Raleigh","brewery_state":"NC","lat":35.8098,"lng":-78.6172},"brewery_active":1},"venue":{"venue_id":18099,"venue_name":"Mo''s
+        Diner","primary_category":"Food","parent_category_id":"4d4b7105d754a06374d81259","categories":{"count":1,"items":[{"category_name":"Diner","category_id":"4bf58dd8d48988d147941735","is_primary":true}]},"location":{"venue_address":"306
+        E Hargett St","venue_city":"Raleigh","venue_state":"NC","venue_country":"United
+        States","lat":35.7781,"lng":-78.6347},"contact":{"twitter":"","venue_url":""},"public_venue":true,"foursquare":{"foursquare_id":"4b034d30f964a5206a4e22e3","foursquare_url":"http:\/\/4sq.com\/d2KRrl"},"venue_icon":{"sm":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_64.png","md":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png","lg":"https:\/\/ss1.4sqi.net\/img\/categories_v2\/food\/diner_bg_88.png"}},"comments":{"total_count":0,"count":0,"items":[]},"toasts":{"total_count":0,"count":0,"auth_toast":null,"items":[]},"media":{"count":0,"items":[]},"source":{"app_name":"Untappd
+        Mobile","app_website":null},"badges":{"count":0,"items":[]}}]}}}'
     http_version: '1.1'
-  recorded_at: Tue, 04 Dec 2012 02:51:21 GMT
+  recorded_at: Fri, 19 Sep 2014 03:53:36 GMT
 recorded_with: VCR 2.3.0

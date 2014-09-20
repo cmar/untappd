@@ -12,32 +12,32 @@ describe "User" do
 
   it "get badges", :vcr do
     badges = Untappd::User.badges("cmar")
-    badges.items.first.badge_name.should == "Newbie"
+    badges.items.first.badge_name.should == "American Craft Beer Week (2013)"
   end
 
   it "get friends", :vcr do
     friends = Untappd::User.friends("cmar")
-    friends.items.first.user.user_name.should == "pks1850"
+    friends.items.first.user.user_name.should == "geekoncoffee"
   end
 
   it "get wish list", :vcr do
     wish_list = Untappd::User.wish_list("cmar")
-    wish_list.beers.items.first.beer.beer_name.should == "DFH Ale"
+    wish_list.beers.items.first.beer.beer_name.should == "90 Minute IPA"
   end
 
   it "get distinct beers", :vcr do
     distinct_beers = Untappd::User.distinct("cmar")
-    distinct_beers.beers.items.first.beer.beer_name.should == "Palo Santo Marron"
+    distinct_beers.beers.items.first.beer.beer_name.should == "Jai Alai IPA"
   end
 
   it "get feed", :vcr do
     feed = Untappd::User.feed("cmar")
-    feed.checkins.items.first.beer.beer_name.should == "Palo Santo Marron"
+    feed.checkins.items.first.beer.beer_name.should == "Jai Alai IPA"
   end
 
   it "get friend feed", :vcr do
     friend_feed = Untappd::User.friend_feed(TEST_ACCESS_TOKEN)
-    friend_feed.checkins.items.first.beer.beer_name.should == "Christmas Ale (2012)"
-    friend_feed.checkins.items.first.brewery.brewery_name.should == "Great Lakes Brewing Company "
+    friend_feed.checkins.items.first.beer.beer_name.should == "Paulaner Oktoberfest Bier"
+    friend_feed.checkins.items.first.brewery.brewery_name.should == "Paulaner Gruppe"
   end
 end

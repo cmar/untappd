@@ -47,7 +47,7 @@ module Untappd
     # * foursquare (optional) - Default = "off", Pass "on" to checkin on foursquare
     def self.create(access_token, beer_id, options={})
       timezone = options.fetch(:timezone, 'PST')
-      gmt_offset = options.fetch(:gmt_offset, Time.zone_offset(timezone))
+      gmt_offset = options.fetch(:gmt_offset, Time.zone_offset(timezone)) / 60 / 60
 
       options.merge!({
         :timezone     => timezone,

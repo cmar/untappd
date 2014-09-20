@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.untappd.com/v4/user/wishlist/cmar?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
+    uri: https://api.untappd.com/v4/user/wishlist/cmar?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
     body:
       encoding: US-ASCII
       string: ''
@@ -13,35 +13,45 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Tue, 04 Dec 2012 02:51:41 GMT
+      - Fri, 19 Sep 2014 03:53:24 GMT
       server:
-      - Apache
-      set-cookie:
-      - BALANCEID=balancer.as0; path=/; domain=.untappd.com
+      - Apache/2.2.22 (Ubuntu)
       x-powered-by:
-      - PHP/5.3.3-1ubuntu9.3
+      - PHP/5.4.6-1ubuntu1.4
       x-ratelimit-limit:
       - '100'
       x-ratelimit-remaining:
-      - '11'
+      - '63'
       x-auth-type:
       - key
+      x-api-version:
+      - '4'
+      x-http-protocol:
+      - '443'
+      vary:
+      - Accept-Encoding
       access-control-allow-origin:
       - ! '*'
+      access-control-allow-headers:
+      - X-Untappd-App
       content-length:
-      - '975'
+      - '1526'
       connection:
       - close
       content-type:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"meta":{"code":200,"response_time":{"time":0.026,"measure":"seconds"}},"notifications":[],"response":{"beers":{"count":1,"items":[{"created_at":"Thu,
-        20 Jan 2011 23:19:53 +0000","beer":{"bid":18182,"beer_name":"DFH Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-beer-default.png","beer_abv":"9.5","beer_description":"(AKA
-        Dogfish Head Ale)","beer_style":"Imperial \/ Double IPA","created_at":"Tue,
-        28 Dec 2010 04:14:19 +0000","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
-        Head Craft Brewery","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
-        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099}},"friends":{"count":0,"items":[]}}]}}}'
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.064,"measure":"seconds"},"init_time":{"time":0.043,"measure":"seconds"}},"notifications":[],"response":{"sort":"","sort_english":"Date
+        (Descending)","type_id":0,"beers":{"count":1,"items":[{"created_at":"Thu,
+        20 Jan 2011 23:19:53 +0000","beer":{"bid":8056,"beer_name":"90 Minute IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-dfh90MinIPA.jpg","beer_abv":9,"beer_ibu":90,"beer_slug":"dogfish-head-craft-brewery-90-minute-ipa","beer_description":"Esquire
+        Magazine calls our 90 Minute IPA \"perhaps the best IPA in America.\" An imperial
+        IPA best savored from a snifter, 90 Minute has a great malt backbone that
+        stands up to the extreme hopping rate.\n90 Minute IPA was the first beer we
+        continuously hopped, allowing for a pungent, but not crushing, hop flavor.","is_in_production":1,"beer_style":"Imperial
+        \/ Double IPA","created_at":"Mon, 08 Nov 2010 11:02:57 +0000","auth_rating":0,"rating_score":4.15,"rating_count":99742,"wish_list":false},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
+        Head Craft Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
+        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","instagram":"dogfishbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099},"brewery_active":1},"friends":[]}]}}}'
     http_version: '1.1'
-  recorded_at: Tue, 04 Dec 2012 02:51:20 GMT
+  recorded_at: Fri, 19 Sep 2014 03:53:30 GMT
 recorded_with: VCR 2.3.0

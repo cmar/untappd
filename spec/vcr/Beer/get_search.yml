@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.untappd.com/v4/search/beer/?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>&q=stone
+    uri: https://api.untappd.com/v4/search/beer/?client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>&q=stone
     body:
       encoding: US-ASCII
       string: ''
@@ -13,21 +13,27 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Tue, 04 Dec 2012 03:07:04 GMT
+      - Fri, 19 Sep 2014 03:53:13 GMT
       server:
-      - Apache
-      set-cookie:
-      - BALANCEID=balancer.as1; path=/; domain=.untappd.com
+      - Apache/2.2.22 (Ubuntu)
       x-powered-by:
-      - PHP/5.3.3-1ubuntu9.3
+      - PHP/5.4.6-1ubuntu1.4
       x-ratelimit-limit:
       - '100'
       x-ratelimit-remaining:
-      - '7'
+      - '75'
       x-auth-type:
       - key
+      x-api-version:
+      - '4'
+      x-http-protocol:
+      - '443'
+      vary:
+      - Accept-Encoding
       access-control-allow-origin:
       - ! '*'
+      access-control-allow-headers:
+      - X-Untappd-App
       connection:
       - close
       transfer-encoding:
@@ -36,74 +42,263 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"meta":{"code":200,"response_time":{"time":0.246,"measure":"seconds"}},"notifications":[],"response":{"message":"","search_version":1,"found":922,"offset":0,"limit":25,"term":"stone","parsed_term":"stone","breweries":{"items":[{"brewery":{"brewery_id":34952,"beer_count":1,"brewery_name":"Stone
-        Fly Rye","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
-        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":40767,"beer_count":2,"brewery_name":"Oskar
-        Stone","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
-        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":46299,"beer_count":1,"brewery_name":"Stone
-        Larger","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"Ghana","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":1204,"beer_count":380,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"brewery":{"brewery_id":2555,"beer_count":8,"brewery_name":"Stone
-        & Wood","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-StoneWood_2555.jpeg","country_name":"Australia","location":{"brewery_city":"Byron
-        Bay","brewery_state":"NSW","lat":-28.6344,"lng":153.586}}},{"brewery":{"brewery_id":15190,"beer_count":5,"brewery_name":"Blarney
-        stone","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
-        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":28036,"beer_count":4,"brewery_name":"Stone
-        the Crows","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
-        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":8794,"beer_count":2,"brewery_name":"Stone
-        Fly Brewery","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
-        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":9557,"beer_count":1,"brewery_name":"Stone
-        Elk Creek","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
-        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":18028,"beer_count":1,"brewery_name":"Stone
-        Creek","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
-        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":28037,"beer_count":1,"brewery_name":"Stone
-        the Crow","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
-        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":29085,"beer_count":1,"brewery_name":"Stone
-        street","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
-        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":46887,"beer_count":1,"brewery_name":"Red
-        Stone Meadery","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
-        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":9299,"beer_count":18,"brewery_name":"Stone
-        Oak Brewing","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
-        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":20243,"beer_count":8,"brewery_name":"Stone
-        Haven Brewery","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
-        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}}],"count":15},"beers":{"count":25,"items":[{"beer":{"bid":821,"beer_name":"Stone
-        IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-StoneIPA.jpg","beer_abv":6.9,"beer_style":"American
-        IPA","beer_description":"An \"India Pale Ale\" by definition is highly hopped
-        and high in alcohol.\n\nMedium Bodied Refreshing Ale Light-medium malt character
-        with a heavy dose of over the top hops! Two full weeks of \"dry hopping\"
-        give this beer its abundant hop aroma and crisp hop flavor.\"","created_at":"Sat,
-        21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false},"checkin_count":48293,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":18099,"beer_name":"Arrogant
-        Bastard Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-arrogantBastardAle.jpg","beer_abv":7.2,"beer_style":"American
-        Strong Ale","beer_description":"","created_at":"Mon, 27 Dec 2010 20:34:38
-        +0000","auth_rating":0,"wish_list":false},"checkin_count":29006,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":1382,"beer_name":"Stone
-        Ruination IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-StoneRuinationIPA.jpg","beer_abv":7.7,"beer_style":"Imperial
-        \/ Double IPA","beer_description":"Wonderfully delicious and intensely bitter
-        flavor on a refreshing malt base. Those who seek, crave and rejoice in beers
-        with big, bold, bitter character will find true nirvana.","created_at":"Sat,
-        21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false},"checkin_count":26552,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":5659,"beer_name":"Stone
-        Sublimely Self-Righteous Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-stoneSublimelySelf-Righteous-Ale.jpg","beer_abv":8.7,"beer_style":"Imperial
-        \/ Double Black IPA","beer_description":"First brewed in 2007 as the Stone
-        11th Anniversary Ale, this ale was an instant hit. With us. Other folks with
-        great taste loved it too, but we were focused on how much we liked it, and
-        we felt it was truly sublime. That euphoria didn''t last long though, as it
-        was soon replaced with the grim reality that when we sold out of it there
-        wouldn''t be any more. For us. And that was simply unacceptable. So, we are
-        now blessing ourselves, and you the enlightened, with this ale. Thusly, you
-        may now revel in your own self-righteousness as you see fit with this glorious
-        example of ours. You are genuinely welcome, as it is our pleasure.","created_at":"Sat,
-        21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false},"checkin_count":16591,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":211212,"beer_name":"Stone
-        16th Anniversary IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-Stone16thAnniversaryIPA_211212.jpeg","beer_abv":10,"beer_style":"Imperial
-        \/ Double IPA","beer_description":"This year our brewing team was inspired
-        by some exotic-ish additions of the lemony persuasion. Yes, it''s a Double
-        IPA (can you really say you''re surprised?), but as we strive to do with all
-        our Stone Anniversary Ales of the let''s-take-this-IPA-in-a-new-direction
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.181,"measure":"seconds"},"init_time":{"time":0.009,"measure":"seconds"}},"notifications":[],"response":{"message":"","brewery_id":false,"type_id":0,"search_version":3,"found":2270,"offset":0,"limit":25,"term":"stone","parsed_term":"stone*","beers":{"count":25,"items":[{"checkin_count":243489,"have_had":false,"your_count":0,"beer":{"bid":821,"beer_name":"Stone
+        IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-StoneIPA.jpg","beer_abv":6.9,"beer_ibu":77,"beer_description":"An
+        \"India Pale Ale\" by definition is highly hopped and high in alcohol.\n\nMedium
+        Bodied Refreshing Ale Light-medium malt character with a heavy dose of over
+        the top hops! Two full weeks of \"dry hopping\" give this beer its abundant
+        hop aroma and crisp hop flavor.\"","created_at":"Sat, 21 Aug 2010 07:26:35
+        +0000","beer_style":"American IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":133347,"have_had":false,"your_count":0,"beer":{"bid":18099,"beer_name":"Arrogant
+        Bastard Ale","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-arrogantBastardAle.jpg","beer_abv":7.2,"beer_ibu":0,"beer_description":"","created_at":"Mon,
+        27 Dec 2010 20:34:38 +0000","beer_style":"American Strong Ale","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":127472,"have_had":false,"your_count":0,"beer":{"bid":1382,"beer_name":"Stone
+        Ruination IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-StoneRuinationIPA.jpg","beer_abv":8.2,"beer_ibu":100,"beer_description":"Wonderfully
+        delicious and intensely bitter flavor on a refreshing malt base. Those who
+        seek, crave and rejoice in beers with big, bold, bitter character will find
+        true nirvana.","created_at":"Sat, 21 Aug 2010 07:26:35 +0000","beer_style":"Imperial
+        \/ Double IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":93817,"have_had":false,"your_count":0,"beer":{"bid":564031,"beer_name":"Stone
+        Go To IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-564031_15fa5_sm.jpeg","beer_abv":4.5,"beer_ibu":65,"beer_description":"Since
+        Day One, we''ve been abundantly forthright and fully transparent about our
+        lust for hops. It''s led us to craft many an IPA, most of them imperial\u2014some
+        intense for their time and all timeless in their intensity. For Stone Go To
+        IPA, we are embracing our hop obsession in a new way, funneling an abundance
+        of lupulin-borne bitterness into a \"session\" IPA delivering all the fruity,
+        piney character of a much bigger IPA. To accomplish this, we employed \"hop
+        bursting,\" a new technique wherein an irrational amount of hops is added
+        during the final phase of the brewing process to coax out extreme flavors
+        and aromas while also imparting a burst of desirably pleasant bitterness.
+        The result is an Alpha-acid-rich beer that fans can enjoy more of without
+        missing out on the assertive hop character you, like us, crave. So, sit back
+        and go two with your new everyday go-to IPA and bask along with us in the
+        glory of the almighty hop.","created_at":"Sat, 18 Jan 2014 08:14:44 +0000","beer_style":"American
+        IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":86805,"have_had":false,"your_count":0,"beer":{"bid":5659,"beer_name":"Stone
+        Sublimely Self-Righteous Black IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-stoneSublimelySelf-Righteous-Ale.jpg","beer_abv":8.7,"beer_ibu":90,"beer_description":"First
+        brewed in 2007 as the Stone 11th Anniversary Ale, this ale was an instant
+        hit. With us. Other folks with great taste loved it too, but we were focused
+        on how much we liked it, and we felt it was truly sublime. That euphoria didn''t
+        last long though, as it was soon replaced with the grim reality that when
+        we sold out of it there wouldn''t be any more. For us. And that was simply
+        unacceptable. So, we are now blessing ourselves, and you the enlightened,
+        with this ale. Thusly, you may now revel in your own self-righteousness as
+        you see fit with this glorious example of ours. You are genuinely welcome,
+        as it is our pleasure.","created_at":"Sat, 21 Aug 2010 07:26:35 +0000","beer_style":"Imperial
+        \/ Double Black IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":78216,"have_had":false,"your_count":0,"beer":{"bid":355380,"beer_name":"Stone
+        RuinTen IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_355380_sm_3e7120608d726ecef36bd3ce6c334e.jpeg","beer_abv":10.8,"beer_ibu":110,"beer_description":"In
+        our Brewers\u2019 Tasting Panel, we all get excited every time we sample one
+        of our new beers for the first time. When we absolutely nail a beer, and get
+        exactly what we were hoping for on the first swing, we call it a homerun.
+        This morning\u2019s (hey, we\u2019re professionals!) taste panel was definitely
+        a homerun. Or, as Brewing Supervisor Mike Richmond commented, \u201cthis one
+        has got the love.\u201d We brewed this beer using the same ingredients as
+        in our classic Stone Ruination IPA, but bumped up the malt to achieve its
+        elevated 10.8% ABV. And of course we jacked up the hops as well. Not just
+        in the boil, but we doubled the dry-hop amount, using a 50\/50 blend of Centennial
+        and Citra. The combination is, dare I say, magic.","created_at":"Tue, 30 Apr
+        2013 12:07:16 +0000","beer_style":"Imperial \/ Double IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":60238,"have_had":false,"your_count":0,"beer":{"bid":1253,"beer_name":"Stone
+        Levitation Ale","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-stoneLevitation.jpg","beer_abv":4.4,"beer_ibu":45,"beer_description":"It''s
+        been said that \"Gravity Sucks.\" Simple enough. Well, we at Stone have identified
+        gravitational forces in the beer world. And we have come to the conclusion
+        that they, well, see above. So we avoid these less-than-desirable gravitational
+        forces. We avoid dumbed-down flavor profiles and the vigorous pursuit of the
+        lowest common denominator. We avoid big dollar marketing mentalities. We avoid
+        additives, cheap adjuncts, stabilizers, and chemical preservatives. So in
+        the defiance of gravity we bring you Stone Levitation Ale. This deep amber
+        ale has rich malt flavors, a big hoppy character, citrus overtones (courtesy
+        of the hops and our special brewers yeast), and modest alcohol. ","created_at":"Sat,
+        21 Aug 2010 07:26:35 +0000","beer_style":"American Amber \/ Red Ale","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":52126,"have_had":false,"your_count":0,"beer":{"bid":4653,"beer_name":"OAKED
+        Arrogant Bastard Ale","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-stoneOakedArrogantBastard.jpg","beer_abv":7.2,"beer_ibu":0,"beer_description":"Arrogant
+        Bastard Ale aged on oak chips.","created_at":"Sat, 21 Aug 2010 07:26:35 +0000","beer_style":"American
+        Strong Ale","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":46334,"have_had":false,"your_count":0,"beer":{"bid":11746,"beer_name":"Stone
+        Cali-Belgique IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-stoneCaliBelgique.jpg","beer_abv":6.9,"beer_ibu":77,"beer_description":"This
+        beer is indeed a complex and surprising combination of flavors, but behind
+        the fancy title is simply delicious Stone IPA dressed up in new Belgian duds.
+        The addition of a carefully selected strain of Belgian yeast adds unexpected
+        layers of flavors and aroma, providing a deliciously funky overtone to the
+        hoppy brightness you already know and love as Stone IPA. Think of it as an
+        otherwise identical twin to Stone IPA that was raised in a Belgian culture.
+        Literally.","created_at":"Sun, 28 Nov 2010 09:39:28 +0000","beer_style":"Belgian
+        IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":44587,"have_had":false,"your_count":0,"beer":{"bid":538152,"beer_name":"Stochasticity
+        Project: Grapefruit Slam IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_538152_sm.jpeg","beer_abv":8.2,"beer_ibu":95,"beer_description":"\"India
+        Pale Ales harness the inherent flavor characteristics of hops to bring forward
+        the familiar flavors of pine, resin, spice and citrus. In some cases those
+        botanicals are so potent, they exactly mirror specific edibles. Such is the
+        case with Centennial hops, which hail from the great Northwest, and come across
+        on the palate like a mouthful of citrus fruit. That sensation is amplified
+        with this, the first beer introduced via the Stochasticity Project; a double
+        IPA brewed with Centennial, Chinook and Magnum hops as well as an immense
+        dosing of fresh grapefruit peel. The result is over-the-top bittersweet grapefruit
+        intensity that is at once refreshing and bracing in its citrusy bitterness.\"\n\nHops:
+        Centennial, Chinook, Magnum, dry-hopped with Centennial\n\nMalts: North American
+        Pale, Light Crystal\n\nSpecial Ingredients: Grapefruit Peel\n","created_at":"Sat,
+        21 Dec 2013 09:42:49 +0000","beer_style":"American IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":41058,"have_had":false,"your_count":0,"beer":{"bid":389372,"beer_name":"Stone
+        17th Anniversary G\u00f6tterd\u00e4mmerung IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_389372_sm_4d64db972cf71cc6f40259389fb5c3.jpeg","beer_abv":9.5,"beer_ibu":102,"beer_description":"Stone
+        brewers used a grain bill comprised exclusively of pilsner malts and German
+        hops (Herkules, Hersbrucker, Magnum, Merkur, Opal, Smaragd, Strisselspalt).
+        Dry-hopping with Sterling, a U.S. hop with Saaz parentage, lends a bit of
+        familiarity [...]","created_at":"Fri, 21 Jun 2013 12:47:10 +0000","beer_style":"Imperial
+        \/ Double IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":38649,"have_had":false,"your_count":0,"beer":{"bid":1257,"beer_name":"Stone
+        Smoked Porter","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-stoneSmokedPorter.jpg","beer_abv":5.9,"beer_ibu":0,"beer_description":"Stone
+        Smoked Porter is dark, rich and complicated. A porter is substantially darker
+        than a pale ale, but not as black or opaque as a stout. Our Smoked porter
+        has a captivatingly deep mahogany color, complimented by silky dark tan head.
+        Rich, full bodied and robust. Smooth, with chocolate and coffee-like flavors
+        balanced by the subtle \\smoky\\\" character of just the right amount of peat-smoked
+        specialty malt.\"","created_at":"Sat, 21 Aug 2010 07:26:35 +0000","beer_style":"Smoked
+        Beer","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":37950,"have_had":false,"your_count":0,"beer":{"bid":8337,"beer_name":"Stone
+        Smoked Porter with Vanilla Bean","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-stoneSmokedPorterVanilla.jpg","beer_abv":5.9,"beer_ibu":53,"beer_description":"Stone
+        Smoked Porter w\/ Vanilla Bean was the brainchild of Small Batch Brewer Laura
+        Ulrich, who had a stroke of genius after trying Stone Smoked Porter poured
+        over a couple scoops of vanilla ice cream. The complex flavor of Madagascar
+        vanilla beans melds perfectly with the chocolatey, malty, coffee-like character
+        of the beer, making it almost like a liquid dessert, but without an overbearing
+        sweetness.","created_at":"Wed, 10 Nov 2010 09:33:58 +0000","beer_style":"Smoked
+        Beer","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":36401,"have_had":false,"your_count":0,"beer":{"bid":495727,"beer_name":"Matt''s
+        Burning Rosids","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-495727_94cd9_sm.jpeg","beer_abv":10.5,"beer_ibu":35,"beer_description":"Life
+        is extraordinarily precious, joyous...and fragile. At Stone, we recently were
+        reminded of this when we lost our dear friend and coworker, Matt Courtright.
+        We felt that there was no better way to share with the world what an extraordinary
+        person he was than by brewing this beer he created. Rather than a somber momento,
+        please think of this as a celebration of Matt. We do. We can\u2019t contemplate
+        it any other way. Matt was by no means a shrinking violet. Quite the contrary.
+        He was exuberant, courageous, outwardly positive, and the type of stalwart
+        friend everybody who knew him was happy to have in their corner. Matt\u2019s
+        smile and voluminous laugh were infectious mainstays around the brewery. He
+        was larger than life in every way...and he was without a doubt an incredible
+        brewer.\n\nEveryone at Stone recognized Matt\u2019s prowess and passion for
+        brewing. He loved to explore what-ifs and why-nots. He crafted the beer you
+        hold in your hands, which he conceived with Stone friend and colleague, Brian
+        Bishop. Burning Rosids is a Belgian-style saison incorporating a unique ingredient-cherrywood
+        smoked malt (the name references the rosid plant family from which cherry
+        trees hail).\n\nBrian and Matt\u2019s many devoting brewing comrades here
+        at Stone were proud to hoist this mash paddles and brew this recipe for him
+        as a symbolic gesture of how much he meant to everyone and how immensely he
+        is missed. When you enjoy this very special beer, please join all of us in
+        raising your glass in Matt\u2019s memory ","created_at":"Sun, 03 Nov 2013
+        16:30:39 +0000","beer_style":"Saison \/ Farmhouse Ale","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":34896,"have_had":false,"your_count":0,"beer":{"bid":1258,"beer_name":"Stone
+        Pale Ale","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-stonePaleAle.jpg","beer_abv":5.4,"beer_ibu":0,"beer_description":"Our
+        flagship ale, Stone Pale Ale is our Southern California interpretation of
+        the classic British pale ale style. Deep amber in color, Stone Pale Ale is
+        robust and full flavored. A delicate hop aroma is complemented by a rich maltiness.
+        This is an ale for those who have learned to appreciate distinctive flavor.
+        Stone Pale Ale is great by itself, or with food that requires a beer of character.","created_at":"Sat,
+        21 Aug 2010 07:26:35 +0000","beer_style":"American Pale Ale","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":31377,"have_had":false,"your_count":0,"beer":{"bid":730995,"beer_name":"Unapologetic
+        IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-730995_97525_sm.jpeg","beer_abv":8.8,"beer_ibu":65,"beer_description":"When
+        you get three hopheads together to collaborate on a beer, it\u2019s only natural
+        to expect some hopped up liquid incarnation of their lupulin lust to spring
+        forth from such a session. Maybe it seems pass\u00e9 to some\u2014three masters
+        of hoppy beer once again exploring the familiar territory of the India pale
+        ale. After all, who needs yet another IPA, double or otherwise, right? It\u2019s
+        all been done. To those who feel this way, this trio\u2019s reply is: \u201cSo
+        what?\u201d In birthing a double IPA made bitter and fruity care of a m\u00e9lange
+        of new and experimental hops (Azacca, Belma, and yet-to-be-named varieties
+        from Washington\u2019s Yakima Valley), they aren\u2019t staying in a comfort
+        zone\u2014they\u2019re hitting a sweet spot in the name of all that is good,
+        delicious, hoppy and forward-thinking to create an IPA that\u2019s both like
+        and unlike anything they, or you, have ever tasted. Rife with essence of pine,
+        resin, and fruits both citrus and tropical, there\u2019s no need for apologies
+        with this beer. All that\u2019s necessary is a yearning for hops, a sturdy
+        constitution and an empty glass.","created_at":"Sun, 29 Jun 2014 17:25:21
+        +0000","beer_style":"Imperial \/ Double IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":29512,"have_had":false,"your_count":0,"beer":{"bid":620987,"beer_name":"Keri
+        Kelli\/Kyle Hollingsworth\/Stone Collective Distortion IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-620987_719e9_sm.jpeg","beer_abv":9.3,"beer_ibu":87,"beer_description":"From
+        Kyle Hollingsworth:\nHere we go! It''s a new year in brews. I''ve got a feeling
+        it''s going to be a good beer year.\n\nI started 2014 in San Diego with my
+        friends at Stone Brewing Company. We''re making a nationally-released beer
+        for the spring. This is a collaboration between Stone, Keri Kelli and me -
+        guitarist for Alice Cooper and beer connoisseur from LA.\n\nIt''s a wild mixture
+        on many levels. Keri and I are pretty far apart in our music worlds, but it
+        makes for great \"mashup\" of hard rock and funk. The beer will definitely
+        go to 11! With an ABV of 9.8% and coriander, elderberries it''s as unusual
+        as our musical backgrounds. Look for that at special events in April and everywhere
+        soon after.\n\nMore immediately, I''m working with SKA Brewing Company for
+        a one-off brew. This is for my upcoming 2014 BrewSki tour in Colorado. I''m
+        excited to get out and play yet another fun weekend with music, brews, and
+        snow. With \"Kyle''s Manipulated Modus IPA,\" we added more hops (if you can
+        believe that), an additional dry hop of Mandarina Bavaria and an orange peel
+        in a whirlpool. I haven''t tasted it yet, looking forward to the enhanced
+        flavor profiles.\n\nThere are lots of new brews in the works for 2014. I''m
+        getting ready to release a new solo disc in August and plan to have a beer
+        come out with each single. I''m calling it \"Hop tracks.\" Stay tuned for
+        more info on these brews.","created_at":"Mon, 17 Mar 2014 21:23:53 +0000","beer_style":"Imperial
+        \/ Double IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":26609,"have_had":false,"your_count":0,"beer":{"bid":444114,"beer_name":"10
+        Barrel\/Bluejacket\/Stone Suede Imperial Porter","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-_444114_sm_5bb567184a957007873c1bac208784.jpeg","beer_abv":9.6,"beer_ibu":50,"beer_description":"Due
+        to our participation in at least a half a dozen collaborations each year,
+        one might perceive Stone as the craft beer equivalent of a beer flitting indiscriminately
+        from one brewery to the next, all the while drawing precious nectar- the expertise
+        and creativity of those institutions\u2019 brewmasters.\n\nAnother buzzy operation
+        that gets the same rap is Bluejacket, a new Washington DC-based operation
+        headed by industry veteran and constant collaborator, Megan O\u2019Leary Parisi.
+        But make no mistake, Stone and Bluejacket are intensely selective about the
+        contemporaries we invite into our brewhouses. We look for the same high level
+        of passion and daringness to flip a beer style on its head that we employ
+        on a daily basis. So, when Parisi and Stone brewmaster, Mitch Steele, decided
+        to collaborate, it was essential that they tap a special individual to complete
+        theyr triad of fermentation domination, and they found just that in Tonya
+        Cornett, the brewmaster at Bend, Oregon\u2019s 10 Barrel Brewing Company.\n\nTogether,
+        they decided on a sturdy yet velvety base of imperial porter and developed
+        a plan to celebrate the bounty of the environs in which it was produced by
+        harvesting avocado honey, jasmine and calendula flowers (some from our very
+        own Stone Farms) and infusing them into the beer to create something complex
+        and uniquely Southern Californian. Consider it craft cross-pollination at
+        its finest.","created_at":"Sat, 31 Aug 2013 18:12:32 +0000","beer_style":"Imperial
+        \/ Double Porter","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":25253,"have_had":false,"your_count":0,"beer":{"bid":642165,"beer_name":"Stone
+        Saison","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-642165_6a667_sm.jpeg","beer_abv":6,"beer_ibu":45,"beer_description":"A
+        taste of our homespun farm-to-tableism is provided in this farmhouse ale stoked
+        with lemon zest, plus lemon thyme and lavender straight from Stone Farms.
+        This spring-to-summer saison is citric and herbal on the palate with a dry,
+        peppery finish. Thanks to the infusion of fresh West Coast ingredients, this
+        isn\u2019t your everyday saison. It\u2019s our saison\u2014100% Stone.","created_at":"Tue,
+        08 Apr 2014 01:57:42 +0000","beer_style":"Saison \/ Farmhouse Ale","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":21908,"have_had":false,"your_count":0,"beer":{"bid":581607,"beer_name":"Spr\u00f6cketbier
+        (Black Rye K\u00f6lsch)","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-581607_bffa4_sm.jpeg","beer_abv":5.4,"beer_ibu":0,"beer_description":"Hitting
+        shelves April 21 2014, it\u2019s the winner of our first ever Stone Spotlight
+        Series intra-company brewing competition, SPR\u00d6CKETBIER. An easy-drinking,
+        silky smooth reinvention of an Old World style with a crisp yet flavorfully
+        lasting finish, it had the goods to make  good on its bid for brewing supremacy.\n\nBitter
+        hops : Magnum\n\nFlavor hops: Hallertauer Hersbrucker (in the whirlpool)\n\nMalt
+        bill: 2-Row Pale Malt, Flaked Rye, Light Munich Malt, Carafa III.","created_at":"Thu,
+        06 Feb 2014 19:06:59 +0000","beer_style":"K\u00f6lsch","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":21617,"have_had":false,"your_count":0,"beer":{"bid":211212,"beer_name":"Stone
+        16th Anniversary IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-Stone16thAnniversaryIPA_211212.jpeg","beer_abv":10,"beer_ibu":85,"beer_description":"This
+        year our brewing team was inspired by some exotic-ish additions of the lemony
+        persuasion. Yes, it''s a Double IPA (can you really say you''re surprised?),
+        but as we strive to do with all our Stone Anniversary Ales of the let''s-take-this-IPA-in-a-new-direction
         variety, we''ve brewed up a Stone-worthy divergence from tradition. The amount
         of rye malt we used isn''t quite enough to warrant the appellation \"Rye IPA,\"
         but it still adds hints of spiciness that contrast deliciously with the tropical
@@ -124,201 +319,94 @@ http_interactions:
         peach and tropical mango flavors from the Amarillo, and the apple and berry
         notes from the Calypso hops. The result is an intense, bitter and very refreshing
         take on a double IPA. Perfect for a Southern California summer.","created_at":"Mon,
-        06 Aug 2012 10:05:23 +0000","auth_rating":0,"wish_list":false},"checkin_count":15434,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":1253,"beer_name":"Stone
-        Levitation Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-stoneLevitation.jpg","beer_abv":4.4,"beer_style":"American
-        Amber \/ Red Ale","beer_description":"It''s been said that \"Gravity Sucks.\"
-        Simple enough. Well, we at Stone have identified gravitational forces in the
-        beer world. And we have come to the conclusion that they, well, see above.
-        So we avoid these less-than-desirable gravitational forces. We avoid dumbed-down
-        flavor profiles and the vigorous pursuit of the lowest common denominator.
-        We avoid big dollar marketing mentalities. We avoid additives, cheap adjuncts,
-        stabilizers, and chemical preservatives. So in the defiance of gravity we
-        bring you Stone Levitation Ale. This deep amber ale has rich malt flavors,
-        a big hoppy character, citrus overtones (courtesy of the hops and our special
-        brewers yeast), and modest alcohol. ","created_at":"Sat, 21 Aug 2010 07:26:35
-        +0000","auth_rating":0,"wish_list":false},"checkin_count":13429,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":4653,"beer_name":"OAKED
-        Arrogant Bastard Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-stoneOakedArrogantBastard.jpg","beer_abv":7.2,"beer_style":"American
-        Strong Ale","beer_description":"Arrogant Bastard Ale aged on oak chips.","created_at":"Sat,
-        21 Aug 2010 07:26:35 +0000","auth_rating":0,"wish_list":false},"checkin_count":11844,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":163540,"beer_name":"Stone
-        Ruination Tenth Anniversary IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-Ruination10thAnniversaryIPA_163540.jpeg","beer_abv":10.8,"beer_style":"Imperial
-        \/ Double IPA","beer_description":"","created_at":"Mon, 23 Apr 2012 17:12:55
-        +0000","auth_rating":0,"wish_list":false},"checkin_count":10350,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":1257,"beer_name":"Stone
-        Smoked Porter","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-stoneSmokedPorter.jpg","beer_abv":5.9,"beer_style":"American
-        Porter","beer_description":"Stone Smoked Porter is dark, rich and complicated.
-        A porter is substantially darker than a pale ale, but not as black or opaque
-        as a stout. Our Smoked porter has a captivatingly deep mahogany color, complimented
-        by silky dark tan head. Rich, full bodied and robust. Smooth, with chocolate
-        and coffee-like flavors balanced by the subtle \\smoky\\\" character of just
-        the right amount of peat-smoked specialty malt.\"","created_at":"Sat, 21 Aug
-        2010 07:26:35 +0000","auth_rating":0,"wish_list":false},"checkin_count":9567,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":11746,"beer_name":"Stone
-        Cali-Belgique IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-stoneCaliBelgique.jpg","beer_abv":6.9,"beer_style":"Belgian
-        IPA","beer_description":"","created_at":"Sun, 28 Nov 2010 09:39:28 +0000","auth_rating":0,"wish_list":false},"checkin_count":9417,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":58338,"beer_name":"Stone
-        15th Anniversary Escondidian Imperial Black IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-15thAnniversaryEscondidianImperialBlackIPA_58338.jpeg","beer_abv":10.8,"beer_style":"Imperial
-        \/ Double Black IPA","beer_description":"An Imperial Black IPA, with intense
-        herbal and piney hops and a great balance of roasted malt flavors. The beer
-        is full bodied, with a touch of alcohol heat, and the hops are upfront all
-        the way through the palate, finishing with an intense bitter linger. The roasted
-        malt comes through more like cocoa in the taste, and balances fantastically
-        with the hops and the alcohol on the aftertaste. Bittered with Columbus hops,
-        with a late Citra addition, followed by prodigious dry-hopping with Nelson
-        Sauvin and Pacific Jade hops from New Zealand, the beer boasts a fragrant
-        and complex hop aroma. Resinous, piney hops hit first on the aromatics, followed
-        by healthy doses of roasted malt flavors, including coffee, anise and cocoa.","created_at":"Sat,
-        18 Jun 2011 09:09:38 +0000","auth_rating":0,"wish_list":false},"checkin_count":9187,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":1258,"beer_name":"Stone
-        Pale Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-stonePaleAle.jpg","beer_abv":5.4,"beer_style":"American
-        Pale Ale","beer_description":"Our flagship ale, Stone Pale Ale is our Southern
-        California interpretation of the classic British pale ale style. Deep amber
-        in color, Stone Pale Ale is robust and full flavored. A delicate hop aroma
-        is complemented by a rich maltiness. This is an ale for those who have learned
-        to appreciate distinctive flavor. Stone Pale Ale is great by itself, or with
-        food that requires a beer of character.","created_at":"Sat, 21 Aug 2010 07:26:35
-        +0000","auth_rating":0,"wish_list":false},"checkin_count":8666,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":8337,"beer_name":"Stone
-        Smoked Porter with Vanilla Bean","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-stoneSmokedPorterVanilla.jpg","beer_abv":5.9,"beer_style":"American
-        Porter","beer_description":"Stone Smoked Porter w\/ Vanilla Bean was the brainchild
-        of Small Batch Brewer Laura Ulrich, who had a stroke of genius after trying
-        Stone Smoked Porter poured over a couple scoops of vanilla ice cream. The
-        complex flavor of Madagascar vanilla beans melds perfectly with the chocolatey,
-        malty, coffee-like character of the beer, making it almost like a liquid dessert,
-        but without an overbearing sweetness.","created_at":"Wed, 10 Nov 2010 09:33:58
-        +0000","auth_rating":0,"wish_list":false},"checkin_count":7268,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":484,"beer_name":"Double
-        Bastard Ale (2011)","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-stoneDoubleBastard.jpg","beer_abv":10.5,"beer_style":"American
-        Strong Ale","beer_description":"","created_at":"Sat, 21 Aug 2010 07:26:35
-        +0000","auth_rating":0,"wish_list":false},"checkin_count":7041,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":10125,"beer_name":"Lukcy
-        Basartd Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-stoneLukcyBasartd.jpg","beer_abv":8.5,"beer_style":"American
-        Strong Ale","beer_description":"Oepn yuor mnid. Use a craobwr if you msut.
-        Snice 1997, Arorgnat Basartd Ale has denemdad taht tyrnianacl micredioty rleax
-        its girp of opprobrium on our ciollectve couniescosnss. Few pessoss the ruiereqd
-        isinght or detph of piversceptve to crdiet the Liuqid Arorgnace for initatgsing
-        the rlveoituon in tsate taht it has. Hevweor, taht\u2019s pfecertly fnie,
-        as our hlurecaen erffots in thirstung the larlegy unlliwing wolrd farorwd
-        rquereis no exrtneal vaditilaon. We ralieze it\u2019s hmaun nautre to bleeive
-        taht pregorss trowads getreanss is one\u2019s own ieda.\n\nThe mree fcat taht
-        yuo\u2019re hdoinlg tihs bttloe in yuor hnad ianidctes taht yuo\u2019re pyiang
-        antteiton, wihch ideitammley stes you arpat form the msseas. It aslo mkaes
-        you one Lukcy Basartd. Hewover, lcuk faovrs the blod... and the arorgnat.
-        The trmiraivute of Arorgnat Basartd Ale, OEKAD Arorgnat Basartd Ale and Dbolue
-        Basartd Ale are all in paly in this cvue\u00e9 de Basartd you now hlod, and
-        wihle it is idneed a Lukcy Basartd, lcuk had ntohing to do wtih it.\n\nTaody,
-        wihle nueomrus iendicrlby dinistcitve chcoies are now alavaible, msot popele
-        sitll fucos tiehr attntieon uopn msas mdiea\u2019s isscenatnly banal ehco
-        cheambr, keenpig thier hdeas frimly buerid in the maross of mecridioty. To
-        beark thurogh tihs cophocany, to gsarp enitghnelnemt anmog the mnid-nmubnig
-        culettr, rerequis itnent. Coinscous itnent. For mnay, this aictve piticipataron
-        in the wolrd is unomfacbtorle. Prerrifeng inasted for oethrs to mkae teihr
-        chcoies for tehm \u2014 be it a shioutng pindut or a toelievisn ciommecral
-        \u2014 sheeple apccet the cmmoitozdied nrom wioutht thoghut. And to thsoe
-        we say: \u201cSetp asdie, and get the hlel out of our way.\u201d","created_at":"Sat,
-        20 Nov 2010 03:07:04 +0000","auth_rating":0,"wish_list":false},"checkin_count":6185,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":157675,"beer_name":"Imperial
-        Russian Stout (2012)","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-ImperialRussianStout2012_157675.jpeg","beer_abv":10.5,"beer_style":"Russian
-        Imperial Stout","beer_description":"Brewed in the authentic historical style
-        of an Imperial Russian Stout, this beer is massive. Intensely aromatic (notes
-        of anise, black currants, coffee, roastiness and alcohol) and heavy on the
-        palate, this brew goes where few can - and fewer dare even try. The style
-        originated from Czarist Russia''s demand for ever thicker English stouts.
-        Expect our version of this mysterious brew to pour like Siberian crude and
-        taste even heavier!","created_at":"Wed, 11 Apr 2012 11:56:52 +0000","auth_rating":0,"wish_list":false},"checkin_count":5985,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":262630,"beer_name":"Enjoy
-        By 12.21.12 IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-_262630_cf1462bea2de12df978bb5c72843.jpeg","beer_abv":9.4,"beer_style":"Imperial
-        \/ Double IPA","beer_description":"Bottled on 11.16.12. You have in your hands
-        a devastatingly fresh double IPA. While freshness is a key component of many
-        beers - especially big, citrusy, floral IPAs - we''ve taken it further, a
-        lot further, in this IPA. You see, we specifically brewed it NOT to last.
-        We''ve not only gone to extensive lengths to ensure that you''re getting this
-        beer in your hands within an extraordinarily short window, we made sure that
-        the Enjoy By date isn''t randomly etched in tiny text somewhere on the label,
-        to be overlooked by all but the most attentive of retailers and consumers.
-        Instead, we''ve sent a clear message with the name of the beer itself that
-        there is no better time than right now to enjoy this IPA.","created_at":"Tue,
-        13 Nov 2012 12:26:29 +0000","auth_rating":0,"wish_list":false},"checkin_count":5963,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":138244,"beer_name":"Bear
-        Republic \/ Fat Head''s \/ Stone TBA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-StoneFatHeadsBearRepublicTexasBrownAle_138244.jpeg","beer_abv":7.1,"beer_style":"American
-        Brown Ale","beer_description":"Stone Collaboration Series 2012 -- a mightily
-        hopped \"Texas Brown Ale.\" Full details at http:\/\/blog.stonebrew.com\/?p=3066","created_at":"Sun,
-        26 Feb 2012 18:34:22 +0000","auth_rating":0,"wish_list":false},"checkin_count":4387,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":98720,"beer_name":"More
-        Brown Than Black IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-MoreBrownThanBlack_98720.jpeg","beer_abv":7.4,"beer_style":"Black
-        IPA \/ Cascadian Dark Ale","beer_description":"Collab w\/ Ninkasi and Tha
-        Alchemist Pub and Brewery","created_at":"Sun, 13 Nov 2011 13:02:03 +0000","auth_rating":0,"wish_list":false},"checkin_count":4133,"have_had":false,"your_count":0,"brewery":{"brewery_id":19610,"brewery_name":"Collaboration:
-        Stone\/Ninkasi\/The Alchemist","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
-        States","contact":{"twitter":"","facebook":"","url":""},"location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"beer":{"bid":8418,"beer_name":"Stone
-        Smoked Porter w\/ Chipotle Peppers","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-SmokedPorterWithChipotlePeppers_8418.jpeg","beer_abv":5.9,"beer_style":"American
-        Porter","beer_description":"Stone Smoked Porter w\/ Chipotle Peppers is a
-        thing of spicy glory, with the just-right heat of smoked jalape\u00f1os (aka
-        chipotles) that combines beautifully with the beer''s peat-smoked malt and
-        roasty character. The idea came about in 2006 when Merchandise Manager Chris
-        Carroll suggested we make a special \"South of the Border Stone Smoked Porter\"
-        for Cinco de Mayo that year. One sip, and we were hooked! ","created_at":"Wed,
-        10 Nov 2010 14:19:38 +0000","auth_rating":0,"wish_list":false},"checkin_count":3911,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":216575,"beer_name":"Ken
-        Schmidt \/ Iron Fist \/ Stone Mint Chocolate Imperial Stout","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-KenSchmidtIronFistStoneMintChocolateImperialStout_216575.jpeg","beer_abv":9.6,"beer_style":"American
-        Imperial \/ Double Stout","beer_description":"","created_at":"Fri, 17 Aug
-        2012 23:25:43 +0000","auth_rating":0,"wish_list":false},"checkin_count":3850,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":208405,"beer_name":"Enjoy
-        By 09.21.12 IPA","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-EnjoyBy_208405.jpeg","beer_abv":9.4,"beer_style":"Imperial
-        \/ Double IPA","beer_description":"You have in your hands a devastatingly
-        fresh double IPA. While freshness is a key component of many beers - especially
-        big, citrusy, floral IPAs - we''ve taken it further, a lot further, in this
-        IPA. You see, we specifically brewed it NOT to last. We''ve not only gone
-        to extensive lengths to ensure that you''re getting this beer in your hands
-        within an extraordinarily short window, we made sure that the Enjoy By date
-        isn''t randomly etched in tiny text somewhere on the label, to be overlooked
-        by all but the most attentive of retailers and consumers. Instead, we''ve
-        sent a clear message with the name of the beer itself that there is no better
-        time than right now to enjoy this IPA.","created_at":"Tue, 31 Jul 2012 21:50:26
-        +0000","auth_rating":0,"wish_list":false},"checkin_count":3440,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":121588,"beer_name":"Old
-        Guardian (2012)","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-OldGuardian2012_121588.jpeg","beer_abv":11,"beer_style":"American
-        Barleywine","beer_description":"","created_at":"Thu, 19 Jan 2012 12:59:54
-        +0000","auth_rating":0,"wish_list":false},"checkin_count":3308,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":92024,"beer_name":"Stone
-        11.11.11 Vertical Epic Ale","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-111111VerticalEpicAle_92024.jpeg","beer_abv":9.4,"beer_style":"Belgian
-        Strong Dark Ale","beer_description":"Not your typical chili beer! The famous
-        mild green chilies from the Hatch Valley in New Mexico add layers of delicious
-        flavor with a very mild heat component. The base beer itself is very reminiscent
-        of a European amber beer, with Perle and Pacific Jade hops, Munich and other
-        roasted German and Belgian malts, hopped and brewed to a very Stone. Cinnamon
-        is a wonderful spice if used judiciously, which is done here-it doesn\u2019t
-        by any means dominate the beer\u2019s flavor, but definitely adds a subtly
-        complex spice note that blends amazingly well with the banana esters and green
-        chili.","created_at":"Tue, 25 Oct 2011 16:02:43 +0000","auth_rating":0,"wish_list":false},"checkin_count":8730,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}},{"beer":{"bid":82264,"beer_name":"Bruery\/Elysian\/Stone
-        La Citrueille C\u00e9leste de Citracado","beer_label":"https:\/\/untappd.s3.amazonaws.com\/site\/beer_logos\/beer-LaCitrueilleCelestedeCitracado_82264.jpeg","beer_abv":5.1,"beer_style":"Pumpkin\/Yam
-        Beer","beer_description":"Amber ale brewed with pumpkins grown on Stone Farms,
-        yams, toasted fenugreek, maple, lemon verbena, and birch bark. http:\/\/youtu.be\/C0nBIXXH__w
-        Brewed in collaboration with The Bruery and Elysian Brewing Company.","created_at":"Wed,
-        28 Sep 2011 22:19:08 +0000","auth_rating":0,"wish_list":false},"checkin_count":3513,"have_had":false,"your_count":0,"brewery":{"brewery_id":1204,"brewery_name":"Stone
-        Brewing Co.","brewery_label":"https:\/\/untappd.s3.amazonaws.com\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
-        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12}}}]},"homebrew":{"count":0,"items":[]}}}'
+        06 Aug 2012 10:05:23 +0000","beer_style":"Imperial \/ Double IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":21040,"have_had":false,"your_count":0,"beer":{"bid":8418,"beer_name":"Smoked
+        Porter w\/ Chipotle Peppers","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-SmokedPorterWithChipotlePeppers_8418.jpeg","beer_abv":5.9,"beer_ibu":53,"beer_description":"Stone
+        Smoked Porter w\/ Chipotle Peppers is a thing of spicy glory, with the just-right
+        heat of smoked jalape\u00f1os (aka chipotles) that combines beautifully with
+        the beer''s peat-smoked malt and roasty character. The idea came about in
+        2006 when Merchandise Manager Chris Carroll suggested we make a special \"South
+        of the Border Stone Smoked Porter\" for Cinco de Mayo that year. One sip,
+        and we were hooked! ","created_at":"Wed, 10 Nov 2010 14:19:38 +0000","beer_style":"Smoked
+        Beer","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":19562,"have_had":false,"your_count":0,"beer":{"bid":715788,"beer_name":"18th
+        Anniversary IPA","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-715788_d9496_sm.jpeg","beer_abv":8.5,"beer_ibu":75,"beer_description":"As
+        we compose the text for this celebratory beer\u2010a golden\u2010brown India
+        pale ale dry-hopped exclusively and abundantly with El Dorado hops\u2010we
+        stand ready to leap from the precipice of all we know into a new era for our
+        company, our beers and, most importantly, our fans. It\u2019s one that will
+        see us exploring new territory, both geographically and creatively, as we
+        evolve from pacesetters for the American craft brewing movement to cross\u2010planetary
+        champions of the worldwide cause of craft, hoisting our banner to proclaim
+        artisanal beers\u2019 vast superiority over stripped\u2010down, business-driven,
+        industrialized, fizzy, yellow mediocrity. We thank you for shadowing us for
+        the first 18 years of our journey, and welcome you to join us for next leg
+        and all that follows.","created_at":"Sun, 15 Jun 2014 13:10:09 +0000","beer_style":"Imperial
+        \/ Double IPA","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":18247,"have_had":false,"your_count":0,"beer":{"bid":641422,"beer_name":"Stochasticity
+        Project: Quadrotriticale","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-641422_2f48b_sm.jpeg","beer_abv":9.3,"beer_ibu":40,"beer_description":"When
+        testing the inherent makeup of the quadrupel\u2014the warmest and darkest
+        of Trappist monastery beer styles\u2014we added triticale, a hybrid grain
+        combining the pleasant flavor of wheat with the elemental durability of rye.
+        We originally explored this nouveau twist on a traditional style in 2010,
+        when brewing a test batch of a potential beer in our Stone Vertical Epic Ale
+        series. Brewmaster Mitch Steele reached for and subsequently improved on that
+        pilot recipe, bringing it to life as part of the Stone Stochasticity Project.
+        The result is a quad that\u2019s lower in sweetness, but rich with dried fruit
+        and spice nuances.","created_at":"Mon, 07 Apr 2014 08:44:56 +0000","beer_style":"Belgian
+        Quad","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":1204,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","contact":{"twitter":"StoneBrewingCo","facebook":"http:\/\/www.facebook.com\/StoneBrewingCo","instagram":"StoneBrewingCo","url":"http:\/\/www.stonebrew.com\/"},"location":{"brewery_city":"Escondido","brewery_state":"CA","lat":33.1157,"lng":-117.12},"brewery_active":1}},{"checkin_count":17173,"have_had":false,"your_count":0,"beer":{"bid":6226,"beer_name":"Saison
+        du BUFF","beer_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/beer_logos\/beer-dfhSaisonDuBUFF.jpg","beer_abv":6.8,"beer_ibu":0,"beer_description":"Brewed
+        in collaboration w\/ Dogfish Head Craft Brewery, Stone Brewing Company, and
+        Victory Brewing Company, who each brewed a version at their own breweries.","created_at":"Wed,
+        06 Oct 2010 09:50:10 +0000","beer_style":"Saison \/ Farmhouse Ale","auth_rating":0,"wish_list":false},"brewery":{"brewery_id":459,"brewery_name":"Dogfish
+        Head Craft Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-DogfishHeadCraftBrewery_459.jpeg","country_name":"United
+        States","contact":{"twitter":"dogfishbeer","facebook":"http:\/\/www.facebook.com\/dogfishheadbeer","instagram":"dogfishbeer","url":"http:\/\/www.dogfish.com\/"},"location":{"brewery_city":"Milton","brewery_state":"DE","lat":38.7776,"lng":-75.3099},"brewery_active":1}}]},"homebrew":{"count":0,"items":[]},"breweries":{"items":[{"brewery":{"brewery_id":1204,"beer_count":715,"brewery_name":"Stone
+        Brewing Co.","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-stone.jpg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":2555,"beer_count":11,"brewery_name":"Stone
+        & Wood","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-StoneWood_2555.jpeg","country_name":"Australia","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":3159,"beer_count":40,"brewery_name":"Redstone
+        Meadery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-RedstoneMeadery_3159.jpeg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":1205,"beer_count":86,"brewery_name":"Stone
+        Cellar Brewpub","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-StoneCellarBrewpubRestaurant_1205.jpeg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":61531,"beer_count":33,"brewery_name":"5
+        Stones Artisan Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-5stonesartisanbrewery_61531.jpeg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":1691,"beer_count":32,"brewery_name":"F&M
+        Brewery\/Stone Hammer Beer","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-FMBrewery_1691.jpeg","country_name":"Canada","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":35610,"beer_count":9,"brewery_name":"Stony
+        Creek Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-StonyCreekBrewery_35610.jpeg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":15158,"beer_count":2,"brewery_name":"Stone''s","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-Stones_15158.jpeg","country_name":"England","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":1193,"beer_count":52,"brewery_name":"Standing
+        Stone Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-StandingStoneBrewingCompany_1193.jpeg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":111440,"beer_count":5,"brewery_name":"Stoneface
+        Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-111440_2db01.jpeg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":5490,"beer_count":23,"brewery_name":"Stonefly
+        Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-StoneflyBrewingCompany_5490.jpeg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":70011,"beer_count":14,"brewery_name":"Stonehenge
+        Ales","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-70011_f5eb0.jpeg","country_name":"England","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":33404,"beer_count":30,"brewery_name":"Stone''s
+        Throw Brewing","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-StonesThrow_33404_bf382.jpeg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":69223,"beer_count":26,"brewery_name":"Kettle
+        & Stone Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-KettleStoneBrewingCompany_69223_087bb.jpeg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":7904,"beer_count":3,"brewery_name":"Collaboration:
+        Ken Schmidt\/Maui\/Stone","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":47227,"beer_count":7,"brewery_name":"Collaboration:
+        N\u00f8gne \u00d8\/Jolly Pumpkin\/Stone Brewing","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":25342,"beer_count":6,"brewery_name":"Nohoval
+        Brewing Company (Stonewell\/Finnbarra Cider)","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-25342_e7dd1.jpeg","country_name":"Ireland","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":10140,"beer_count":12,"brewery_name":"Stonehouse
+        Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"England","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":16142,"beer_count":22,"brewery_name":"Olde
+        Stone Brewing Co","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"Canada","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":27372,"beer_count":11,"brewery_name":"Turtle
+        Stone Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-TurtleStone_27372.jpeg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":21430,"beer_count":10,"brewery_name":"Stonekeep
+        Meadery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-StonekeepMeadery_21430.jpeg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":6782,"beer_count":1,"brewery_name":"Stonewood
+        Ale House","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/assets\/images\/temp\/badge-brewery-default.png","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":98058,"beer_count":25,"brewery_name":"Stoneman
+        Brewery","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-StonemanBrewery_98058_63f49.jpeg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":5700,"beer_count":14,"brewery_name":"Brewery
+        Hakusekikan","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-BreweryHakusekikan_5700.jpeg","country_name":"Japan","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}},{"brewery":{"brewery_id":72040,"beer_count":6,"brewery_name":"StoneyHead
+        Brewing Company","brewery_label":"https:\/\/d1c8v1qci5en44.cloudfront.net\/site\/brewery_logos\/brewery-72040_659cd.jpeg","country_name":"United
+        States","location":{"brewery_city":"","brewery_state":"","lat":0,"lng":0}}}],"count":25}}}'
     http_version: '1.1'
-  recorded_at: Tue, 04 Dec 2012 03:06:56 GMT
+  recorded_at: Fri, 19 Sep 2014 03:53:20 GMT
 recorded_with: VCR 2.3.0
