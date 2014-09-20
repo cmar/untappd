@@ -12,6 +12,7 @@ the API documentation.
 
 ## Releases
 
+* 4.0.2 use https endpoint
 * 4.0.0 supports the v4 API (https://untappd.com/api/docs/v4)
 * 0.0.5 Brewery Info and Search
 * 0.0.4 Complete coverage of v3 API. Checkins, Comments, Toasts, gmt_offset configuration
