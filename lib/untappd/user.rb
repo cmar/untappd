@@ -9,8 +9,8 @@ module Untappd
     end
 
     # options:
-    # * compact (string, optional) - You can pass "true" here only show the user infomation,
-    # and remove the "checkins", "media", "recent_brews", etc attributes
+    # * compact (string, optional) - You can pass "true" here to only show the user
+    # infomation, and remove the "checkins", "media", "recent_brews", etc attributes
     def self.info(username, options={})
       options.merge!(auth_options)
       response_to_mash get("/user/info/#{username}", :query => options)
