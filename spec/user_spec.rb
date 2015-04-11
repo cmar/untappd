@@ -15,9 +15,9 @@ describe "User" do
     info.user.user_name.should == "cmar"
     #according to docs recent_brews, media, and checkins should be removed
     #when compact=true
-    info.user.recent_brews.should == nil
-    info.user.media.should == nil
-    info.user.checkins.should == nil
+    info.user.recent_brews.should be_nil
+    info.user.media.should be_nil
+    info.user.checkins.should be_nil
   end
 
   it "get badges", :vcr do
