@@ -10,6 +10,16 @@ describe "User" do
     info.user.user_name.should == "cmar"
   end
 
+  it "get info with compact", :vcr do
+    info = Untappd::User.info("cmar", :compact => true)
+    info.user.user_name.should == "cmar"
+    #according to docs recent_brews, media, and checkins should be removed
+    #when compact=true
+    info.user.recent_brews.should be_nil
+    info.user.media.should be_nil
+    info.user.checkins.should be_nil
+  end
+
   it "get badges", :vcr do
     badges = Untappd::User.badges("cmar")
     badges.items.first.badge_name.should == "American Craft Beer Week (2013)"

@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.untappd.com/v4/user/info/cmar?compact=true&client_id=<UNTAPPD_CLIENT_ID>&client_secret=<UNTAPPD_CLIENT_SECRET>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 11 Apr 2015 16:08:35 GMT
+      server:
+      - Apache
+      x-powered-by:
+      - PHP/5.5.9-1ubuntu4.5
+      x-ratelimit-limit:
+      - '100'
+      x-ratelimit-remaining:
+      - '97'
+      x-auth-type:
+      - key
+      x-api-version:
+      - '4'
+      x-http-protocol:
+      - '80'
+      access-control-allow-origin:
+      - ! '*'
+      access-control-allow-headers:
+      - X-Untappd-App, X-Untappd-App-Version, Content-Type
+      content-length:
+      - '1199'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"meta":{"code":200,"response_time":{"time":0.021,"measure":"seconds"},"init_time":{"time":0.004,"measure":"seconds"}},"notifications":[],"response":{"user":{"uid":10824,"id":10824,"user_name":"cmar","first_name":"cmar","last_name":"","user_avatar":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=100&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","user_avatar_hd":"https:\/\/gravatar.com\/avatar\/cf989ae1f7ddd979f38b00ec033a0e7d?size=125&d=https%3A%2F%2Fd1c8v1qci5en44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1","user_cover_photo":"https:\/\/untappd.s3.amazonaws.com\/site\/assets\/v3\/images\/cover_default.jpg","user_cover_photo_offset":0,"is_private":0,"location":"Leesburg,
+        VA","url":"","bio":"","is_supporter":0,"relationship":null,"untappd_url":"http:\/\/untappd.com\/user\/cmar","account_type":"user","stats":{"total_badges":10,"total_friends":2,"total_checkins":19,"total_beers":18,"total_created_beers":1,"total_followings":1,"total_photos":3},"contact":{"twitter":"cmar","foursquare":990366,"facebook":500011785},"date_joined":"Thu,
+        23 Dec 2010 17:22:26 +0000","settings":[]}}}'
+    http_version: '1.1'
+  recorded_at: Sat, 11 Apr 2015 16:08:57 GMT
+recorded_with: VCR 2.3.0

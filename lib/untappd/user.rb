@@ -8,8 +8,12 @@ module Untappd
       response_to_mash get("/user/checkins/#{username}", :query => options)
     end
 
-    def self.info(username)
-      response_to_mash get("/user/info/#{username}", :query => auth_options)
+    # options:
+    # * compact (string, optional) - You can pass "true" here to only show the user
+    # infomation, and remove the "checkins", "media", "recent_brews", etc attributes
+    def self.info(username, options={})
+      options.merge!(auth_options)
+      response_to_mash get("/user/info/#{username}", :query => options)
     end
 
     # options:
