@@ -30,7 +30,7 @@ the API documentation.
 
 **User Object**
 * User Feed - Untappd::User.feed(username, options={})
-* User Info - Untappd::User.info(username)
+* User Info - Untappd::User.info(username, options={})
 * User Badges - Untappd::User.badges(username, options={})
 * User Friends - Untappd::User.friends(username, options={})
 * User Wish List - Untappd::User.wish_list(username, options={})
